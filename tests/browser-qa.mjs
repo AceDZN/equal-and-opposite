@@ -132,7 +132,7 @@ try {
     });
     assert.ok(physical, 'a physical 3D card center must be exposed outside DOM controls');
     await page.mouse.click(physical.x, physical.y);
-    assert.equal((await state()).selected, physical.slot, 'raycast selects the physical card that was clicked');
+    assert.equal((await state()).selected, physical.index + 1, 'raycast selects the physical card that was clicked');
     await page.keyboard.press('Escape');
   }
 

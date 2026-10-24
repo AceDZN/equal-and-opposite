@@ -28,7 +28,7 @@ function faceTexture(text: string, opts: { negative?: boolean; card?: boolean; s
   p.strokeRect(19, 19, c.width - 38, c.height - 38);
   p.beginPath(); p.moveTo(30, c.height - 42); p.lineTo(c.width - 30, c.height - 30); p.strokeStyle = '#cebea1'; p.lineWidth = 2; p.stroke();
   p.fillStyle = opts.negative ? RED : INK; p.textAlign = 'center'; p.textBaseline = 'middle'; p.direction = 'ltr';
-  p.font = `${opts.card ? 134 : 216}px Georgia, serif`;
+  p.font = `${opts.card ? 180 : 216}px Georgia, serif`;
   const max = c.width - 70; while (p.measureText(text).width > max) { const m = /([\d.]+)px/.exec(p.font); p.font = `${Number(m![1]) - 4}px Georgia, serif`; }
   p.fillText(text.replace(/-/g, '−'), 256, c.height * (opts.card ? .44 : .5));
   if (opts.card) {
@@ -116,7 +116,7 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
   key.shadow.mapSize.set(2048, 2048); key.shadow.camera.left = -14; key.shadow.camera.right = 14; key.shadow.camera.top = 12; key.shadow.camera.bottom = -12; key.shadow.camera.near = .5; key.shadow.camera.far = 40; key.shadow.normalBias = .035; key.shadow.bias = -.00015; world.add(key);
   const rim = new THREE.DirectionalLight('#f7e5ca', 1.3); rim.position.set(7, 5, -7); world.add(rim);
   const paper = paperTexture(); const wood=woodTexture();
-  const table = new THREE.Mesh(new THREE.BoxGeometry(22.4, .52, 15.3), new THREE.MeshStandardMaterial({ map: wood, roughness: .94 })); table.position.y = -.3; table.receiveShadow = true; table.castShadow = true; world.add(table);
+  const table = new THREE.Mesh(new THREE.BoxGeometry(26.4, .52, 31), new THREE.MeshStandardMaterial({ map: wood, roughness: .94 })); table.position.set(0,-.3,7.8); table.receiveShadow = true; table.castShadow = true; world.add(table);
   const top = new THREE.Mesh(new THREE.PlaneGeometry(19.95, 10.8), new THREE.MeshStandardMaterial({ map: paper, roughness: 1 })); top.rotation.x = -Math.PI / 2; top.position.set(0,-.026,-.8); top.receiveShadow = true; world.add(top);
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(150, 150), new THREE.MeshStandardMaterial({ color: '#d9cfb9', roughness: 1 })); floor.rotation.x = -Math.PI / 2; floor.position.y = -.72; floor.receiveShadow = true; world.add(floor);
   // A sewn center crease divides the expressions without implying transport.
@@ -143,7 +143,7 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
   loader.load(new URL('models/ink-duelist.glb', document.baseURI).href, gltf => {
     if(disposed) {disposeObject(gltf.scene);return;}
     const model=gltf.scene; const bounds=new THREE.Box3().setFromObject(model); const size=bounds.getSize(new THREE.Vector3()); const center=bounds.getCenter(new THREE.Vector3());
-    const scale=5.8/Math.max(size.y,.01); model.scale.setScalar(scale);model.position.set(-center.x*scale,.11-bounds.min.y*scale,-center.z*scale);model.rotation.y=.08;
+    const scale=9.8/Math.max(size.y,.01); model.scale.set(scale*1.35,scale,scale);model.position.set(-center.x*scale*1.35,.11-bounds.min.y*scale-3,-center.z*scale);model.rotation.y=.08;
     model.traverse(o=>{const m=o as THREE.Mesh;if(m.isMesh){m.castShadow=true;m.receiveShadow=true;for(const mat of Array.isArray(m.material)?m.material:[m.material]){const p=mat as THREE.MeshStandardMaterial;if(p.isMeshStandardMaterial){p.roughness=Math.max(.7,p.roughness);p.metalness=0;}}}});
     duelist.add(model);modelLoaded=true;
   },undefined, e=>{modelError=e instanceof Error?e.message:'Local model not yet available';});
@@ -184,12 +184,12 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
     s.hand.forEach((card,i)=>{
       const group=new THREE.Group();group.userData.index=i;
       const material = new THREE.MeshStandardMaterial({color:'#ddc9a4',roughness:1});
-      const body=new THREE.Mesh(new THREE.BoxGeometry(1.92,.065,2.55),material);body.castShadow=true;body.receiveShadow=true;body.userData.cardIndex=i;group.add(body);
+      const body=new THREE.Mesh(new THREE.BoxGeometry(2.7,.065,3.8),material);body.castShadow=true;body.receiveShadow=true;body.userData.cardIndex=i;group.add(body);
       const texture=faceTexture(card.label,{card:true,negative:/[−-]/.test(card.label)});
-      const face=new THREE.Mesh(new THREE.PlaneGeometry(1.88,2.51),new THREE.MeshBasicMaterial({map:texture,toneMapped:false}));face.rotation.x=-Math.PI/2;face.position.y=.035;face.userData.cardIndex=i;group.add(face);
-      const foldedCorner=new THREE.Mesh(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute([.62,.038,-1.10,.84,.038,-.86,.84,.20,-1.10],3)),new THREE.MeshStandardMaterial({color:'#fff1d4',side:THREE.DoubleSide,roughness:1}));foldedCorner.geometry.computeVertexNormals();foldedCorner.userData.cardIndex=i;group.add(foldedCorner);
-      const edge=new THREE.Mesh(new THREE.BoxGeometry(2.02,.035,2.65),new THREE.MeshBasicMaterial({color:'#e0422a',toneMapped:false}));edge.position.y=-.045;edge.name='selectionEdge';edge.visible=s.selected===i;group.add(edge);
-      const offset=i-(s.hand.length-1)/2;group.position.set(offset*1.95,.65,5.3+Math.abs(offset)*.12);group.rotation.set(.39,-offset*.09,-offset*.025);group.userData.baseX=group.position.x;group.userData.baseZ=group.position.z;hands.add(group);cardGroups.push(group);
+      const face=new THREE.Mesh(new THREE.PlaneGeometry(2.65,3.75),new THREE.MeshBasicMaterial({map:texture,toneMapped:false}));face.rotation.x=-Math.PI/2;face.position.y=.035;face.userData.cardIndex=i;group.add(face);
+      const foldedCorner=new THREE.Mesh(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute([1.04,.038,-1.87,1.33,.038,-1.56,1.33,.25,-1.87],3)),new THREE.MeshStandardMaterial({color:'#fff1d4',side:THREE.DoubleSide,roughness:1}));foldedCorner.geometry.computeVertexNormals();foldedCorner.userData.cardIndex=i;group.add(foldedCorner);
+      const edge=new THREE.Mesh(new THREE.BoxGeometry(2.86,.035,3.98),new THREE.MeshBasicMaterial({color:'#e0422a',toneMapped:false}));edge.position.y=-.045;edge.name='selectionEdge';edge.visible=s.selected===i;group.add(edge);
+      const offset=i-(s.hand.length-1)/2;group.position.set(offset*2.1,1.5,7.2+Math.abs(offset)*.12);group.rotation.set(.9,-offset*.09,-offset*.045);group.userData.fanTilt=-offset*.045;group.userData.baseX=group.position.x;group.userData.baseZ=group.position.z;hands.add(group);cardGroups.push(group);
     });
   }
   function buildPiles(s:SceneState){
@@ -224,7 +224,7 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
     equal.rotation.y=animated&&transition?Math.sin(p*Math.PI)*.08:0;
     duelist.rotation.y=animated?Math.sin(elapsed*.48)*.045:0;
     duelist.position.y=animated?Math.sin(elapsed*.8)*.022:0;
-    cardGroups.forEach((g,i)=>{const selected=current.selected===i;const target=.65+(selected?.68:hover===i?.24:0);const edge=g.getObjectByName('selectionEdge');if(edge)edge.visible=selected;g.position.y+= (target-g.position.y)*(current.reducedMotion?1:Math.min(1,dt*12));g.rotation.z+=((selected?-.035:0)-g.rotation.z)*Math.min(1,dt*10);});
+    cardGroups.forEach((g,i)=>{const selected=current.selected===i;const target=1.5+(selected?.68:hover===i?.24:0);const edge=g.getObjectByName('selectionEdge');if(edge)edge.visible=selected;g.position.y+= (target-g.position.y)*(current.reducedMotion?1:Math.min(1,dt*12));g.rotation.z+=((selected?-.035:0)+g.userData.fanTilt-g.rotation.z)*Math.min(1,dt*10);});
     renderer.render(world,camera);
   }
   resize();

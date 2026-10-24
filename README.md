@@ -37,6 +37,6 @@ Import **AceDZN/equal-and-opposite**, select the Vite preset, install with `npm 
 
 ## Evidence and scope
 
-[Game identity](GAME_IDENTITY.md), [curriculum mapping](CURRICULUM.md), [asset provenance](ASSETS.md), [independent findings](QA_FINDINGS.md), [playtest report](PLAYTEST.md), and [visual comparison](docs/VISUAL_REVIEW.md) distinguish implementation, checks and remaining differences. [The primary generated target](docs/visual-targets/gameplay-v1.png) is reference art, never a gameplay capture. Actual captures live in `docs/evidence/`.
+[Game identity](GAME_IDENTITY.md), [curriculum mapping](CURRICULUM.md), [asset provenance](ASSETS.md), [independent findings](QA_FINDINGS.md), [playtest report](PLAYTEST.md), and [visual comparison](docs/VISUAL_REVIEW.md) distinguish implementation, checks and remaining differences. [The primary generated target](docs/visual-targets/gameplay-v2.png) is reference art, never a gameplay capture. Actual captures live in `docs/evidence/`.
 
 This is a finite single-player slice, not multiplayer or an endless deck builder. Completion time and enjoyment/learning gains have not been established by a learner study. No student identity, analytics or external telemetry is collected. Only settings and an anonymous last-match action summary are saved locally. Generated-asset rights are described separately in ASSETS.md; no permissive license is assigned to that asset by this repository.

@@ -14,3 +14,9 @@ State: duel 2 after player divided both sides of 2x+4=12 by 2 and the opponent t
 UI: modest top-right duel "דו־קרב 2 / 5" and round "2 / 4"; small opponent notice "+2 לשני האגפים". Finite fanned hand along the bottom, real 3D cards readable from the camera, selected "−4" card slightly lifted with vermilion edge. Other remaining cards show "−2", "+2", "×2"; the played divide card is in a small visible discard stack. One compact "ביצוע" commit button, history/retry icons. No typed answer, automatic highlighted solution or arithmetic worksheet. Both side formations and card action must be spatially legible.
 Avoid: transport/cargo/locomotive/lift, toy robot, free-roaming avatar, flat DOM card grid, collectible currency, anime illustration covering gameplay, fake incorrect equation.
 ```
+
+## Final rules-consistency correction — selected gameplay-v2.png
+
+```text
+Use case: precise-object-edit. Edit target: this Equal & Opposite gameplay mockup. Change ONLY the visible player hand: add the required newly drawn '+1' card at the far right of the existing fanned hand, without covering the selected −4 card or the commit button. There must now be FIVE hand cards: −2, −4(selected), +2, ×2, +1. Keep the discard stack's ÷2 visible. Preserve x+4=8, four known unit chips left/eight right, x-rune, opponent+2 notice, duel2/5, round2/4, tabletop camera, folded-paper duelist, material/lighting/palette, Hebrew UI and all other composition. This is a rules-driven exact hand correction, no redesign. One full-frame16:9 gameplay reference.
+```
