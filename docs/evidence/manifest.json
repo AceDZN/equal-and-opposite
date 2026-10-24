@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-24",
+  "production_url": "http://localhost:4185/",
+  "source_commit": "bd3eb87",
+  "source_js": "assets/index-Di_ENwWW.js",
+  "reference": "../visual-targets/gameplay-v2.png",
+  "note": "Input-driven captures, no injected win states. native-chrome-complete.png uses preceding visual framing with unchanged rules; native-chrome-target.png refreshes the final build.",
+  "images": [
+    {
+      "file": "duel2-win.png",
+      "sha256": "0c3262fd58f02de51b0dd87eec141b59b92bf36194ac23e26a0f7fa8112db65a",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "final-unaided.png",
+      "sha256": "8ea3814d67fd610e62a28434e7d8e162dfda6748e0d0affa0874a2792975a034",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "gameplay-selected-minus4.png",
+      "sha256": "9fd10457251898947199e15c0b504926f0796d53c95efc6cd106587344d3def5",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "landscape-ready.png",
+      "sha256": "ea5355cd41f6845b6889eb8c252ea8093f31dfcf0dac3b41ecefd4417cc6f688",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "landscape-win.png",
+      "sha256": "b845c06afbd0cd79fbbd399328033af578e342b31bc5a07b62349c95b9befe77",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "loss-recovery.png",
+      "sha256": "20a595d706f9c91bb162cc83123117f78291bd8ad2488f6ba6c74beca2361054",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "native-chrome-complete.png",
+      "sha256": "23ef348f284b1fb3efa80c62b161a657314149cd16770681917ce7fee77c7b4b",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "native-chrome-target.png",
+      "sha256": "2e3aa5654e8191048f291ceba19ee61a7b21ef2c17ed6f3bf3020ee30c8f5a5b",
+      "type": "actual browser gameplay capture"
+    },
+    {
+      "file": "portrait.png",
+      "sha256": "5a2c69adb78a536dc528771e7bdbc0a61ca39521e567c3ef5ec8b351cced1d9c",
+      "type": "actual browser gameplay capture"
+    }
+  ]
+}

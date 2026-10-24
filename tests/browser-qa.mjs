@@ -270,6 +270,21 @@ try {
   await advance();
   assert.equal((await state()).phase, 'won');
   await checkpoint('08-touch-isolation');
+  await page.locator('#result-retry').click();
+  await page.setViewportSize({ width: 844, height: 390 });
+  const landscape = await page.evaluate(() => {
+    const bounds = id => {
+      const b = document.getElementById(id).getBoundingClientRect();
+      return { x: b.x, y: b.y, width: b.width, height: b.height, inside: b.x >= 0 && b.y >= 0 && b.right <= innerWidth && b.bottom <= innerHeight };
+    };
+    return { app: bounds('app'), commit: bounds('commit'), hand: bounds('hand'), horizontalOverflow: document.documentElement.scrollWidth > innerWidth };
+  });
+  await checkpoint('09-landscape-controls');
+  assert.equal(landscape.commit.inside, true, 'short landscape commit must fit entirely in the viewport');
+  assert.equal(landscape.hand.inside, true, 'short landscape hand must fit entirely in the viewport');
+  assert.equal(landscape.horizontalOverflow, false);
+  await winningRoute(['1-a']);
+  await checkpoint('10-landscape-isolation');
   assert.deepEqual(errors, [], 'no browser console or uncaught errors');
   assert.deepEqual(badRequests, [], 'no failed runtime assets');
   const assets = await runtimeSizes(path.resolve('dist')).catch(error => ({ unavailable: String(error) }));

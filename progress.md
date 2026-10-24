@@ -18,14 +18,14 @@ btw,create it as a new public repo on my github (AceDZN). I think that I'll depl
 - One normal Chrome Tripo generation submitted by visual contributor, displayed 45 credits. No further submissions while primary generated target is pending.
 - Image-first steering received: root coordinating chat supplies primary target at docs/visual-targets/gameplay-v1.png. Preserve initial compatible Tripo work; compare actual build against target after it arrives.
 
-## Next work
+## Initial next steps (completed below)
 
 - Integrate local optimized GLB and check scale/orientation/lighting.
 - Run installed Playwright action client and independent full input-driven browser suite, inspect screenshots, then actual production Chrome play.
 - Read generated target; document layout/asset breakdown and visual comparison/fix iteration.
 - Finish delivery docs/evidence and push regular main checkpoints.
 
-- First main checkpoint pushed: cd51b8a. Initial production compilation succeeded; independent dev browser suite played all5 plus alternates/loss/retry (no gameplay defects). QA found dark HUD contrast, stale operation status across duels and cropped portrait formations; fixes assigned and underway.
+- First main checkpoint pushed: cd51b8a. Initial production compilation succeeded; independent dev browser suite played all five plus alternates/loss/retry (no gameplay defects). QA found dark HUD contrast, stale operation status across duels and cropped portrait formations; fixes assigned and underway.
 - Loaded local Tripo asset in real renderer (5.24MB,111866 triangles). Actual skill action client invoked unchanged using an installed-Chrome launch adapter after its bundled headless launch stalled; meaningful costly ×2 play completed and screenshot inspected.
 - Inspected canonical built-in image_gen target and documented its tabletop/camera/UI/material/asset breakdown. No duplicate primary generation. Preserved exact +1 draw despite reference omission; target is labeled generated art throughout.
 - Cleared status on retry/advance, focused canvas after selection for reliable Enter, grouped rational coefficients and isolated counters LTR, streamlined desktop controls and added static Vercel config/README. Await final scene-target adaptation before final evidence and production recheck.
@@ -33,5 +33,19 @@ btw,create it as a new public repo on my github (AceDZN). I think that I'll depl
 - Corrected upcoming-round counters with LTR isolation; retained previous opponent action in past tense; final local summary now survives settings changes. Strict production QA has started against the latest static build.
 - Coordinating imagegen correction produced gameplay-v2.png with the missing drawn+1 card restored. Inspected v2; it is now the selected target in manifest. Keep v1 as history. Exact game rules never changed to imitate the earlier omission.
 - Strict production QA caught Escape not explicitly leaving API fullscreen in headlessChrome. Added explicit exitFullscreen handling; retest required. Sound now includes a locally synthesized paper-brush noise envelope (muted by default).
-- Strict production suite passed all5 duels/all3 alternates and10captures; model required and loaded, no console/network failures. Actual target01/target02 and mobile screenshots were opened. Found foreground hand still occluded charges; assigned one bounded scene correction.
+- Strict production suite passed all five duels/all three alternates and10captures; model required and loaded, no console/network failures. Actual target 01/target 02 and mobile screenshots were opened. Found foreground hand still occluded charges; assigned one bounded scene correction.
 - Additional844×390 check caught a real unreachable-controls defect caused by app min-height540 and hidden body overflow. Added short-height reflow with no min-height, compact header/hand/commit/result, preserving explicit touch/keyboard controls. Final low-height regression and final scene capture required.
+
+## Completed delivery
+
+- Final production build, 13 math tests and 12-capture independent browser suite passed. The final script includes physical raycast, portrait touch and short-landscape actual isolation; no console/network failures and the local GLB is explicitly loaded.
+- Native user Chrome completed all five duels. Refreshed final framing and replayed through duel 2 target selection. Dedicated Chrome tab remains at x+4=8 with−4 selected; verified production server4185 and dev5185 remain running.
+- Opened final target/consequence, portrait, short-landscape and native screenshots. All4 left/8 right known chips are unobscured at the comparable target state. Preserved representative real captures/JSON and the final report in docs/evidence/.
+- Imagegen target v2, exact prompts, hashes, asset provenance, actual curriculum mapping, playtest and independent findings are saved. docs/VISUAL_REVIEW.md records concrete comparison/fix iterations and remaining stylistic gaps.
+- Runtime output is static and local-only. Vercel configuration/instructions prepared; owner chooses deployment later. No code/asset work outside this game's repository, no other processes stopped, no provider API/token use, no credit purchase.
+
+## Remaining limitations / future work
+
+- Simpler room/brushwork/lighting than the generated reference; compatible hooded model reused rather than generating another.
+- Human duration, enjoyment and learning outcomes remain unmeasured; broader physical-device playtesting is future work. No multiplayer or procedural/endless deck content is claimed.
+- Vite's large JS chunk warning remains; measured host-context details and exact bundle size are documented in PLAYTEST.md.

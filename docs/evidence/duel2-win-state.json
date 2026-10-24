@@ -1,0 +1,133 @@
+{
+  "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+  "duel": 2,
+  "title": "תגובה בדיו",
+  "phase": "won",
+  "paused": false,
+  "equation": {
+    "aL": "1",
+    "bL": "0",
+    "aR": "0",
+    "bR": "4"
+  },
+  "formula": "x = 4",
+  "original": "2x + 4 = 12",
+  "unknown": "signed virtual charge of one x rune",
+  "hand": [
+    {
+      "slot": 1,
+      "id": "2-c",
+      "label": "−2",
+      "kind": "addC",
+      "value": "-2"
+    },
+    {
+      "slot": 2,
+      "id": "2-d",
+      "label": "+2",
+      "kind": "addC",
+      "value": "2"
+    },
+    {
+      "slot": 3,
+      "id": "2-e",
+      "label": "×2",
+      "kind": "mul",
+      "value": "2"
+    },
+    {
+      "slot": 4,
+      "id": "2-draw+1",
+      "label": "+1",
+      "kind": "addC",
+      "value": "1"
+    }
+  ],
+  "selected": null,
+  "preview": false,
+  "helpRequests": 0,
+  "moves": 2,
+  "limit": 4,
+  "opponent": null,
+  "deck": [
+    "−1"
+  ],
+  "discard": [
+    "÷2",
+    "−4"
+  ],
+  "cycleAvailable": true,
+  "history": [
+    {
+      "actor": "player",
+      "card": "2-a",
+      "label": "÷2",
+      "result": "x + 2 = 6"
+    },
+    {
+      "actor": "opponent",
+      "card": "2-opp",
+      "label": "+2",
+      "result": "x + 4 = 8"
+    },
+    {
+      "actor": "player",
+      "card": "2-b",
+      "label": "−4",
+      "result": "x = 4"
+    }
+  ],
+  "reason": "הנעלם בודד והפתרון אומת במשוואה המקורית.",
+  "settings": {
+    "muted": true,
+    "reduced": false
+  },
+  "elapsedSimulation": 19.5,
+  "scene": {
+    "modelLoaded": true,
+    "modelError": "",
+    "camera": {
+      "azimuth": 0,
+      "distance": 25
+    },
+    "drawCalls": 69,
+    "triangles": 113434,
+    "textures": 23,
+    "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+    "physicalCards": 4,
+    "cardScreens": [
+      {
+        "id": "2-c",
+        "index": 0,
+        "slot": 0,
+        "x": 556.6782732522399,
+        "y": 800.9030217176229,
+        "visible": false
+      },
+      {
+        "id": "2-d",
+        "index": 1,
+        "slot": 1,
+        "x": 743.5411273360834,
+        "y": 793.4982260064953,
+        "visible": false
+      },
+      {
+        "id": "2-e",
+        "index": 2,
+        "slot": 2,
+        "x": 928.4588726639167,
+        "y": 793.4982260064953,
+        "visible": false
+      },
+      {
+        "id": "2-draw+1",
+        "index": 3,
+        "slot": 3,
+        "x": 1115.32172674776,
+        "y": 800.9030217176229,
+        "visible": false
+      }
+    ]
+  }
+}
