@@ -49,3 +49,13 @@ btw,create it as a new public repo on my github (AceDZN). I think that I'll depl
 - Simpler room/brushwork/lighting than the generated reference; compatible hooded model reused rather than generating another.
 - Human duration, enjoyment and learning outcomes remain unmeasured; broader physical-device playtesting is future work. No multiplayer or procedural/endless deck content is claimed.
 - Vite's large JS chunk warning remains; measured host-context details and exact bundle size are documented in PLAYTEST.md.
+
+## UX hardening follow-up · 24 October 2026
+
+User request: "this one is pretty nice, but there are still weird ui/ux issue try to play with it, find all the fuckups and fix them".
+
+- Reused the real visual and independent QA contributors. Lead owns UI/integration/Git; visual owns scene/camera/picking; QA owns new adversarial UX regression checks. No new model generation.
+- Played the user's current in-app build. Confirmed History then P stacks a pause layer underneath the drawer, focus stays on the background, and unrelated focus changes force an unnecessary pause in an untimed game.
+- Independent probes found modal click-through/keyboard resets, wrong arrow navigation, result/pause focus failures, leaked preview mode into a new match, overlapping controls at651px and unreachable commit/footer at short portrait sizes.
+- Replaced conflicting absolute strips with a unified fluid action dock, larger control text, explicit selected operation, contextual cycle availability and real operation-only previews. Native dialogs gate background inputs and supply focus containment; Escape closes/resumes the relevant layer. Hand DOM stays stable across settings/selection so focus is preserved. Blur no longer interrupts untimed play; hidden documents simply suspend simulation.
+- Scene contributor is fixing overlapping rays, edge hit dead zones, term occlusion, rotated/stretching text and camera extremes with actual projected safe-area bounds. Final test/capture work is ongoing.
