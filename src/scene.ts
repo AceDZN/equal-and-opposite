@@ -88,7 +88,7 @@ function chargeTexture(value: string): THREE.CanvasTexture {
   p.fillText(label,128,132);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return t;
 }
 function inkCharge(value:string):THREE.Group {
-  const g=new THREE.Group();const r=value.includes('/')||Math.abs(numberValue(value))>12?.66:.52;
+  const g=new THREE.Group();const r=value.includes('/')||Math.abs(numberValue(value))>12?.8:.7;
   const body=new THREE.Mesh(new THREE.CylinderGeometry(r,r*.99,.15,36),new THREE.MeshStandardMaterial({color:'#cbb48c',roughness:1}));body.position.y=.075;body.castShadow=true;body.receiveShadow=true;g.add(body);
   const face=new THREE.Mesh(new THREE.PlaneGeometry(r*1.98,r*1.98),new THREE.MeshBasicMaterial({map:chargeTexture(value),transparent:true,toneMapped:false}));face.rotation.x=-Math.PI/2;face.position.y=.153;g.add(face);return g;
 }
@@ -106,10 +106,10 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
   renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = .96;
   const world = new THREE.Scene(); world.background = new THREE.Color('#e9e2d2');
   world.fog = new THREE.Fog('#e9e2d2', 90, 160);
-  const camera = new THREE.PerspectiveCamera(39, 1, .1, 85);
+  const camera = new THREE.PerspectiveCamera(39, 1, .1, 180);
   let azimuth = 0, distance = 25, elapsed = 0, modelLoaded = false, modelError = '', disposed = false;
   const cameraTarget = new THREE.Vector3(0, .25, .7);
-  const updateCamera = () => { const aspect = canvas.clientWidth / Math.max(1, canvas.clientHeight); const d = distance * Math.max(1, 1.5 / aspect); camera.position.set(Math.sin(azimuth) * d * .7, d * .48, Math.cos(azimuth) * d * .88); camera.lookAt(cameraTarget); };
+  const updateCamera = () => { const aspect = canvas.clientWidth / Math.max(1, canvas.clientHeight); const d = distance * Math.max(1, 1.3 / aspect); camera.position.set(Math.sin(azimuth) * d * .7, d * .48, Math.cos(azimuth) * d * .88); camera.lookAt(cameraTarget); };
   world.add(new THREE.AmbientLight('#e9d9b5', .85));
   const hemi = new THREE.HemisphereLight('#f6ecd5', '#3a3024', .95); world.add(hemi);
   const key = new THREE.DirectionalLight('#ffe6bb', 2.4); key.position.set(-6, 13, 6); key.castShadow = true;
@@ -167,12 +167,12 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
       if(hasX){
         const n=numberValue(a),values=Number.isInteger(n)&&Math.abs(n)<=4?Array.from({length:Math.abs(n)},()=>n<0?'-1':'1'):[a];
         const cols=Math.min(values.length,2),base=center+(hasB?-1.95:0);
-        values.forEach((value,i)=>{const piece=foldedRune(value,true);piece.position.set(base+(i%cols-(cols-1)/2)*1.68,.07,(Math.floor(i/cols)-(Math.ceil(values.length/cols)-1)/2)*1.43+.3);formation.add(piece);});
+        values.forEach((value,i)=>{const piece=foldedRune(value,true);piece.scale.setScalar(values.length===1?1.2:hasB?1:1.1);piece.position.set(base+(i%cols-(cols-1)/2)*1.68,.07,(Math.floor(i/cols)-(Math.ceil(values.length/cols)-1)/2)*1.43+.3);formation.add(piece);});
       }
       if(hasB){
         const n=numberValue(b),values=Number.isInteger(n)&&Math.abs(n)<=12?Array.from({length:Math.abs(n)},()=>n<0?'-1':'1'):[b];
-        const cols=Math.min(values.length,hasX?3:4),rows=Math.ceil(values.length/cols),base=center+(hasX?1.18:0);
-        values.forEach((value,i)=>{const piece=inkCharge(value);const row=Math.floor(i/cols),inRow=Math.min(cols,values.length-row*cols);piece.position.set(base+(i%cols-(inRow-1)/2)*1.1,.07,(row-(rows-1)/2)*1.05+.3);piece.rotation.y=i*.13;formation.add(piece);});
+        const cols=Math.min(values.length,hasX&&values.length<=4?2:hasX?3:4),rows=Math.ceil(values.length/cols),base=center+(hasX?1.18:0);
+        values.forEach((value,i)=>{const piece=inkCharge(value);const row=Math.floor(i/cols),inRow=Math.min(cols,values.length-row*cols);piece.position.set(base+(i%cols-(inRow-1)/2)*1.4,.07,(row-(rows-1)/2)*1.35+.3);piece.rotation.y=i*.13;formation.add(piece);});
       }
       const expr = `${a==='0'?'':runeLabel(a,true)}${b==='0'?'':a==='0'?b:numberValue(b)<0?' − '+b.slice(1):' + '+b}` || '0';
       const inscription=textPlane(expr,4.65,.83);inscription.position.set(center,.02,-2.12);formation.add(inscription);
@@ -189,7 +189,7 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
       const face=new THREE.Mesh(new THREE.PlaneGeometry(2.65,3.75),new THREE.MeshBasicMaterial({map:texture,toneMapped:false}));face.rotation.x=-Math.PI/2;face.position.y=.035;face.userData.cardIndex=i;group.add(face);
       const foldedCorner=new THREE.Mesh(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute([1.04,.038,-1.87,1.33,.038,-1.56,1.33,.25,-1.87],3)),new THREE.MeshStandardMaterial({color:'#fff1d4',side:THREE.DoubleSide,roughness:1}));foldedCorner.geometry.computeVertexNormals();foldedCorner.userData.cardIndex=i;group.add(foldedCorner);
       const edge=new THREE.Mesh(new THREE.BoxGeometry(2.86,.035,3.98),new THREE.MeshBasicMaterial({color:'#e0422a',toneMapped:false}));edge.position.y=-.045;edge.name='selectionEdge';edge.visible=s.selected===i;group.add(edge);
-      const offset=i-(s.hand.length-1)/2;group.position.set(offset*2.1,1.5,7.2+Math.abs(offset)*.12);group.rotation.set(.9,-offset*.09,-offset*.045);group.userData.fanTilt=-offset*.045;group.userData.baseX=group.position.x;group.userData.baseZ=group.position.z;hands.add(group);cardGroups.push(group);
+      const offset=i-(s.hand.length-1)/2;group.position.set(offset*2.1,1.5,10.5+Math.abs(offset)*.12);group.rotation.set(.9,-offset*.09,-offset*.045);group.userData.fanTilt=-offset*.045;group.userData.baseX=group.position.x;group.userData.baseZ=group.position.z;hands.add(group);cardGroups.push(group);
     });
   }
   function buildPiles(s:SceneState){
@@ -224,7 +224,7 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
     equal.rotation.y=animated&&transition?Math.sin(p*Math.PI)*.08:0;
     duelist.rotation.y=animated?Math.sin(elapsed*.48)*.045:0;
     duelist.position.y=animated?Math.sin(elapsed*.8)*.022:0;
-    cardGroups.forEach((g,i)=>{const selected=current.selected===i;const target=1.5+(selected?.68:hover===i?.24:0);const edge=g.getObjectByName('selectionEdge');if(edge)edge.visible=selected;g.position.y+= (target-g.position.y)*(current.reducedMotion?1:Math.min(1,dt*12));g.rotation.z+=((selected?-.035:0)+g.userData.fanTilt-g.rotation.z)*Math.min(1,dt*10);});
+    cardGroups.forEach((g,i)=>{const selected=current.selected===i;const target=1.5+(selected?.25:hover===i?.16:0);const edge=g.getObjectByName('selectionEdge');if(edge)edge.visible=selected;g.position.y+= (target-g.position.y)*(current.reducedMotion?1:Math.min(1,dt*12));g.rotation.z+=((selected?-.035:0)+g.userData.fanTilt-g.rotation.z)*Math.min(1,dt*10);});
     renderer.render(world,camera);
   }
   resize();

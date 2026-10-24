@@ -32,3 +32,7 @@ The tabletop, folded rune forms, signed mathematical inscriptions, cards, floor,
 ## Reference matching
 
 The first normal Tripo task was already submitted and exported before the later instruction to produce an imagegen gameplay target arrived. Once `docs/visual-targets/gameplay-v1.png` became available (subsequently corrected to selected `gameplay-v2.png`), the crew inspected it and reused the compatible ivory/charcoal/vermilion folded-paper duelist. No second model was generated and no image was falsely claimed as the first task input. The model has a hood instead of the target's wide paper hat. The scene was then revised toward the target: oblique wood-and-paper tabletop, taller x folds, separate signed unit ink discs, larger opposing figure, red-edged selected card, physical finite stacks and warm paper lanterns. The actual five-card hand retains mathematically required drawn cards even where the illustrative target omitted one.
+
+## Hebrew font
+
+`@fontsource/noto-sans-hebrew` **5.3.0** supplies the locally bundled Noto Sans Hebrew weights 400, 600 and 700. Runtime CSS loads packaged font files without an external font fetch. The SIL Open Font License is included at `public/licenses/Noto-Sans-Hebrew-OFL.txt`. The formula and card canvas fallback uses the browser's available Georgia/serif font.
