@@ -1,6 +1,8 @@
 export interface SceneState {
   equation: { aL: string; bL: string; aR: string; bR: string };
   hand: { id: string; label: string; description: string }[];
+  deck?: { id: string; label: string }[];
+  discard?: { id: string; label: string }[];
   selected: number | null;
   phase: 'ready' | 'player' | 'opponent' | 'won' | 'lost';
   motion: number;

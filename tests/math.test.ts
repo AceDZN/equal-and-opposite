@@ -225,7 +225,7 @@ test('search actual finite hands, stacks, free cycle, timing and limits for all 
 });
 
 test('formula text retains signed rational values and never calls an identity x=0', () => {
-  assert.equal(formatEquation(equation('1/2', 3, 0, '17/4')), '1/2x + 3 = 17/4');
+  assert.equal(formatEquation(equation('1/2', 3, 0, '17/4')), '(1/2)x + 3 = 17/4');
   assert.equal(formatEquation(equation(-2, -2, 0, -10)), '−2x − 2 = −10');
   assert.equal(formatEquation(equation(0, 0, 0, 0)), '0 = 0');
   assert.equal(eq(R('5/2'), solution(DUELS[3].original)!), true);

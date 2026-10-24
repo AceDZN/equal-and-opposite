@@ -24,3 +24,8 @@ btw,create it as a new public repo on my github (AceDZN). I think that I'll depl
 - Run installed Playwright action client and independent full input-driven browser suite, inspect screenshots, then actual production Chrome play.
 - Read generated target; document layout/asset breakdown and visual comparison/fix iteration.
 - Finish delivery docs/evidence and push regular main checkpoints.
+
+- First main checkpoint pushed: cd51b8a. Initial production compilation succeeded; independent dev browser suite played all5 plus alternates/loss/retry (no gameplay defects). QA found dark HUD contrast, stale operation status across duels and cropped portrait formations; fixes assigned and underway.
+- Loaded local Tripo asset in real renderer (5.24MB,111866 triangles). Actual skill action client invoked unchanged using an installed-Chrome launch adapter after its bundled headless launch stalled; meaningful costly ×2 play completed and screenshot inspected.
+- Inspected canonical built-in image_gen target and documented its tabletop/camera/UI/material/asset breakdown. No duplicate primary generation. Preserved exact +1 draw despite reference omission; target is labeled generated art throughout.
+- Cleared status on retry/advance, focused canvas after selection for reliable Enter, grouped rational coefficients and isolated counters LTR, streamlined desktop controls and added static Vercel config/README. Await final scene-target adaptation before final evidence and production recheck.
