@@ -15,18 +15,20 @@ npm test           # exact math and finite-hand search
 npm run build      # typecheck + static dist/
 npm run preview    # http://localhost:4185
 npm run test:browser
+npm run test:ux     # adversarial focus, modal, camera and responsive checks
 ```
 
 Both servers use strict assigned ports and never stop other processes. Browser QA uses Playwright, falling back to installed Chrome if its bundled browser is missing. `QA_URL`, `QA_BROWSER_CHANNEL` and `QA_HEADED=1` can select test context. Screenshots and local reports go to ignored `output/`.
 
 ## Play
 
-The first duel is open immediately. Click a physical paper card or its compact accessible hand control, then choose **ביצוע** to apply it to both sides. All quantities are exact fractions; chips carrying a number represent exactly that signed value. The next card in the finite stack and all discarded cards remain visible. Once per duel, exchange one selected card if the stack is nonempty, without spending a round.
+The first duel is open immediately. Click a physical paper card or its accessible hand control, then choose **להפעיל** to apply it to both sides. All quantities are exact fractions; chips carrying a number represent exactly that signed value. The next card in the finite stack and the discarded-card count remain visible; click the count to read the full transformation history. Once per duel, exchange one selected card if the stack is nonempty, without spending a round.
 
 - **1–5 / arrows:** select a card; **Enter:** commit; **Escape:** cancel/close.
 - **C:** cycle once; **P:** pause; **R:** retry this duel; **F:** fullscreen.
-- Camera buttons rotate/zoom without changing math. Touch uses large buttons and explicit commit.
-- History shows every player/opponent transformation. Optional preview is recorded as help use.
+- **מצלמה** opens rotate, zoom, reset and fullscreen controls. Touch uses large buttons and explicit commit.
+- History shows every player/opponent transformation. Optional preview applies to the selected card and each requested preview is recorded as help use.
+- Help, history, pause and results keep keyboard focus inside their active dialog. Hidden tabs suspend simulation; returning to the untimed game resumes automatically. P creates an explicit pause, with Enter or Escape to resume.
 - Sound starts muted. Reduced motion shortens operation transitions. Losing a round allowance means unresolved, not no mathematical solution.
 
 Win requires exactly `x = q` or `q = x`, plus exact substitution into the saved original equation. `2x = 8` is not isolated. Invalid zero/unknown divisors are rejected by the rules, and no arbitrary operand or typed-answer shortcut is offered. Legal but unhelpful cards remain legal. Retry restores the finite starting hand. The final duel starts without suggested selections or a solved sequence.
@@ -37,6 +39,6 @@ Import **AceDZN/equal-and-opposite**, select the Vite preset, install with `npm 
 
 ## Evidence and scope
 
-[Game identity](GAME_IDENTITY.md), [curriculum mapping](CURRICULUM.md), [asset provenance](ASSETS.md), [independent findings](QA_FINDINGS.md), [playtest report](PLAYTEST.md), and [visual comparison](docs/VISUAL_REVIEW.md) distinguish implementation, checks and remaining differences. [The primary generated target](docs/visual-targets/gameplay-v2.png) is reference art, never a gameplay capture. Actual captures live in `docs/evidence/`.
+[Game identity](GAME_IDENTITY.md), [curriculum mapping](CURRICULUM.md), [asset provenance](ASSETS.md), [independent findings](QA_FINDINGS.md), [UX audit](UX_FINDINGS.md), [playtest report](PLAYTEST.md), and [visual comparison](docs/VISUAL_REVIEW.md) distinguish implementation, checks and remaining differences. [The primary generated target](docs/visual-targets/gameplay-v2.png) is reference art, never a gameplay capture. Actual captures live in `docs/evidence/`.
 
 This is a finite single-player slice, not multiplayer or an endless deck builder. Completion time and enjoyment/learning gains have not been established by a learner study. No student identity, analytics or external telemetry is collected. Only settings and an anonymous last-match action summary are saved locally. Generated-asset rights are described separately in ASSETS.md; no permissive license is assigned to that asset by this repository.

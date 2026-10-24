@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-24",
+  "sourceCommit": "97ade9b",
+  "productionJavaScript": "index-DEwZri80.js",
+  "kind": "Actual interactive game screenshots and input-driven reports; no generated reference images",
+  "checks": {
+    "domainTests": 13,
+    "uxRegressions": 29,
+    "productionBrowserCaptures": 12,
+    "comprehensiveSceneViews": 15,
+    "comprehensivePhysicalPicks": 60,
+    "postDecorativeCorrectionViews": 15,
+    "postDecorativeCorrectionPhysicalPicks": 15
+  },
+  "files": [
+    {
+      "file": "camera-extreme.png",
+      "bytes": 332965,
+      "sha256": "930b91e51a812bfac54028cb89df1b18f9057f15b76dc3f2c67e9921dac408c7"
+    },
+    {
+      "file": "camera-matrix.json",
+      "bytes": 80320,
+      "sha256": "7dd96b2fcdcfd433f1963661b223cd6d2b9555233e620d52aa92b9abb1353237"
+    },
+    {
+      "file": "complete-match.png",
+      "bytes": 305424,
+      "sha256": "50ea227a9d3a4b983cc58d1d3b3c722e1ffc6b7684a48bac004d80ae37113504"
+    },
+    {
+      "file": "desktop.png",
+      "bytes": 317207,
+      "sha256": "135653aecdcd6b8a13c61fa313dfa7ec9eca77dba0b463392c87b221c7f72c31"
+    },
+    {
+      "file": "history-fractions.png",
+      "bytes": 29969,
+      "sha256": "41f9ff07e2faf9b072a3d85887d8c31e17f05648d01de82b519115a9d76c997c"
+    },
+    {
+      "file": "landscape.png",
+      "bytes": 78734,
+      "sha256": "0d89c0f8f069deb56a43fd97c4817851f1b3662b9ffb3287ae17f2730ff98adc"
+    },
+    {
+      "file": "loss-fractions.png",
+      "bytes": 55031,
+      "sha256": "74586abe5ade21031c86bad3a56082e8499e85c01e92c8838953c87e5ff745d2"
+    },
+    {
+      "file": "portrait-camera.png",
+      "bytes": 140652,
+      "sha256": "969f968a14767774aead75ac70184928d5ceb10d053ce2954a68242de7a923a9"
+    },
+    {
+      "file": "preview-fractions.png",
+      "bytes": 61471,
+      "sha256": "c79217d93ca0570e8eda8055c5018cf9fe8b7b951c665da88772959f788110cb"
+    },
+    {
+      "file": "production-report.json",
+      "bytes": 47802,
+      "sha256": "425f992f72669b53b1bf49013bbea6911b2c98db9d987c7a02fcd74873954aac"
+    },
+    {
+      "file": "selected-minus4-state.json",
+      "bytes": 5315,
+      "sha256": "06c7bc6a6b13d1320a32a35ba739d9aa6de4d604c12997bd2105720f6fc99bcc"
+    },
+    {
+      "file": "selected-minus4.png",
+      "bytes": 384276,
+      "sha256": "e983824331ef133d8f2099fde8a5ca10950d770d0a16882f208cc178f1d1c6ce"
+    },
+    {
+      "file": "skill-client-state.json",
+      "bytes": 2845,
+      "sha256": "fca51495c0602850b49dbfa6e8b6cfb201bde2f5162887b5ef89543127682e80"
+    },
+    {
+      "file": "skill-client.png",
+      "bytes": 192991,
+      "sha256": "1bd8176a3db3e7c0d94160f4066faefbdd2464d2d53f8a8bb8cf8b245c1c5b2e"
+    },
+    {
+      "file": "small-screen.png",
+      "bytes": 61001,
+      "sha256": "81b7345480f346ded1060ee05f3633c803780f8a4a4f90148e2b0a7a6c3eecdd"
+    },
+    {
+      "file": "ux-report.json",
+      "bytes": 187586,
+      "sha256": "99b3216c05855d60ba8c805a855eb7dc2e6feef5eb87bdd30ee23e1acaafbf8e"
+    }
+  ]
+}

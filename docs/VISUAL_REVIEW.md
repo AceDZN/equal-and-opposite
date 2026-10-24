@@ -2,6 +2,14 @@
 
 The selected design target is [gameplay-v2.png](visual-targets/gameplay-v2.png), 1672×941. It was generated with the built-in image_gen tool; prompts, correction and hash are in [PROMPT.md](visual-targets/PROMPT.md) and [manifest.json](visual-targets/manifest.json). It is not an implemented-game screenshot. Version1 is retained as historical reference; version2 fixes the required +1 draw card.
 
+## Latest UX hardening revision
+
+The owner requested a second adversarial playtest after the initial delivery. [The latest comparable capture](evidence/ux/selected-minus4.png) uses the same 1672×941 state with the revised fluid action dock, selected-operation text and explicit commit label. The decorative opponent now occupies the free upper-left space instead of sitting beneath the equation panel. Exact quantities and the generated local model are unchanged.
+
+Physical card picking now respects visible indexed surfaces and scene occlusion; invisible selection frames cannot intercept clicks. The hand stays in the player's foreground during camera orbit/zoom. Three/four x runes and known charges occupy separate lanes; signed chip labels stay oriented, and the Hebrew pile captions have correct direction and aspect. Camera framing reserves the measured space between formula and action dock. Camera controls open on demand, with reset and Escape dismissal.
+
+The independent comprehensive matrix passed all 60 physical-card selections across 15 viewport/camera combinations, plus all five legal duel routes. The last decorative grounding correction was followed by [15 fresh camera captures](evidence/ux/camera-matrix.json) and one physical pick per view. Opened screenshots include [portrait orbit](evidence/ux/portrait-camera.png), [short landscape](evidence/ux/landscape.png), [far camera](evidence/ux/camera-extreme.png), [320px controls](evidence/ux/small-screen.png), and [long fractional history](evidence/ux/history-fractions.png). The complete production suite and 29 additional UX regressions pass; see [PLAYTEST.md](../PLAYTEST.md) and [UX_FINDINGS.md](../UX_FINDINGS.md). Evidence and descriptions below document the earlier delivery and its original reference comparison.
+
 ## Comparison state and inputs
 
 Open the game, play −3 in duel 1, continue to duel 2, select/commit ÷2 and let the announced +2 opponent action settle. Select −4 without committing it. Authoritative state is x+4=8, upcoming round2/4, one committed player move; hand [−4,−2,+2,×2,+1], stack [−1], discard [÷2], no cycle and no preview help. The exact saved original is 2x+4=12. This is the reference's action state; hand order may differ without changing the finite resource rules.

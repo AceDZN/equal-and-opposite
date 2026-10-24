@@ -191,6 +191,7 @@ try {
   assert.match((await state()).formula, /17\/4/);
 
   // Resizing during a full animation preserves the operation and camera.
+  await page.locator('#camera-toggle').click();
   await page.locator('#cam-left').click();
   const cameraBefore = (await state()).scene.camera;
   await choose('4-b');
@@ -198,7 +199,12 @@ try {
   await page.setViewportSize({ width: 1000, height: 760 });
   await advance();
   assert.equal((await state()).moves, 1);
-  if (cameraBefore !== undefined) assert.deepEqual((await state()).scene.camera, cameraBefore);
+  if (cameraBefore !== undefined) {
+    const cameraAfter = (await state()).scene.camera;
+    assert.equal(cameraAfter.azimuth, cameraBefore.azimuth, 'resize preserves requested camera orbit');
+    assert.equal(cameraAfter.distance, cameraBefore.distance, 'resize preserves requested camera zoom');
+    // Effective distance changes with aspect/insets so the exact formations fit.
+  }
   await page.setViewportSize({ width: 1440, height: 1000 });
   await checkpoint('03-fraction-response');
   await winningRoute(['4-d']);
@@ -242,9 +248,9 @@ try {
   await page.locator('#mute').click();
   assert.equal((await state()).settings.muted, false);
   await page.locator('#mute').click();
+  await choose('5-a');
   await page.locator('#preview').click();
   assert.equal((await state()).helpRequests, 1);
-  await choose('5-a');
   assert.ok((await page.locator('#preview-value').innerText()).length > 0);
   await page.locator('#history').click();
   assert.equal(await page.locator('#drawer').isVisible(), true);

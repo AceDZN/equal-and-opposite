@@ -16,7 +16,7 @@ Independent input-driven QA uses tests/browser-qa.mjs. The preliminary dev run p
 
 Native Chrome play uses a dedicated gameplay tab through cua_repl; no other crew's Tripo/game tab is controlled. Production final play and visual comparison are recorded after the revised framing capture.
 
-## Production result
+## Initial production result (before the follow-up audit)
 
 The final `npm run build` typecheck/static build succeeded. `npm run test:browser` passed against production port 4185 on the final JavaScript `index-Di_ENwWW.js`, with 12 captures, no console/uncaught errors, no failed runtime requests, and the GLB explicitly loaded. All five duels and all three alternate routes were played through visible inputs. The suite also verified final-round victory, legal costly loss/retry, keyboard/Enter/cancel, double commit, once-only cycle, physical mesh picking, pause/time freeze, F/Escape, resize during animation with camera preservation, preview/history, reduced motion/mute, malformed local settings, portrait touch at 390×844 and actual landscape at 844×390 isolation with both controls fully reachable.
 
@@ -26,8 +26,18 @@ Native user Chrome completed all five duels with moves [1,2,3,2,2] and exact ori
 
 Representative actual captures are in [docs/evidence](docs/evidence/): [selected −4](docs/evidence/gameplay-selected-minus4.png), [verified consequence](docs/evidence/duel2-win.png), [loss/recovery](docs/evidence/loss-recovery.png), [final unaided duel](docs/evidence/final-unaided.png), [portrait](docs/evidence/portrait.png), [landscape](docs/evidence/landscape-ready.png), [native completion](docs/evidence/native-chrome-complete.png), and [latest native target](docs/evidence/native-chrome-target.png). The full final metadata/checkpoints are in [production-report.json](docs/evidence/production-report.json).
 
+## UX hardening production result
+
+The follow-up request was to play outside the happy paths and fix interaction problems. The independent audit reproduced twelve concrete failures in the initially delivered build, then added camera, touch, focus, preview, completion and long-equation checks. [UX_FINDINGS.md](UX_FINDINGS.md) records the triggers and rechecks.
+
+The new production build `index-DEwZri80.js` passes all 29 cases in `npm run test:ux`, the complete 12-capture `npm run test:browser` suite and all 13 domain tests. Browser testing played all five duels, three alternate routes, losses/retries and touch isolation through actual inputs. The local model was required and loaded; there were zero console/uncaught errors and zero failed runtime requests. A previous test's camera assertion was narrowed to the requested orbit/zoom: effective framing now correctly adapts to the available viewport. The separate scene matrix checks those projected bounds.
+
+The comprehensive scene matrix covers five viewport sizes at normal, near-left and far-right camera positions: 15 views, 60 correct physical-card selections and no math-fit failures. A five-duel legal ladder also passes. After the last decorative grounding correction, all 15 views were captured again with one physical pick per view. The final installed skill client was run unchanged through the existing Chrome launch adapter and played a costly ×2 to `2x + 6 = 16`. Its screenshot/state and the desktop, portrait, short-landscape, narrow history and complete-match captures were opened and inspected. Native in-app pointer selection, Enter commit, focused win result and Enter advance were also verified in a separate test tab.
+
+Latest evidence lives in [docs/evidence/ux](docs/evidence/ux/): [selected −4](docs/evidence/ux/selected-minus4.png), [small screen](docs/evidence/ux/small-screen.png), [long history](docs/evidence/ux/history-fractions.png), [complete match](docs/evidence/ux/complete-match.png), [UX report](docs/evidence/ux/ux-report.json), [production report](docs/evidence/ux/production-report.json), and [camera matrix](docs/evidence/ux/camera-matrix.json). Earlier captures above remain historical.
+
 ## Measured context and limits
 
-In installed headless Chrome 155 on the shared development host, 120 requestAnimationFrame intervals at 1672×941 measured median 16.7 ms, p95 16.7 ms, min 16.6 ms and max 16.8 ms. This measures observed scheduler/render intervals in that context; it does not establish typical-device FPS. Final static output totals 6,061,940 bytes, including the 5,243,292-byte GLB. Vite reports a >500 kB JavaScript chunk warning; its final JS is 612,036 bytes before compression (about 161 kB gzip).
+In installed headless Chrome 155 on the shared development host, the follow-up run's 120 requestAnimationFrame intervals at 1672×941 measured median 16.7 ms, p95 16.7 ms, min 16.6 ms and max 16.8 ms. This measures observed scheduler/render intervals in that context; it does not establish typical-device FPS. Current static output totals 6,078,587 bytes, including the 5,243,292-byte GLB. Vite reports a >500 kB JavaScript chunk warning; its current JS is 624,922 bytes before compression (165.37 kB gzip).
 
 The scene retains simpler surroundings, brushwork and lighting than the generated target, and the duelist has a hood rather than a broad hat. Touch/control checks used browser emulation plus real native desktop Chrome, not a separate physical phone. The five-duel slice is authored for deliberate play; no learner study established a human 5–10-minute duration, enjoyment or learning gains. No deployment has occurred. The verified local production server remains at http://localhost:4185/.

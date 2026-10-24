@@ -1,0 +1,234 @@
+{
+  "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+  "duel": 2,
+  "title": "תגובה בדיו",
+  "phase": "ready",
+  "paused": false,
+  "drawer": null,
+  "cameraOpen": false,
+  "matchComplete": false,
+  "equation": {
+    "aL": "1",
+    "bL": "4",
+    "aR": "0",
+    "bR": "8"
+  },
+  "formula": "x + 4 = 8",
+  "original": "2x + 4 = 12",
+  "unknown": "signed virtual charge of one x rune",
+  "hand": [
+    {
+      "slot": 1,
+      "id": "2-b",
+      "label": "−4",
+      "kind": "addC",
+      "value": "-4"
+    },
+    {
+      "slot": 2,
+      "id": "2-c",
+      "label": "−2",
+      "kind": "addC",
+      "value": "-2"
+    },
+    {
+      "slot": 3,
+      "id": "2-d",
+      "label": "+2",
+      "kind": "addC",
+      "value": "2"
+    },
+    {
+      "slot": 4,
+      "id": "2-e",
+      "label": "×2",
+      "kind": "mul",
+      "value": "2"
+    },
+    {
+      "slot": 5,
+      "id": "2-draw+1",
+      "label": "+1",
+      "kind": "addC",
+      "value": "1"
+    }
+  ],
+  "selected": 1,
+  "preview": false,
+  "helpRequests": 0,
+  "moves": 1,
+  "limit": 4,
+  "opponent": null,
+  "deck": [
+    "−1"
+  ],
+  "discard": [
+    "÷2"
+  ],
+  "cycleAvailable": true,
+  "history": [
+    {
+      "actor": "player",
+      "card": "2-a",
+      "label": "÷2",
+      "result": "x + 2 = 6"
+    },
+    {
+      "actor": "opponent",
+      "card": "2-opp",
+      "label": "+2",
+      "result": "x + 4 = 8"
+    }
+  ],
+  "reason": "",
+  "settings": {
+    "muted": true,
+    "reduced": false
+  },
+  "elapsedSimulation": 13.8,
+  "viewportInsets": {
+    "top": 368.09375,
+    "formulaTop": 244.65625,
+    "formulaLeft": 712.03125,
+    "formulaRight": 959.96875,
+    "bottom": 173,
+    "left": 20,
+    "right": 20
+  },
+  "scene": {
+    "modelLoaded": true,
+    "modelError": "",
+    "camera": {
+      "azimuth": 0,
+      "distance": 25,
+      "effectiveDistance": 25.095500946044922
+    },
+    "drawCalls": 88,
+    "triangles": 114617,
+    "textures": 32,
+    "coordinateSystem": "Y up; left expression X<0, right expression X>0; physical hand follows player camera",
+    "physicalCards": 5,
+    "cardScreens": [
+      {
+        "id": "2-b",
+        "index": 0,
+        "slot": 0,
+        "x": 608.9414641172732,
+        "y": 733.0564986236703,
+        "visible": true,
+        "bounds": {
+          "left": 507.74430286740255,
+          "top": 683.7443274134921,
+          "right": 706.0151706900784,
+          "bottom": 907.6144900839697,
+          "width": 198.27086782267588,
+          "height": 223.8701626704776
+        }
+      },
+      {
+        "id": "2-c",
+        "index": 1,
+        "slot": 1,
+        "x": 722.6590296595325,
+        "y": 741.0425165251955,
+        "visible": true,
+        "bounds": {
+          "left": 631.9318314803129,
+          "top": 693.9946179159825,
+          "right": 807.4086494512253,
+          "bottom": 912.3736181506878,
+          "width": 175.4768179709124,
+          "height": 218.37900023470525
+        }
+      },
+      {
+        "id": "2-d",
+        "index": 2,
+        "slot": 2,
+        "x": 836,
+        "y": 741.2872077861682,
+        "visible": true,
+        "bounds": {
+          "left": 755.4584708499962,
+          "top": 697.5958592324774,
+          "right": 916.5415291500038,
+          "bottom": 909.3225909829201,
+          "width": 161.08305830000768,
+          "height": 211.7267317504427
+        }
+      },
+      {
+        "id": "2-e",
+        "index": 3,
+        "slot": 3,
+        "x": 949.3409703404675,
+        "y": 741.0425165251955,
+        "visible": true,
+        "bounds": {
+          "left": 864.5913505487746,
+          "top": 694.4432324203856,
+          "right": 1040.02496590745,
+          "bottom": 912.3736181506878,
+          "width": 175.4336153586754,
+          "height": 217.9303857303022
+        }
+      },
+      {
+        "id": "2-draw+1",
+        "index": 4,
+        "slot": 4,
+        "x": 1062.3478973351787,
+        "y": 740.9473178221826,
+        "visible": true,
+        "bounds": {
+          "left": 963.0145966013727,
+          "top": 690.9899113177763,
+          "right": 1163.5053961133801,
+          "bottom": 915.1436105055744,
+          "width": 200.49079951200747,
+          "height": 224.1536991877981
+        }
+      }
+    ],
+    "formationBounds": {
+      "left": 317.94664917761355,
+      "top": 395.6787096453047,
+      "right": 1354.0533508223864,
+      "bottom": 658.4319153546953,
+      "width": 1036.1067016447728,
+      "height": 262.7532057093906
+    },
+    "layout": {
+      "math": {
+        "left": 30,
+        "right": 1642,
+        "top": 376.09375,
+        "bottom": 678.016875
+      },
+      "handTop": 696.016875,
+      "dockTop": 768,
+      "cardHeight": 199.953125
+    },
+    "characterYOffset": 0,
+    "characterFaceBounds": {
+      "left": 435.2663772408297,
+      "top": 117.99557791570122,
+      "right": 581.0653120449537,
+      "bottom": 287.2964430895111,
+      "width": 145.79893480412397,
+      "height": 169.30086517380988
+    },
+    "characterBounds": {
+      "left": 279.6649945130674,
+      "top": 101.85276676169218,
+      "right": 714.6015152929764,
+      "bottom": 480.96387451861335,
+      "width": 434.93652077990896,
+      "height": 379.1111077569212
+    },
+    "pileLabels": [
+      "שליפה",
+      "משומשים"
+    ]
+  }
+}
