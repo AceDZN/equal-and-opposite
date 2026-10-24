@@ -179,17 +179,30 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
     }
     if(s.reducedMotion||s.phase==='ready'||s.phase==='won'||s.phase==='lost'){world.remove(oldFormation);disposeObject(oldFormation);oldFormation=null;}
   }
+  // The fan is an intentional foreground overlap. Whole cards share one draw/pick rank.
+  function cardRank(index:number){return 1000+index+(current.selected===index?100:0);}
+  function orderCard(group:THREE.Group,index:number){
+    group.renderOrder=cardRank(index);
+    for(const [part,order] of [['selectionEdge',0],['cardBody',1],['cardFace',2],['cardCorner',3]] as const){
+      const mesh=group.getObjectByName(part) as THREE.Mesh;
+      mesh.renderOrder=order;
+      const material=mesh.material as THREE.Material;
+      material.depthTest=false;material.depthWrite=false;
+      // Keep the entire hand after world transparency as one opaque-looking foreground stack.
+      material.transparent=true;material.opacity=1;
+    }
+  }
   function buildCards(s:SceneState) {
     for(const child of [...hands.children]){hands.remove(child);disposeObject(child);}cardGroups=[];
     s.hand.forEach((card,i)=>{
       const group=new THREE.Group();group.userData.index=i;
       const material = new THREE.MeshStandardMaterial({color:'#ddc9a4',roughness:1});
-      const body=new THREE.Mesh(new THREE.BoxGeometry(2.7,.065,3.8),material);body.castShadow=true;body.receiveShadow=true;body.userData.cardIndex=i;group.add(body);
+      const body=new THREE.Mesh(new THREE.BoxGeometry(2.7,.065,3.8),material);body.castShadow=true;body.receiveShadow=true;body.userData.cardIndex=i;body.name='cardBody';group.add(body);
       const texture=faceTexture(card.label,{card:true,negative:/[−-]/.test(card.label)});
-      const face=new THREE.Mesh(new THREE.PlaneGeometry(2.65,3.75),new THREE.MeshBasicMaterial({map:texture,toneMapped:false}));face.rotation.x=-Math.PI/2;face.position.y=.035;face.userData.cardIndex=i;group.add(face);
-      const foldedCorner=new THREE.Mesh(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute([1.04,.038,-1.87,1.33,.038,-1.56,1.33,.25,-1.87],3)),new THREE.MeshStandardMaterial({color:'#fff1d4',side:THREE.DoubleSide,roughness:1}));foldedCorner.geometry.computeVertexNormals();foldedCorner.userData.cardIndex=i;group.add(foldedCorner);
+      const face=new THREE.Mesh(new THREE.PlaneGeometry(2.65,3.75),new THREE.MeshBasicMaterial({map:texture,toneMapped:false}));face.rotation.x=-Math.PI/2;face.position.y=.035;face.userData.cardIndex=i;face.name='cardFace';group.add(face);
+      const foldedCorner=new THREE.Mesh(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute([1.04,.038,-1.87,1.33,.038,-1.56,1.33,.25,-1.87],3)),new THREE.MeshStandardMaterial({color:'#fff1d4',side:THREE.DoubleSide,roughness:1}));foldedCorner.geometry.computeVertexNormals();foldedCorner.userData.cardIndex=i;foldedCorner.name='cardCorner';group.add(foldedCorner);
       const edge=new THREE.Mesh(new THREE.BoxGeometry(2.86,.035,3.98),new THREE.MeshBasicMaterial({color:'#e0422a',toneMapped:false}));edge.position.y=-.045;edge.name='selectionEdge';edge.visible=s.selected===i;edge.userData.cardIndex=i;group.add(edge);
-      const offset=i-(s.hand.length-1)/2;group.position.set(offset*2.1,1.5,10.5+Math.abs(offset)*.12);group.rotation.set(.9,-offset*.09,-offset*.045);group.userData.fanTilt=-offset*.045;group.userData.baseX=group.position.x;group.userData.baseZ=group.position.z;hands.add(group);cardGroups.push(group);
+      const offset=i-(s.hand.length-1)/2;group.position.set(offset*2.1,1.5,10.5+Math.abs(offset)*.12);group.rotation.set(.9,-offset*.09,-offset*.045);group.userData.fanTilt=-offset*.045;group.userData.baseX=group.position.x;group.userData.baseZ=group.position.z;orderCard(group,i);hands.add(group);cardGroups.push(group);
     });
   }
   function buildPiles(s:SceneState){
@@ -209,8 +222,9 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
   }
   function hitAt(x:number,y:number):number|null {
     const box=canvas.getBoundingClientRect();pointer.set((x-box.left)/box.width*2-1,-(y-box.top)/box.height*2+1);world.updateMatrixWorld(true);ray.setFromCamera(pointer,camera);
-    const hit=ray.intersectObjects(hands.children,true).find(hit=>{let object:THREE.Object3D|null=hit.object;while(object){if(!object.visible)return false;object=object.parent;}return Number.isInteger(hit.object.userData.cardIndex);});
-    return hit?.object.userData.cardIndex??null;
+    const hits=ray.intersectObjects(hands.children,true).filter(hit=>{let object:THREE.Object3D|null=hit.object;while(object){if(!object.visible)return false;object=object.parent;}return Number.isInteger(hit.object.userData.cardIndex);});
+    hits.sort((a,b)=>cardRank(b.object.userData.cardIndex)-cardRank(a.object.userData.cardIndex)||a.distance-b.distance);
+    return hits[0]?.object.userData.cardIndex??null;
   }
   function getHit(event:PointerEvent){return hitAt(event.clientX,event.clientY);}
   const move=(e:PointerEvent)=>{hover=getHit(e);canvas.style.cursor=hover!==null&&current.phase==='ready'&&!current.paused?'pointer':'default';};
@@ -234,7 +248,7 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
     equal.rotation.y=animated&&transition?Math.sin(p*Math.PI)*.08:0;
     duelist.rotation.y=animated?Math.sin(elapsed*.48)*.045:0;
     duelist.position.y=animated?Math.sin(elapsed*.8)*.022:0;
-    cardGroups.forEach((g,i)=>{const selected=current.selected===i;const target=1.5+(selected?.25:hover===i?.16:0);const edge=g.getObjectByName('selectionEdge');if(edge)edge.visible=selected;g.position.y+= (target-g.position.y)*(current.reducedMotion?1:Math.min(1,dt*12));g.rotation.z+=((selected?-.035:0)+g.userData.fanTilt-g.rotation.z)*Math.min(1,dt*10);});
+    cardGroups.forEach((g,i)=>{orderCard(g,i);const selected=current.selected===i;const target=1.5+(selected?.25:hover===i?.16:0);const edge=g.getObjectByName('selectionEdge');if(edge)edge.visible=selected;g.position.y+= (target-g.position.y)*(current.reducedMotion?1:Math.min(1,dt*12));g.rotation.z+=((selected?-.035:0)+g.userData.fanTilt-g.rotation.z)*Math.min(1,dt*10);});
     renderer.render(world,camera);
   }
   resize();
@@ -244,5 +258,5 @@ export function createScene(canvas: HTMLCanvasElement, onSelect: (index: number)
     updateCamera();
     // Bound camera input without changing the accepted default tabletop composition.
     if(action!=='reset'&&visibleCardCount()<before.visible){azimuth=before.azimuth;distance=before.distance;updateCamera();}
-  },stats(){return{modelLoaded,modelError,camera:{azimuth,distance},drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,textures:renderer.info.memory.textures,coordinateSystem:'Y up; left expression X<0, right expression X>0; hand at positive Z',physicalCards:cardGroups.length,cardScreens:cardGroups.map((g,index)=>{const p=g.getWorldPosition(new THREE.Vector3()).project(camera),r=canvas.getBoundingClientRect(),x=r.left+(p.x*.5+.5)*r.width,y=r.top+(-.5*p.y+.5)*r.height;return{id:current.hand[index]?.id,index,slot:index,x,y,visible:p.z>-1&&p.z<1&&Math.abs(p.x)<1&&Math.abs(p.y)<1&&document.elementFromPoint(x,y)===canvas&&hitAt(x,y)===index};})};},dispose(){disposed=true;canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerleave',leave);canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',leave);disposeObject(world);paper.dispose();wood.dispose();renderer.dispose();}};
+  },stats(){return{modelLoaded,modelError,camera:{azimuth,distance},drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,textures:renderer.info.memory.textures,coordinateSystem:'Y up; left expression X<0, right expression X>0; hand at positive Z',physicalCards:cardGroups.length,cardScreens:cardGroups.map((g,index)=>{const p=g.getWorldPosition(new THREE.Vector3()).project(camera),r=canvas.getBoundingClientRect(),x=r.left+(p.x*.5+.5)*r.width,y=r.top+(-.5*p.y+.5)*r.height;const facePolygon=[[-1.325,.036,-1.875],[1.325,.036,-1.875],[1.325,.036,1.875],[-1.325,.036,1.875]].map(point=>{const q=g.localToWorld(new THREE.Vector3(...point)).project(camera);return{x:r.left+(q.x*.5+.5)*r.width,y:r.top+(-q.y*.5+.5)*r.height};});return{id:current.hand[index]?.id,index,slot:index,x,y,facePolygon,layer:cardRank(index),hovered:hover===index,visible:p.z>-1&&p.z<1&&Math.abs(p.x)<1&&Math.abs(p.y)<1&&document.elementFromPoint(x,y)===canvas&&hitAt(x,y)===index};})};},dispose(){disposed=true;canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerleave',leave);canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',leave);disposeObject(world);paper.dispose();wood.dispose();renderer.dispose();}};
 }

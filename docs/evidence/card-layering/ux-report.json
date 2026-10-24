@@ -1,0 +1,6791 @@
+{
+  "url": "http://127.0.0.1:4185",
+  "checks": [
+    {
+      "name": "01-pause-keyboard-focus",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.1,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "02-pause-escape",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.2,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "pause",
+        "text": "Ⅱ"
+      }
+    },
+    {
+      "name": "03-drawer-blocks-underlying-input",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.2,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "help",
+        "text": "?"
+      }
+    },
+    {
+      "name": "04-drawer-blocks-retry-shortcut",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": "history",
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "2",
+          "bL": "6",
+          "aR": "0",
+          "bR": "16"
+        },
+        "formula": "2x + 6 = 16",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "×2"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "1-b",
+            "label": "×2",
+            "result": "2x + 6 = 16"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 2.417,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 75,
+          "triangles": 113840,
+          "textures": 25,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 542.5212916536801,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 422.9199908909945,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 640.7965696311292,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 666.6788528670668,
+                  "y": 918.8295929849154
+                },
+                {
+                  "x": 439.4989801956759,
+                  "y": 938.2934181851698
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-c",
+              "index": 1,
+              "slot": 1,
+              "x": 720,
+              "y": 755.420755281382,
+              "facePolygon": [
+                {
+                  "x": 610.784429039339,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 829.215570960661,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 833.8087628922801,
+                  "y": 920.8808145746432
+                },
+                {
+                  "x": 606.1912371077199,
+                  "y": 920.8808145746432
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-d",
+              "index": 2,
+              "slot": 2,
+              "x": 897.4787083463198,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 799.2034303688708,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 1017.0800091090055,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 1000.5010198043241,
+                  "y": 938.2934181851698
+                },
+                {
+                  "x": 773.3211471329332,
+                  "y": 918.8295929849154
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "close-drawer",
+        "text": "×"
+      }
+    },
+    {
+      "name": "05-result-focus-and-tab",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "won",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "0",
+          "aR": "0",
+          "bR": "5"
+        },
+        "formula": "x = 5",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 2,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "−3"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "1-a",
+            "label": "−3",
+            "result": "x = 5"
+          }
+        ],
+        "reason": "הנעלם בודד והפתרון אומת במשוואה המקורית.",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 2.383,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 68,
+          "triangles": 113542,
+          "textures": 22,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "1-b",
+              "index": 0,
+              "slot": 0,
+              "x": 542.5212916536801,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 422.9199908909945,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 640.7965696311292,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 666.6788528670668,
+                  "y": 918.8295929849154
+                },
+                {
+                  "x": 439.4989801956759,
+                  "y": 938.2934181851698
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-c",
+              "index": 1,
+              "slot": 1,
+              "x": 720,
+              "y": 755.420755281382,
+              "facePolygon": [
+                {
+                  "x": 610.784429039339,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 829.215570960661,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 833.8087628922801,
+                  "y": 920.8808145746432
+                },
+                {
+                  "x": 606.1912371077199,
+                  "y": 920.8808145746432
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-d",
+              "index": 2,
+              "slot": 2,
+              "x": 897.4787083463198,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 799.2034303688708,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 1017.0800091090055,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 1000.5010198043241,
+                  "y": 938.2934181851698
+                },
+                {
+                  "x": 773.3211471329332,
+                  "y": 918.8295929849154
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "next",
+        "text": "לדו־קרב הבא ←"
+      }
+    },
+    {
+      "name": "06-arrow-direction",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": 2,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.133,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 83,
+          "triangles": 114432,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 451.79368416934614,
+              "y": 758.1593405090116,
+              "facePolygon": [
+                {
+                  "x": 326.7362699342731,
+                  "y": 614.1778636630676
+                },
+                {
+                  "x": 544.5260446083383,
+                  "y": 583.6415926533532
+                },
+                {
+                  "x": 581.1921464314765,
+                  "y": 909.5305779519406
+                },
+                {
+                  "x": 354.02068944318717,
+                  "y": 939.6002929979292
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1101,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "06b-focused-settings-enter",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": "help",
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": 1,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": false,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.3,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 83,
+          "triangles": 114432,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 451.04460328036,
+              "y": 752.5862412975199,
+              "facePolygon": [
+                {
+                  "x": 325.22297347465775,
+                  "y": 608.2710601347567
+                },
+                {
+                  "x": 544.3260652631923,
+                  "y": 577.7511237591826
+                },
+                {
+                  "x": 581.0487133846684,
+                  "y": 903.9679961461624
+                },
+                {
+                  "x": 352.55087998932123,
+                  "y": 934.7262283127587
+                }
+              ],
+              "layer": 1100,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "close-drawer",
+        "text": "×"
+      }
+    },
+    {
+      "name": "06b-pointer-card-then-enter",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "won",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "0",
+          "aR": "0",
+          "bR": "5"
+        },
+        "formula": "x = 5",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 2,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "−3"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "1-a",
+            "label": "−3",
+            "result": "x = 5"
+          }
+        ],
+        "reason": "הנעלם בודד והפתרון אומת במשוואה המקורית.",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 2.4,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 68,
+          "triangles": 113542,
+          "textures": 22,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "1-b",
+              "index": 0,
+              "slot": 0,
+              "x": 542.5212916536801,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 422.9199908909945,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 640.7965696311292,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 666.6788528670668,
+                  "y": 918.8295929849154
+                },
+                {
+                  "x": 439.4989801956759,
+                  "y": 938.2934181851698
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-c",
+              "index": 1,
+              "slot": 1,
+              "x": 720,
+              "y": 755.420755281382,
+              "facePolygon": [
+                {
+                  "x": 610.784429039339,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 829.215570960661,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 833.8087628922801,
+                  "y": 920.8808145746432
+                },
+                {
+                  "x": 606.1912371077199,
+                  "y": 920.8808145746432
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-d",
+              "index": 2,
+              "slot": 2,
+              "x": 897.4787083463198,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 799.2034303688708,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 1017.0800091090055,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 1000.5010198043241,
+                  "y": 938.2934181851698
+                },
+                {
+                  "x": 773.3211471329332,
+                  "y": 918.8295929849154
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "next",
+        "text": "לדו־קרב הבא ←"
+      }
+    },
+    {
+      "name": "06c-focus-loss-recovery",
+      "passed": true,
+      "details": {
+        "wasPausedOnReturn": false
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.25,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "06d-preview-belongs-to-selection",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": 3,
+        "preview": false,
+        "helpRequests": 1,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.367,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 83,
+          "triangles": 114432,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.0490382772552,
+              "y": 747.1824989049856,
+              "facePolygon": [
+                {
+                  "x": 515.3503179724123,
+                  "y": 592.6342237136382
+                },
+                {
+                  "x": 735.742501055024,
+                  "y": 582.7122759121174
+                },
+                {
+                  "x": 751.0247648306383,
+                  "y": 908.399058109745
+                },
+                {
+                  "x": 521.3038343109313,
+                  "y": 919.3416020078408
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.5721473629761,
+              "y": 755.727169855189,
+              "facePolygon": [
+                {
+                  "x": 704.4181260278754,
+                  "y": 591.5987711563365
+                },
+                {
+                  "x": 923.3033830677996,
+                  "y": 601.8462714301256
+                },
+                {
+                  "x": 917.3354134635192,
+                  "y": 926.6207853065739
+                },
+                {
+                  "x": 689.1671652207476,
+                  "y": 917.1392605502132
+                }
+              ],
+              "layer": 1102,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "",
+        "text": "3÷2"
+      }
+    },
+    {
+      "name": "06e-settled-feedback",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "2",
+          "bL": "6",
+          "aR": "0",
+          "bR": "16"
+        },
+        "formula": "2x + 6 = 16",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "×2"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "1-b",
+            "label": "×2",
+            "result": "2x + 6 = 16"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 2.883,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 75,
+          "triangles": 113840,
+          "textures": 25,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 542.5212916536801,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 422.9199908909945,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 640.7965696311292,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 666.6788528670668,
+                  "y": 918.8295929849154
+                },
+                {
+                  "x": 439.4989801956759,
+                  "y": 938.2934181851698
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 1,
+              "slot": 1,
+              "x": 720,
+              "y": 755.420755281382,
+              "facePolygon": [
+                {
+                  "x": 610.784429039339,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 829.215570960661,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 833.8087628922801,
+                  "y": 920.8808145746432
+                },
+                {
+                  "x": 606.1912371077199,
+                  "y": 920.8808145746432
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 2,
+              "slot": 2,
+              "x": 897.4787083463198,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 799.2034303688708,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 1017.0800091090055,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 1000.5010198043241,
+                  "y": 938.2934181851698
+                },
+                {
+                  "x": 773.3211471329332,
+                  "y": 918.8295929849154
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "06f-drawer-close-preserves-choice",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": 2,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.283,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 83,
+          "triangles": 114432,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 630.9179331535121,
+              "y": 744.225245270367,
+              "facePolygon": [
+                {
+                  "x": 514.9832386634291,
+                  "y": 589.4709104012213
+                },
+                {
+                  "x": 735.7706322352707,
+                  "y": 579.6089609784271
+                },
+                {
+                  "x": 751.0702335588442,
+                  "y": 905.5081482956607
+                },
+                {
+                  "x": 520.9328212635764,
+                  "y": 916.6847574825813
+                }
+              ],
+              "layer": 1101,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "history",
+        "text": "דרך הפתרון"
+      }
+    },
+    {
+      "name": "06g-pause-during-operation",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "2",
+          "bL": "6",
+          "aR": "0",
+          "bR": "16"
+        },
+        "formula": "2x + 6 = 16",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "×2"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "1-b",
+            "label": "×2",
+            "result": "2x + 6 = 16"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 2.583,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 75,
+          "triangles": 113840,
+          "textures": 25,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 542.5212916536801,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 422.9199908909945,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 640.7965696311292,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 666.6788528670668,
+                  "y": 918.8295929849154
+                },
+                {
+                  "x": 439.4989801956759,
+                  "y": 938.2934181851698
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 1,
+              "slot": 1,
+              "x": 720,
+              "y": 755.420755281382,
+              "facePolygon": [
+                {
+                  "x": 610.784429039339,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 829.215570960661,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 833.8087628922801,
+                  "y": 920.8808145746432
+                },
+                {
+                  "x": 606.1912371077199,
+                  "y": 920.8808145746432
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 2,
+              "slot": 2,
+              "x": 897.4787083463198,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 799.2034303688708,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 1017.0800091090055,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 1000.5010198043241,
+                  "y": 938.2934181851698
+                },
+                {
+                  "x": 773.3211471329332,
+                  "y": 918.8295929849154
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "06h-loss-dialog-focus",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 7.583,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "07-layout-660x800",
+      "passed": true,
+      "details": {
+        "viewport": {
+          "width": 660,
+          "height": 800
+        },
+        "controls": [
+          {
+            "id": "2-a",
+            "rect": {
+              "x": 2.3125,
+              "y": 696,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-b",
+            "rect": {
+              "x": 71.359375,
+              "y": 696,
+              "width": 64.1875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-c",
+            "rect": {
+              "x": 140.546875,
+              "y": 696,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-d",
+            "rect": {
+              "x": 209.59375,
+              "y": 696,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-e",
+            "rect": {
+              "x": 278.640625,
+              "y": 696,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "cycle",
+            "rect": {
+              "x": 572.328125,
+              "y": 689,
+              "width": 48.671875,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "cycle"
+          },
+          {
+            "id": "commit",
+            "rect": {
+              "x": 354,
+              "y": 689,
+              "width": 91.796875,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "commit"
+          },
+          {
+            "id": "preview",
+            "rect": {
+              "x": 560.625,
+              "y": 754,
+              "width": 69.375,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "preview"
+          },
+          {
+            "id": "retry",
+            "rect": {
+              "x": 30,
+              "y": 754,
+              "width": 84.953125,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "retry"
+          }
+        ]
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 2,
+        "title": "תגובה בדיו",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "4",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 4 = 8",
+        "original": "2x + 4 = 12",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "2-b",
+            "label": "−4",
+            "kind": "addC",
+            "value": "-4"
+          },
+          {
+            "slot": 2,
+            "id": "2-c",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 3,
+            "id": "2-d",
+            "label": "+2",
+            "kind": "addC",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "2-e",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 5,
+            "id": "2-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 4,
+        "opponent": null,
+        "deck": [
+          "−1"
+        ],
+        "discard": [
+          "÷2"
+        ],
+        "cycleAvailable": true,
+        "history": [
+          {
+            "actor": "player",
+            "card": "2-a",
+            "label": "÷2",
+            "result": "x + 2 = 6"
+          },
+          {
+            "actor": "opponent",
+            "card": "2-opp",
+            "label": "+2",
+            "result": "x + 4 = 8"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 4.95,
+        "viewportInsets": {
+          "top": 343,
+          "formulaTop": 248,
+          "formulaLeft": 165,
+          "formulaRight": 495,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 92,
+          "triangles": 114610,
+          "textures": 32,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 5,
+          "cardScreens": [
+            {
+              "id": "2-b",
+              "index": 0,
+              "slot": 0,
+              "x": 168.3740074423584,
+              "y": 543.8623748150375,
+              "facePolygon": [
+                {
+                  "x": 108.03058281403403,
+                  "y": 482.41324860575656
+                },
+                {
+                  "x": 206.1234839475263,
+                  "y": 463.51369591819554
+                },
+                {
+                  "x": 229.6876153141958,
+                  "y": 606.8835488941005
+                },
+                {
+                  "x": 129.38243357400634,
+                  "y": 625.4181619754557
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-c",
+              "index": 1,
+              "slot": 1,
+              "x": 249.4755348699194,
+              "y": 541.1332932151124,
+              "facePolygon": [
+                {
+                  "x": 193.86384234275621,
+                  "y": 474.39670852245933
+                },
+                {
+                  "x": 293.7954577871345,
+                  "y": 464.90871851773426
+                },
+                {
+                  "x": 306.1117692667046,
+                  "y": 609.3727027057441
+                },
+                {
+                  "x": 204.00045684629123,
+                  "y": 618.6797913766915
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-d",
+              "index": 2,
+              "slot": 2,
+              "x": 330,
+              "y": 538.4236298696645,
+              "facePolygon": [
+                {
+                  "x": 279.84677652640386,
+                  "y": 466.93468991681186
+                },
+                {
+                  "x": 380.15322347359614,
+                  "y": 466.93468991681186
+                },
+                {
+                  "x": 381.23266640355644,
+                  "y": 611.3207719068553
+                },
+                {
+                  "x": 278.7673335964436,
+                  "y": 611.3207719068553
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-e",
+              "index": 3,
+              "slot": 3,
+              "x": 410.5244651300806,
+              "y": 541.1332932151124,
+              "facePolygon": [
+                {
+                  "x": 366.2045422128655,
+                  "y": 464.90871851773426
+                },
+                {
+                  "x": 466.1361576572438,
+                  "y": 474.39670852245933
+                },
+                {
+                  "x": 455.99954315370877,
+                  "y": 618.6797913766915
+                },
+                {
+                  "x": 353.88823073329536,
+                  "y": 609.3727027057441
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-draw+1",
+              "index": 4,
+              "slot": 4,
+              "x": 491.6259925576416,
+              "y": 543.8623748150375,
+              "facePolygon": [
+                {
+                  "x": 453.8765160524737,
+                  "y": 463.51369591819554
+                },
+                {
+                  "x": 551.969417185966,
+                  "y": 482.41324860575656
+                },
+                {
+                  "x": 530.6175664259937,
+                  "y": 625.4181619754557
+                },
+                {
+                  "x": 430.3123846858042,
+                  "y": 606.8835488941005
+                }
+              ],
+              "layer": 1004,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "07-layout-651x700",
+      "passed": true,
+      "details": {
+        "viewport": {
+          "width": 651,
+          "height": 700
+        },
+        "controls": [
+          {
+            "id": "2-a",
+            "rect": {
+              "x": 0.0625,
+              "y": 602,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-b",
+            "rect": {
+              "x": 69.109375,
+              "y": 602,
+              "width": 64.1875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-c",
+            "rect": {
+              "x": 138.296875,
+              "y": 602,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-d",
+            "rect": {
+              "x": 207.34375,
+              "y": 602,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-e",
+            "rect": {
+              "x": 276.390625,
+              "y": 602,
+              "width": 64.046875,
+              "height": 43
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "cycle",
+            "rect": {
+              "x": 563.328125,
+              "y": 595,
+              "width": 48.671875,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "cycle"
+          },
+          {
+            "id": "commit",
+            "rect": {
+              "x": 349.5,
+              "y": 595,
+              "width": 91.796875,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "commit"
+          },
+          {
+            "id": "preview",
+            "rect": {
+              "x": 551.625,
+              "y": 660,
+              "width": 69.375,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "preview"
+          },
+          {
+            "id": "retry",
+            "rect": {
+              "x": 30,
+              "y": 660,
+              "width": 84.953125,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "retry"
+          }
+        ]
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 2,
+        "title": "תגובה בדיו",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "4",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 4 = 8",
+        "original": "2x + 4 = 12",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "2-b",
+            "label": "−4",
+            "kind": "addC",
+            "value": "-4"
+          },
+          {
+            "slot": 2,
+            "id": "2-c",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 3,
+            "id": "2-d",
+            "label": "+2",
+            "kind": "addC",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "2-e",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 5,
+            "id": "2-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 4,
+        "opponent": null,
+        "deck": [
+          "−1"
+        ],
+        "discard": [
+          "÷2"
+        ],
+        "cycleAvailable": true,
+        "history": [
+          {
+            "actor": "player",
+            "card": "2-a",
+            "label": "÷2",
+            "result": "x + 2 = 6"
+          },
+          {
+            "actor": "opponent",
+            "card": "2-opp",
+            "label": "+2",
+            "result": "x + 4 = 8"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 4.933,
+        "viewportInsets": {
+          "top": 288,
+          "formulaTop": 203,
+          "formulaLeft": 160.5,
+          "formulaRight": 490.5,
+          "bottom": 134,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 92,
+          "triangles": 114610,
+          "textures": 32,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 5,
+          "cardScreens": [
+            {
+              "id": "2-b",
+              "index": 0,
+              "slot": 0,
+              "x": 158.7596068941085,
+              "y": 498.5595463400572,
+              "facePolygon": [
+                {
+                  "x": 96.98546273959896,
+                  "y": 434.98085316938267
+                },
+                {
+                  "x": 197.85112693577454,
+                  "y": 415.5886041062878
+                },
+                {
+                  "x": 221.74466556031078,
+                  "y": 564.1382533497202
+                },
+                {
+                  "x": 118.20033908970989,
+                  "y": 583.0768957209408
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-c",
+              "index": 1,
+              "slot": 1,
+              "x": 242.48045367328842,
+              "y": 495.6490115972399,
+              "facePolygon": [
+                {
+                  "x": 185.40733446795727,
+                  "y": 426.69497053721955
+                },
+                {
+                  "x": 288.22594837625417,
+                  "y": 416.96385065963756
+                },
+                {
+                  "x": 300.8136008810003,
+                  "y": 566.5193174017795
+                },
+                {
+                  "x": 195.3537537272795,
+                  "y": 576.0258862699067
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-d",
+              "index": 2,
+              "slot": 2,
+              "x": 325.5,
+              "y": 492.7628573929694,
+              "facePolygon": [
+                {
+                  "x": 273.9096112477952,
+                  "y": 418.98743268658876
+                },
+                {
+                  "x": 377.09038875220483,
+                  "y": 418.98743268658876
+                },
+                {
+                  "x": 378.3976383371834,
+                  "y": 568.3361690633279
+                },
+                {
+                  "x": 272.6023616628165,
+                  "y": 568.3361690633279
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-e",
+              "index": 3,
+              "slot": 3,
+              "x": 408.51954632671163,
+              "y": 495.6490115972399,
+              "facePolygon": [
+                {
+                  "x": 362.77405162374583,
+                  "y": 416.96385065963756
+                },
+                {
+                  "x": 465.5926655320427,
+                  "y": 426.69497053721955
+                },
+                {
+                  "x": 455.6462462727205,
+                  "y": 576.0258862699067
+                },
+                {
+                  "x": 350.1863991189997,
+                  "y": 566.5193174017795
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-draw+1",
+              "index": 4,
+              "slot": 4,
+              "x": 492.2403931058915,
+              "y": 498.5595463400572,
+              "facePolygon": [
+                {
+                  "x": 453.1488730642254,
+                  "y": 415.5886041062878
+                },
+                {
+                  "x": 554.0145372604011,
+                  "y": 434.98085316938267
+                },
+                {
+                  "x": 532.7996609102901,
+                  "y": 583.0768957209408
+                },
+                {
+                  "x": 429.25533443968925,
+                  "y": 564.1382533497202
+                }
+              ],
+              "layer": 1004,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "07-layout-390x500",
+      "passed": true,
+      "details": {
+        "viewport": {
+          "width": 390,
+          "height": 500
+        },
+        "controls": [
+          {
+            "id": "1-a",
+            "rect": {
+              "x": 12,
+              "y": 365,
+              "width": 87.75,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "1-b",
+            "rect": {
+              "x": 104.75,
+              "y": 365,
+              "width": 87.75,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "1-c",
+            "rect": {
+              "x": 197.5,
+              "y": 365,
+              "width": 87.75,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "1-d",
+            "rect": {
+              "x": 290.25,
+              "y": 365,
+              "width": 87.75,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "commit",
+            "rect": {
+              "x": 12,
+              "y": 417.5,
+              "width": 68.390625,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "commit"
+          },
+          {
+            "id": "preview",
+            "rect": {
+              "x": 324.625,
+              "y": 464,
+              "width": 53.375,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "preview"
+          },
+          {
+            "id": "retry",
+            "rect": {
+              "x": 12,
+              "y": 464,
+              "width": 53.890625,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "retry"
+          }
+        ]
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "2",
+          "bL": "6",
+          "aR": "0",
+          "bR": "16"
+        },
+        "formula": "2x + 6 = 16",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "×2"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "1-b",
+            "label": "×2",
+            "result": "2x + 6 = 16"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 2.517,
+        "viewportInsets": {
+          "top": 200,
+          "formulaTop": 132,
+          "formulaLeft": 12,
+          "formulaRight": 378,
+          "bottom": 176,
+          "left": 12,
+          "right": 12
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 75,
+          "triangles": 113840,
+          "textures": 25,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 148.28407203839072,
+              "y": 331.84359628871204,
+              "facePolygon": [
+                {
+                  "x": 115.96160117975576,
+                  "y": 293.16070486008846
+                },
+                {
+                  "x": 173.98417414090414,
+                  "y": 287.644722212595
+                },
+                {
+                  "x": 181.1544602603312,
+                  "y": 371.3155698860385
+                },
+                {
+                  "x": 121.95685067633335,
+                  "y": 376.7350026164499
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 1,
+              "slot": 1,
+              "x": 195,
+              "y": 330.29258133431046,
+              "facePolygon": [
+                {
+                  "x": 165.87720805006202,
+                  "y": 288.8349164238256
+                },
+                {
+                  "x": 224.122791949938,
+                  "y": 288.8349164238256
+                },
+                {
+                  "x": 224.70483778964388,
+                  "y": 372.48888819775834
+                },
+                {
+                  "x": 165.29516221035612,
+                  "y": 372.48888819775834
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 2,
+              "slot": 2,
+              "x": 241.71592796160928,
+              "y": 331.84359628871204,
+              "facePolygon": [
+                {
+                  "x": 216.01582585909583,
+                  "y": 287.644722212595
+                },
+                {
+                  "x": 274.03839882024425,
+                  "y": 293.16070486008846
+                },
+                {
+                  "x": 268.0431493236666,
+                  "y": 376.7350026164499
+                },
+                {
+                  "x": 208.8455397396688,
+                  "y": 371.3155698860385
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "07-layout-320x568",
+      "passed": true,
+      "details": {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "controls": [
+          {
+            "id": "1-a",
+            "rect": {
+              "x": 12,
+              "y": 433,
+              "width": 70.25,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "1-b",
+            "rect": {
+              "x": 87.25,
+              "y": 433,
+              "width": 70.25,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "1-c",
+            "rect": {
+              "x": 162.5,
+              "y": 433,
+              "width": 70.25,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "1-d",
+            "rect": {
+              "x": 237.75,
+              "y": 433,
+              "width": 70.25,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "commit",
+            "rect": {
+              "x": 12,
+              "y": 485.5,
+              "width": 68.390625,
+              "height": 39
+            },
+            "reachable": true,
+            "hit": "commit"
+          },
+          {
+            "id": "preview",
+            "rect": {
+              "x": 254.625,
+              "y": 532,
+              "width": 53.375,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "preview"
+          },
+          {
+            "id": "retry",
+            "rect": {
+              "x": 12,
+              "y": 532,
+              "width": 53.890625,
+              "height": 29
+            },
+            "reachable": true,
+            "hit": "retry"
+          }
+        ]
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "2",
+          "bL": "6",
+          "aR": "0",
+          "bR": "16"
+        },
+        "formula": "2x + 6 = 16",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "×2"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "1-b",
+            "label": "×2",
+            "result": "2x + 6 = 16"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 2.517,
+        "viewportInsets": {
+          "top": 200,
+          "formulaTop": 132,
+          "formulaLeft": 12,
+          "formulaRight": 308,
+          "bottom": 176,
+          "left": 12,
+          "right": 12
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 75,
+          "triangles": 113840,
+          "textures": 25,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 124.76002581707695,
+              "y": 345.61460595834575,
+              "facePolygon": [
+                {
+                  "x": 100.18079976137719,
+                  "y": 316.5468579568135
+                },
+                {
+                  "x": 144.1073793100767,
+                  "y": 312.34776406112235
+                },
+                {
+                  "x": 149.59859033796863,
+                  "y": 375.00785240373165
+                },
+                {
+                  "x": 105.08045221557043,
+                  "y": 379.1605158866458
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 1,
+              "slot": 1,
+              "x": 160,
+              "y": 344.5135117478114,
+              "facePolygon": [
+                {
+                  "x": 137.94335138159323,
+                  "y": 313.29458620612706
+                },
+                {
+                  "x": 182.05664861840677,
+                  "y": 313.29458620612706
+                },
+                {
+                  "x": 182.3499770446552,
+                  "y": 376.0331607022763
+                },
+                {
+                  "x": 137.6500229553448,
+                  "y": 376.0331607022763
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 2,
+              "slot": 2,
+              "x": 195.23997418292308,
+              "y": 345.61460595834575,
+              "facePolygon": [
+                {
+                  "x": 175.89262068992326,
+                  "y": 312.34776406112235
+                },
+                {
+                  "x": 219.81920023862278,
+                  "y": 316.5468579568135
+                },
+                {
+                  "x": 214.91954778442957,
+                  "y": 379.1605158866458
+                },
+                {
+                  "x": 170.40140966203137,
+                  "y": 375.00785240373165
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "07-layout-844x390",
+      "passed": true,
+      "details": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "controls": [
+          {
+            "id": "2-a",
+            "rect": {
+              "x": 20.5,
+              "y": 306,
+              "width": 70,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-b",
+            "rect": {
+              "x": 94.5,
+              "y": 306,
+              "width": 70,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-c",
+            "rect": {
+              "x": 168.5,
+              "y": 306,
+              "width": 70,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-d",
+            "rect": {
+              "x": 242.5,
+              "y": 306,
+              "width": 70,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "2-e",
+            "rect": {
+              "x": 316.5,
+              "y": 306,
+              "width": 70,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "BDI"
+          },
+          {
+            "id": "cycle",
+            "rect": {
+              "x": 774.328125,
+              "y": 301,
+              "width": 48.671875,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "cycle"
+          },
+          {
+            "id": "commit",
+            "rect": {
+              "x": 458,
+              "y": 301,
+              "width": 91.796875,
+              "height": 42
+            },
+            "reachable": true,
+            "hit": "commit"
+          },
+          {
+            "id": "preview",
+            "rect": {
+              "x": 765.546875,
+              "y": 356,
+              "width": 63.453125,
+              "height": 27
+            },
+            "reachable": true,
+            "hit": "preview"
+          },
+          {
+            "id": "retry",
+            "rect": {
+              "x": 15,
+              "y": 356,
+              "width": 78.171875,
+              "height": 27
+            },
+            "reachable": true,
+            "hit": "retry"
+          }
+        ]
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 2,
+        "title": "תגובה בדיו",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "4",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 4 = 8",
+        "original": "2x + 4 = 12",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "2-b",
+            "label": "−4",
+            "kind": "addC",
+            "value": "-4"
+          },
+          {
+            "slot": 2,
+            "id": "2-c",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 3,
+            "id": "2-d",
+            "label": "+2",
+            "kind": "addC",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "2-e",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 5,
+            "id": "2-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 4,
+        "opponent": null,
+        "deck": [
+          "−1"
+        ],
+        "discard": [
+          "÷2"
+        ],
+        "cycleAvailable": true,
+        "history": [
+          {
+            "actor": "player",
+            "card": "2-a",
+            "label": "÷2",
+            "result": "x + 2 = 6"
+          },
+          {
+            "actor": "opponent",
+            "card": "2-opp",
+            "label": "+2",
+            "result": "x + 4 = 8"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 4.967,
+        "viewportInsets": {
+          "top": 173.09375,
+          "formulaTop": 113.09375,
+          "formulaLeft": 302,
+          "formulaRight": 542,
+          "bottom": 107,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 92,
+          "triangles": 114610,
+          "textures": 32,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 5,
+          "cardScreens": [
+            {
+              "id": "2-b",
+              "index": 0,
+              "slot": 0,
+              "x": 267.1026944243688,
+              "y": 333.4870940587617,
+              "facePolygon": [
+                {
+                  "x": 211.63802802370006,
+                  "y": 273.6811264811847
+                },
+                {
+                  "x": 304.0079304792286,
+                  "y": 256.090186168368
+                },
+                {
+                  "x": 324.50672001763127,
+                  "y": 396.72939553716765
+                },
+                {
+                  "x": 228.0631214112969,
+                  "y": 413.55413214000373
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "2-c",
+              "index": 1,
+              "slot": 1,
+              "x": 345.0925597165947,
+              "y": 330.3965974329948,
+              "facePolygon": [
+                {
+                  "x": 293.2653293860976,
+                  "y": 265.9223486629065
+                },
+                {
+                  "x": 387.6785135068226,
+                  "y": 257.11106188342615
+                },
+                {
+                  "x": 398.89416957572894,
+                  "y": 398.15949029346336
+                },
+                {
+                  "x": 300.4495580847929,
+                  "y": 406.5938145469069
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "2-d",
+              "index": 2,
+              "slot": 2,
+              "x": 422,
+              "y": 327.3489939552655,
+              "facePolygon": [
+                {
+                  "x": 374.6732525837136,
+                  "y": 258.7261674658531
+                },
+                {
+                  "x": 469.3267474162864,
+                  "y": 258.7261674658531
+                },
+                {
+                  "x": 471.3171305866547,
+                  "y": 399.0483529823454
+                },
+                {
+                  "x": 372.68286941334526,
+                  "y": 399.0483529823454
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-e",
+              "index": 3,
+              "slot": 3,
+              "x": 498.90744028340526,
+              "y": 330.3965974329948,
+              "facePolygon": [
+                {
+                  "x": 456.3214864931774,
+                  "y": 257.11106188342615
+                },
+                {
+                  "x": 550.7346706139024,
+                  "y": 265.9223486629065
+                },
+                {
+                  "x": 543.5504419152071,
+                  "y": 406.5938145469069
+                },
+                {
+                  "x": 445.1058304242711,
+                  "y": 398.15949029346336
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "2-draw+1",
+              "index": 4,
+              "slot": 4,
+              "x": 576.8973055756312,
+              "y": 333.4870940587617,
+              "facePolygon": [
+                {
+                  "x": 539.9920695207715,
+                  "y": 256.090186168368
+                },
+                {
+                  "x": 632.3619719763,
+                  "y": 273.6811264811847
+                },
+                {
+                  "x": 615.9368785887032,
+                  "y": 413.55413214000373
+                },
+                {
+                  "x": 519.4932799823688,
+                  "y": 396.72939553716765
+                }
+              ],
+              "layer": 1004,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "08-new-match-resets-preview",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": true
+        },
+        "elapsedSimulation": 24.75,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "09-summary-shortcuts-and-duplicates",
+      "passed": true,
+      "details": {
+        "pauseOpened": false,
+        "retryReset": false,
+        "rowCount": 5
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 5,
+        "title": "החותם האחרון",
+        "phase": "won",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": true,
+        "equation": {
+          "aL": "1",
+          "bL": "0",
+          "aR": "0",
+          "bR": "11/2"
+        },
+        "formula": "x = 11/2",
+        "original": "4x − 2 = 2x + 9",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "5-b",
+            "label": "+2",
+            "kind": "addC",
+            "value": "2"
+          },
+          {
+            "slot": 2,
+            "id": "5-d",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 3,
+            "id": "5-e",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "5-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 2,
+        "limit": 4,
+        "opponent": null,
+        "deck": [
+          "−1"
+        ],
+        "discard": [
+          "−2x",
+          "÷2"
+        ],
+        "cycleAvailable": true,
+        "history": [
+          {
+            "actor": "player",
+            "card": "5-a",
+            "label": "−2x",
+            "result": "2x − 2 = 9"
+          },
+          {
+            "actor": "opponent",
+            "card": "5-opp",
+            "label": "+2",
+            "result": "2x = 11"
+          },
+          {
+            "actor": "player",
+            "card": "5-c",
+            "label": "÷2",
+            "result": "x = 11/2"
+          }
+        ],
+        "reason": "הנעלם בודד והפתרון אומת במשוואה המקורית.",
+        "settings": {
+          "muted": true,
+          "reduced": true
+        },
+        "elapsedSimulation": 24.633,
+        "viewportInsets": {
+          "top": 374,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 67,
+          "triangles": 113000,
+          "textures": 20,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "5-b",
+              "index": 0,
+              "slot": 0,
+              "x": 452.84850789268427,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 328.79744064396874,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 544.8431356350934,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 581.4228394991899,
+                  "y": 917.3276465085575
+                },
+                {
+                  "x": 356.02314562992916,
+                  "y": 946.5035943668854
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "5-d",
+              "index": 1,
+              "slot": 1,
+              "x": 631.5696223193146,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 516.9161393396805,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 735.5832328507406,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 750.8013431137083,
+                  "y": 920.0190738906349
+                },
+                {
+                  "x": 522.8866709831304,
+                  "y": 929.7454831231765
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "5-e",
+              "index": 2,
+              "slot": 2,
+              "x": 808.4303776806854,
+              "y": 758.9249770519084,
+              "facePolygon": [
+                {
+                  "x": 704.4167671492593,
+                  "y": 595.0359124548161
+                },
+                {
+                  "x": 923.0838606603194,
+                  "y": 605.1936186841983
+                },
+                {
+                  "x": 917.1133290168696,
+                  "y": 929.7454831231765
+                },
+                {
+                  "x": 689.1986568862918,
+                  "y": 920.0190738906349
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "5-draw+1",
+              "index": 3,
+              "slot": 3,
+              "x": 987.1514921073158,
+              "y": 766.0071408563874,
+              "facePolygon": [
+                {
+                  "x": 895.1568643649066,
+                  "y": 591.9734372569917
+                },
+                {
+                  "x": 1111.202559356031,
+                  "y": 622.465030921657
+                },
+                {
+                  "x": 1083.976854370071,
+                  "y": 946.5035943668854
+                },
+                {
+                  "x": 858.5771605008101,
+                  "y": 917.3276465085575
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "replay-match",
+        "text": "משחק חדש"
+      }
+    },
+    {
+      "name": "10-camera-close-extreme",
+      "passed": true,
+      "details": {
+        "camera": {
+          "azimuth": 0,
+          "distance": 22
+        },
+        "pickedCard": "1-a"
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": 1,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 1.233,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 22
+          },
+          "drawCalls": 83,
+          "triangles": 114432,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 384.6210975745131,
+              "y": 838.9919066072904,
+              "facePolygon": [
+                {
+                  "x": 230.9355327560083,
+                  "y": 657.8063000875902
+                },
+                {
+                  "x": 501.2564494577852,
+                  "y": 620.0441591859272
+                },
+                {
+                  "x": 545.1633554325841,
+                  "y": 1032.3606920503903
+                },
+                {
+                  "x": 260.2406028233957,
+                  "y": 1068.9431509201686
+                }
+              ],
+              "layer": 1100,
+              "hovered": true,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 609.5813985683714,
+              "y": 836.3909645782821,
+              "facePolygon": [
+                {
+                  "x": 467.5974041900684,
+                  "y": 643.4982790421979
+                },
+                {
+                  "x": 739.3797089636935,
+                  "y": 630.991069020002
+                },
+                {
+                  "x": 758.6952374776114,
+                  "y": 1041.1760924462678
+                },
+                {
+                  "x": 472.53909452263423,
+                  "y": 1052.9776896620685
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 830.4186014316286,
+              "y": 836.3909645782821,
+              "facePolygon": [
+                {
+                  "x": 700.6202910363065,
+                  "y": 630.991069020002
+                },
+                {
+                  "x": 972.4025958099317,
+                  "y": 643.4982790421979
+                },
+                {
+                  "x": 967.4609054773658,
+                  "y": 1052.9776896620685
+                },
+                {
+                  "x": 681.3047625223886,
+                  "y": 1041.1760924462678
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 1054.160321284162,
+              "y": 845.9352386910779,
+              "facePolygon": [
+                {
+                  "x": 938.3435610825932,
+                  "y": 627.6168320873537
+                },
+                {
+                  "x": 1206.7288744958803,
+                  "y": 665.2028188794474
+                },
+                {
+                  "x": 1177.4452676853623,
+                  "y": 1074.7063922661694
+                },
+                {
+                  "x": 894.5275879276428,
+                  "y": 1039.281870149345
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "11-touch-modal-cycle-recovery",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 2,
+        "title": "תגובה בדיו",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "2",
+          "bL": "4",
+          "aR": "0",
+          "bR": "12"
+        },
+        "formula": "2x + 4 = 12",
+        "original": "2x + 4 = 12",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "2-a",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 2,
+            "id": "2-b",
+            "label": "−4",
+            "kind": "addC",
+            "value": "-4"
+          },
+          {
+            "slot": 3,
+            "id": "2-c",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 4,
+            "id": "2-e",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 5,
+            "id": "2-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 4,
+        "opponent": "+2",
+        "deck": [
+          "−1"
+        ],
+        "discard": [
+          "+2"
+        ],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 3.05,
+        "viewportInsets": {
+          "top": 272,
+          "formulaTop": 199,
+          "formulaLeft": 15.6015625,
+          "formulaRight": 374.3984375,
+          "bottom": 179,
+          "left": 12,
+          "right": 12
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 103,
+          "triangles": 115200,
+          "textures": 36,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 5,
+          "cardScreens": [
+            {
+              "id": "2-a",
+              "index": 0,
+              "slot": 0,
+              "x": 112.0809487758658,
+              "y": 495.55933423243954,
+              "facePolygon": [
+                {
+                  "x": 80.4300981843833,
+                  "y": 464.30192578165133
+                },
+                {
+                  "x": 131.23311479384992,
+                  "y": 454.4539432288952
+                },
+                {
+                  "x": 143.9181800701375,
+                  "y": 527.0914170396586
+                },
+                {
+                  "x": 92.55540424414639,
+                  "y": 536.8543154535357
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-b",
+              "index": 1,
+              "slot": 1,
+              "x": 153.6126415128882,
+              "y": 494.295368468015,
+              "facePolygon": [
+                {
+                  "x": 124.64895996537857,
+                  "y": 460.2122447182389
+                },
+                {
+                  "x": 176.31561147091062,
+                  "y": 455.26196375945875
+                },
+                {
+                  "x": 182.8049835978583,
+                  "y": 528.6303515790773
+                },
+                {
+                  "x": 130.58794316300464,
+                  "y": 533.5382992545044
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-c",
+              "index": 2,
+              "slot": 2,
+              "x": 195,
+              "y": 493.03579533819067,
+              "facePolygon": [
+                {
+                  "x": 169.0524463955541,
+                  "y": 456.398009914335
+                },
+                {
+                  "x": 220.9475536044459,
+                  "y": 456.398009914335
+                },
+                {
+                  "x": 221.2205872853874,
+                  "y": 529.9020533015208
+                },
+                {
+                  "x": 168.7794127146126,
+                  "y": 529.9020533015208
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-e",
+              "index": 3,
+              "slot": 3,
+              "x": 236.3873584871118,
+              "y": 494.295368468015,
+              "facePolygon": [
+                {
+                  "x": 213.68438852908938,
+                  "y": 455.26196375945875
+                },
+                {
+                  "x": 265.3510400346214,
+                  "y": 460.2122447182389
+                },
+                {
+                  "x": 259.41205683699536,
+                  "y": 533.5382992545044
+                },
+                {
+                  "x": 207.19501640214173,
+                  "y": 528.6303515790773
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "2-draw+1",
+              "index": 4,
+              "slot": 4,
+              "x": 277.9190512241342,
+              "y": 495.55933423243954,
+              "facePolygon": [
+                {
+                  "x": 258.76688520615005,
+                  "y": 454.4539432288952
+                },
+                {
+                  "x": 309.5699018156167,
+                  "y": 464.30192578165133
+                },
+                {
+                  "x": 297.4445957558536,
+                  "y": 536.8543154535357
+                },
+                {
+                  "x": 246.0818199298625,
+                  "y": 527.0914170396586
+                }
+              ],
+              "layer": 1004,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "12-drawer-tab-and-keyboard-scroll",
+      "passed": true,
+      "details": {
+        "before": [
+          {
+            "id": "drawer",
+            "scrollTop": 0,
+            "max": 0,
+            "overflow": false
+          },
+          {
+            "id": "drawer-content",
+            "scrollTop": 0,
+            "max": 164,
+            "overflow": true
+          }
+        ],
+        "after": [
+          {
+            "id": "drawer",
+            "scrollTop": 0,
+            "overflow": false
+          },
+          {
+            "id": "drawer-content",
+            "scrollTop": 4,
+            "overflow": true
+          }
+        ]
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": "help",
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.15,
+        "viewportInsets": {
+          "top": 200,
+          "formulaTop": 132,
+          "formulaLeft": 12,
+          "formulaRight": 378,
+          "bottom": 176,
+          "left": 12,
+          "right": 12
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 124.80978797191054,
+              "y": 332.6229657076584,
+              "facePolygon": [
+                {
+                  "x": 91.04169276075301,
+                  "y": 295.4459906530556
+                },
+                {
+                  "x": 148.64135399313582,
+                  "y": 287.1846691708929
+                },
+                {
+                  "x": 159.10915741729792,
+                  "y": 370.60944049137044
+                },
+                {
+                  "x": 100.32643764070446,
+                  "y": 378.7253423759288
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 171.68068108231773,
+              "y": 331.0668057572419,
+              "facePolygon": [
+                {
+                  "x": 140.90748562802446,
+                  "y": 290.9555064157982
+                },
+                {
+                  "x": 199.14516162253187,
+                  "y": 288.1964577747046
+                },
+                {
+                  "x": 203.01862336809532,
+                  "y": 371.94356474374854
+                },
+                {
+                  "x": 143.6122023862649,
+                  "y": 374.6545371281708
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 218.31931891768227,
+              "y": 331.0668057572419,
+              "facePolygon": [
+                {
+                  "x": 190.85483837746816,
+                  "y": 288.1964577747046
+                },
+                {
+                  "x": 249.0925143719755,
+                  "y": 290.9555064157982
+                },
+                {
+                  "x": 246.3877976137351,
+                  "y": 374.6545371281708
+                },
+                {
+                  "x": 186.98137663190468,
+                  "y": 371.94356474374854
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 265.19021202808943,
+              "y": 332.6229657076584,
+              "facePolygon": [
+                {
+                  "x": 241.35864600686418,
+                  "y": 287.1846691708929
+                },
+                {
+                  "x": 298.958307239247,
+                  "y": 295.4459906530556
+                },
+                {
+                  "x": 289.67356235929554,
+                  "y": 378.7253423759288
+                },
+                {
+                  "x": 230.8908425827021,
+                  "y": 370.60944049137044
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "drawer-content",
+        "text": "כל x הוא אותו מטען לא ידוע של רונה אחת. בחרו קלף, ואז הפעילו אותו על שני האגפים בשלמותם.המטרה היא לב"
+      }
+    },
+    {
+      "name": "13-camera-toggle-keyboard-and-dismiss",
+      "passed": true,
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 1,
+        "title": "הקפל הראשון",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "1",
+          "bL": "3",
+          "aR": "0",
+          "bR": "8"
+        },
+        "formula": "x + 3 = 8",
+        "original": "x + 3 = 8",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "1-a",
+            "label": "−3",
+            "kind": "addC",
+            "value": "-3"
+          },
+          {
+            "slot": 2,
+            "id": "1-b",
+            "label": "×2",
+            "kind": "mul",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "1-c",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 4,
+            "id": "1-d",
+            "label": "+3",
+            "kind": "addC",
+            "value": "3"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 0,
+        "limit": 3,
+        "opponent": null,
+        "deck": [],
+        "discard": [],
+        "cycleAvailable": false,
+        "history": [],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 0.717,
+        "viewportInsets": {
+          "top": 369,
+          "formulaTop": 279,
+          "formulaLeft": 555,
+          "formulaRight": 885,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": -0.12,
+            "distance": 25
+          },
+          "drawCalls": 82,
+          "triangles": 114420,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 4,
+          "cardScreens": [
+            {
+              "id": "1-a",
+              "index": 0,
+              "slot": 0,
+              "x": 534.2275301602645,
+              "y": 783.7028310725132,
+              "facePolygon": [
+                {
+                  "x": 394.67001735844366,
+                  "y": 645.4981501806125
+                },
+                {
+                  "x": 617.0782963388674,
+                  "y": 601.3079730681774
+                },
+                {
+                  "x": 677.2973520677464,
+                  "y": 926.8882668945636
+                },
+                {
+                  "x": 446.67148811114623,
+                  "y": 975.2553455102454
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-b",
+              "index": 1,
+              "slot": 1,
+              "x": 713.8474864391654,
+              "y": 763.9552969812191,
+              "facePolygon": [
+                {
+                  "x": 587.1729630066167,
+                  "y": 616.3731373583607
+                },
+                {
+                  "x": 806.5951861191061,
+                  "y": 593.3301628392466
+                },
+                {
+                  "x": 844.300117965355,
+                  "y": 916.0649895651967
+                },
+                {
+                  "x": 616.4355746803816,
+                  "y": 944.2348199725019
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-c",
+              "index": 2,
+              "slot": 2,
+              "x": 888.8900299820718,
+              "y": 751.8157702566481,
+              "facePolygon": [
+                {
+                  "x": 775.7135013776704,
+                  "y": 595.123809503807
+                },
+                {
+                  "x": 989.6971330699901,
+                  "y": 592.7137002384571
+                },
+                {
+                  "x": 1006.1541392031058,
+                  "y": 912.6249383294901
+                },
+                {
+                  "x": 783.4115883772299,
+                  "y": 920.963032478156
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "1-d",
+              "index": 3,
+              "slot": 3,
+              "x": 1063.115646733867,
+              "y": 746.7636337949358,
+              "facePolygon": [
+                {
+                  "x": 964.1966070054312,
+                  "y": 581.2181685366392
+                },
+                {
+                  "x": 1170.329143811741,
+                  "y": 598.9845122843359
+                },
+                {
+                  "x": 1166.4947468818295,
+                  "y": 916.0390025041145
+                },
+                {
+                  "x": 951.225068393459,
+                  "y": 904.9014193656707
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "camera-toggle",
+        "text": "מצלמה"
+      }
+    },
+    {
+      "name": "14-long-fraction-formula-320",
+      "passed": true,
+      "details": {
+        "clientWidth": 276,
+        "scrollWidth": 276,
+        "equation": {
+          "x": 22,
+          "y": 136,
+          "width": 276,
+          "height": 29
+        },
+        "panel": {
+          "x": 12,
+          "y": 132,
+          "width": 296,
+          "height": 55
+        },
+        "viewport": {
+          "width": 320,
+          "height": 568
+        }
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 3,
+        "title": "היפוך הסימנים",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "3/2",
+          "bL": "1",
+          "aR": "1/2",
+          "bR": "5"
+        },
+        "formula": "(3/2)x + 1 = (1/2)x + 5",
+        "original": "3x + 2 = x + 10",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "3-a",
+            "label": "−x",
+            "kind": "addX",
+            "value": "-1"
+          },
+          {
+            "slot": 2,
+            "id": "3-b",
+            "label": "+2",
+            "kind": "addC",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "3-d",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 4,
+            "id": "3-e",
+            "label": "÷2",
+            "kind": "div",
+            "value": "2"
+          },
+          {
+            "slot": 5,
+            "id": "3-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 1,
+        "limit": 4,
+        "opponent": null,
+        "deck": [
+          "−1"
+        ],
+        "discard": [
+          "÷(−2)"
+        ],
+        "cycleAvailable": true,
+        "history": [
+          {
+            "actor": "player",
+            "card": "3-c",
+            "label": "÷(−2)",
+            "result": "(−3/2)x − 1 = (−1/2)x − 5"
+          },
+          {
+            "actor": "opponent",
+            "card": "3-opp",
+            "label": "×(−1)",
+            "result": "(3/2)x + 1 = (1/2)x + 5"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 10.15,
+        "viewportInsets": {
+          "top": 199,
+          "formulaTop": 132,
+          "formulaLeft": 12,
+          "formulaRight": 308,
+          "bottom": 176,
+          "left": 12,
+          "right": 12
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 83,
+          "triangles": 113740,
+          "textures": 27,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 5,
+          "cardScreens": [
+            {
+              "id": "3-a",
+              "index": 0,
+              "slot": 0,
+              "x": 89.36452229672452,
+              "y": 346.7205597766688,
+              "facePolygon": [
+                {
+                  "x": 62.55213347541979,
+                  "y": 320.0357196383633
+                },
+                {
+                  "x": 105.72599111683779,
+                  "y": 311.679367362909
+                },
+                {
+                  "x": 116.40384754390882,
+                  "y": 373.7524688475126
+                },
+                {
+                  "x": 72.62865503193689,
+                  "y": 382.0154173429183
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-b",
+              "index": 1,
+              "slot": 1,
+              "x": 124.76002581707695,
+              "y": 345.61460595834575,
+              "facePolygon": [
+                {
+                  "x": 100.18079976137719,
+                  "y": 316.5468579568135
+                },
+                {
+                  "x": 144.1073793100767,
+                  "y": 312.34776406112235
+                },
+                {
+                  "x": 149.59859033796863,
+                  "y": 375.00785240373165
+                },
+                {
+                  "x": 105.08045221557043,
+                  "y": 379.1605158866458
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-d",
+              "index": 2,
+              "slot": 2,
+              "x": 160,
+              "y": 344.5135117478114,
+              "facePolygon": [
+                {
+                  "x": 137.94335138159323,
+                  "y": 313.29458620612706
+                },
+                {
+                  "x": 182.05664861840677,
+                  "y": 313.29458620612706
+                },
+                {
+                  "x": 182.3499770446552,
+                  "y": 376.0331607022763
+                },
+                {
+                  "x": 137.6500229553448,
+                  "y": 376.0331607022763
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-e",
+              "index": 3,
+              "slot": 3,
+              "x": 195.23997418292308,
+              "y": 345.61460595834575,
+              "facePolygon": [
+                {
+                  "x": 175.89262068992326,
+                  "y": 312.34776406112235
+                },
+                {
+                  "x": 219.81920023862278,
+                  "y": 316.5468579568135
+                },
+                {
+                  "x": 214.91954778442957,
+                  "y": 379.1605158866458
+                },
+                {
+                  "x": 170.40140966203137,
+                  "y": 375.00785240373165
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-draw+1",
+              "index": 4,
+              "slot": 4,
+              "x": 230.63547770327548,
+              "y": 346.7205597766688,
+              "facePolygon": [
+                {
+                  "x": 214.2740088831622,
+                  "y": 311.679367362909
+                },
+                {
+                  "x": 257.4478665245802,
+                  "y": 320.0357196383633
+                },
+                {
+                  "x": 247.3713449680631,
+                  "y": 382.0154173429183
+                },
+                {
+                  "x": 203.59615245609118,
+                  "y": 373.7524688475126
+                }
+              ],
+              "layer": 1004,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "15-negative-and-quarter-formulas-320",
+      "passed": true,
+      "details": {
+        "negative": {
+          "formula": "(−3/2)x − 1 = (−1/2)x − 5",
+          "client": 276,
+          "scroll": 276
+        },
+        "quarter": {
+          "formula": "(3/4)x + 1/2 = (1/4)x + 5/2",
+          "client": 276,
+          "scroll": 276
+        }
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 3,
+        "title": "היפוך הסימנים",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "3/4",
+          "bL": "1/2",
+          "aR": "1/4",
+          "bR": "5/2"
+        },
+        "formula": "(3/4)x + 1/2 = (1/4)x + 5/2",
+        "original": "3x + 2 = x + 10",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "3-a",
+            "label": "−x",
+            "kind": "addX",
+            "value": "-1"
+          },
+          {
+            "slot": 2,
+            "id": "3-b",
+            "label": "+2",
+            "kind": "addC",
+            "value": "2"
+          },
+          {
+            "slot": 3,
+            "id": "3-d",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 4,
+            "id": "3-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          },
+          {
+            "slot": 5,
+            "id": "3-draw-1",
+            "label": "−1",
+            "kind": "addC",
+            "value": "-1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 2,
+        "limit": 4,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "÷(−2)",
+          "÷2"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "3-c",
+            "label": "÷(−2)",
+            "result": "(−3/2)x − 1 = (−1/2)x − 5"
+          },
+          {
+            "actor": "opponent",
+            "card": "3-opp",
+            "label": "×(−1)",
+            "result": "(3/2)x + 1 = (1/2)x + 5"
+          },
+          {
+            "actor": "player",
+            "card": "3-e",
+            "label": "÷2",
+            "result": "(3/4)x + 1/2 = (1/4)x + 5/2"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 12.667,
+        "viewportInsets": {
+          "top": 194,
+          "formulaTop": 132,
+          "formulaLeft": 12,
+          "formulaRight": 308,
+          "bottom": 176,
+          "left": 12,
+          "right": 12
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 74,
+          "triangles": 113154,
+          "textures": 22,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 5,
+          "cardScreens": [
+            {
+              "id": "3-a",
+              "index": 0,
+              "slot": 0,
+              "x": 89.36452229672452,
+              "y": 346.7205597766688,
+              "facePolygon": [
+                {
+                  "x": 62.55213347541979,
+                  "y": 320.0357196383633
+                },
+                {
+                  "x": 105.72599111683779,
+                  "y": 311.679367362909
+                },
+                {
+                  "x": 116.40384754390882,
+                  "y": 373.7524688475126
+                },
+                {
+                  "x": 72.62865503193689,
+                  "y": 382.0154173429183
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-b",
+              "index": 1,
+              "slot": 1,
+              "x": 124.76002581707695,
+              "y": 345.61460595834575,
+              "facePolygon": [
+                {
+                  "x": 100.18079976137719,
+                  "y": 316.5468579568135
+                },
+                {
+                  "x": 144.1073793100767,
+                  "y": 312.34776406112235
+                },
+                {
+                  "x": 149.59859033796863,
+                  "y": 375.00785240373165
+                },
+                {
+                  "x": 105.08045221557043,
+                  "y": 379.1605158866458
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-d",
+              "index": 2,
+              "slot": 2,
+              "x": 160,
+              "y": 344.5135117478114,
+              "facePolygon": [
+                {
+                  "x": 137.94335138159323,
+                  "y": 313.29458620612706
+                },
+                {
+                  "x": 182.05664861840677,
+                  "y": 313.29458620612706
+                },
+                {
+                  "x": 182.3499770446552,
+                  "y": 376.0331607022763
+                },
+                {
+                  "x": 137.6500229553448,
+                  "y": 376.0331607022763
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-draw+1",
+              "index": 3,
+              "slot": 3,
+              "x": 195.23997418292308,
+              "y": 345.61460595834575,
+              "facePolygon": [
+                {
+                  "x": 175.89262068992326,
+                  "y": 312.34776406112235
+                },
+                {
+                  "x": 219.81920023862278,
+                  "y": 316.5468579568135
+                },
+                {
+                  "x": 214.91954778442957,
+                  "y": 379.1605158866458
+                },
+                {
+                  "x": 170.40140966203137,
+                  "y": 375.00785240373165
+                }
+              ],
+              "layer": 1003,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-draw-1",
+              "index": 4,
+              "slot": 4,
+              "x": 230.63547770327548,
+              "y": 346.7205597766688,
+              "facePolygon": [
+                {
+                  "x": 214.2740088831622,
+                  "y": 311.679367362909
+                },
+                {
+                  "x": 257.4478665245802,
+                  "y": 320.0357196383633
+                },
+                {
+                  "x": 247.3713449680631,
+                  "y": 382.0154173429183
+                },
+                {
+                  "x": 203.59615245609118,
+                  "y": 373.7524688475126
+                }
+              ],
+              "layer": 1004,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "16-finite-hand-wide-formula-320",
+      "passed": true,
+      "details": {
+        "formula": "(−3/2)x − 5/2 = (−1/2)x − 13/2",
+        "client": 276,
+        "scroll": 276,
+        "font": "17.8px",
+        "expandedFont": "40px"
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 3,
+        "title": "היפוך הסימנים",
+        "phase": "ready",
+        "paused": false,
+        "drawer": null,
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "-3/2",
+          "bL": "-5/2",
+          "aR": "-1/2",
+          "bR": "-13/2"
+        },
+        "formula": "(−3/2)x − 5/2 = (−1/2)x − 13/2",
+        "original": "3x + 2 = x + 10",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "3-c",
+            "label": "÷(−2)",
+            "kind": "div",
+            "value": "-2"
+          },
+          {
+            "slot": 2,
+            "id": "3-d",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 3,
+            "id": "3-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 0,
+        "moves": 3,
+        "limit": 4,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "−x",
+          "+2",
+          "−1",
+          "÷2"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "3-b",
+            "label": "+2",
+            "result": "3x + 4 = x + 12"
+          },
+          {
+            "actor": "opponent",
+            "card": "3-opp",
+            "label": "×(−1)",
+            "result": "−3x − 4 = −x − 12"
+          },
+          {
+            "actor": "player",
+            "card": "3-draw-1",
+            "label": "−1",
+            "result": "−3x − 5 = −x − 13"
+          },
+          {
+            "actor": "player",
+            "card": "3-e",
+            "label": "÷2",
+            "result": "(−3/2)x − 5/2 = (−1/2)x − 13/2"
+          }
+        ],
+        "reason": "",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 16.083,
+        "viewportInsets": {
+          "top": 374,
+          "formulaTop": 279,
+          "formulaLeft": 407.5390625,
+          "formulaRight": 1032.4609375,
+          "bottom": 140,
+          "left": 20,
+          "right": 20
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 68,
+          "triangles": 113146,
+          "textures": 20,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 3,
+          "cardScreens": [
+            {
+              "id": "3-c",
+              "index": 0,
+              "slot": 0,
+              "x": 542.5212916536801,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 422.9199908909945,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 640.7965696311292,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 666.6788528670668,
+                  "y": 918.8295929849154
+                },
+                {
+                  "x": 439.4989801956759,
+                  "y": 938.2934181851698
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-d",
+              "index": 1,
+              "slot": 1,
+              "x": 720,
+              "y": 755.420755281382,
+              "facePolygon": [
+                {
+                  "x": 610.784429039339,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 829.215570960661,
+                  "y": 597.0603864596611
+                },
+                {
+                  "x": 833.8087628922801,
+                  "y": 920.8808145746432
+                },
+                {
+                  "x": 606.1912371077199,
+                  "y": 920.8808145746432
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": true
+            },
+            {
+              "id": "3-draw+1",
+              "index": 2,
+              "slot": 2,
+              "x": 897.4787083463198,
+              "y": 762.4536863838341,
+              "facePolygon": [
+                {
+                  "x": 799.2034303688708,
+                  "y": 593.3332197309834
+                },
+                {
+                  "x": 1017.0800091090055,
+                  "y": 613.6669584528612
+                },
+                {
+                  "x": 1000.5010198043241,
+                  "y": 938.2934181851698
+                },
+                {
+                  "x": 773.3211471329332,
+                  "y": 918.8295929849154
+                }
+              ],
+              "layer": 1002,
+              "hovered": false,
+              "visible": true
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "table",
+        "text": ""
+      }
+    },
+    {
+      "name": "17-wide-preview-result-history-320",
+      "passed": true,
+      "details": {
+        "preview": {
+          "formula": "(−5/2)x − 5/2 = (−3/2)x − 13/2",
+          "client": 157,
+          "scroll": 157,
+          "rowClient": 157,
+          "rowScroll": 157
+        },
+        "result": {
+          "formula": "(−5/2)x − 5/2 = (−3/2)x − 13/2",
+          "client": 248,
+          "scroll": 248,
+          "rowClient": 288,
+          "rowScroll": 288
+        },
+        "history": [
+          {
+            "formula": "3x + 4 = x + 12",
+            "client": 253,
+            "scroll": 253
+          },
+          {
+            "formula": "−3x − 4 = −x − 12",
+            "client": 253,
+            "scroll": 253
+          },
+          {
+            "formula": "−3x − 5 = −x − 13",
+            "client": 253,
+            "scroll": 253
+          },
+          {
+            "formula": "(−3/2)x − 5/2 = (−1/2)x − 13/2",
+            "client": 253,
+            "scroll": 253
+          },
+          {
+            "formula": "(−5/2)x − 5/2 = (−3/2)x − 13/2",
+            "client": 253,
+            "scroll": 253
+          }
+        ]
+      },
+      "state": {
+        "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+        "duel": 3,
+        "title": "היפוך הסימנים",
+        "phase": "lost",
+        "paused": false,
+        "drawer": "history",
+        "cameraOpen": false,
+        "matchComplete": false,
+        "equation": {
+          "aL": "-5/2",
+          "bL": "-5/2",
+          "aR": "-3/2",
+          "bR": "-13/2"
+        },
+        "formula": "(−5/2)x − 5/2 = (−3/2)x − 13/2",
+        "original": "3x + 2 = x + 10",
+        "unknown": "signed virtual charge of one x rune",
+        "hand": [
+          {
+            "slot": 1,
+            "id": "3-d",
+            "label": "−2",
+            "kind": "addC",
+            "value": "-2"
+          },
+          {
+            "slot": 2,
+            "id": "3-draw+1",
+            "label": "+1",
+            "kind": "addC",
+            "value": "1"
+          }
+        ],
+        "selected": null,
+        "preview": false,
+        "helpRequests": 1,
+        "moves": 4,
+        "limit": 4,
+        "opponent": null,
+        "deck": [],
+        "discard": [
+          "+2",
+          "÷(−2)",
+          "−1",
+          "÷2",
+          "−x"
+        ],
+        "cycleAvailable": false,
+        "history": [
+          {
+            "actor": "player",
+            "card": "3-b",
+            "label": "+2",
+            "result": "3x + 4 = x + 12"
+          },
+          {
+            "actor": "opponent",
+            "card": "3-opp",
+            "label": "×(−1)",
+            "result": "−3x − 4 = −x − 12"
+          },
+          {
+            "actor": "player",
+            "card": "3-draw-1",
+            "label": "−1",
+            "result": "−3x − 5 = −x − 13"
+          },
+          {
+            "actor": "player",
+            "card": "3-e",
+            "label": "÷2",
+            "result": "(−3/2)x − 5/2 = (−1/2)x − 13/2"
+          },
+          {
+            "actor": "player",
+            "card": "3-a",
+            "label": "−x",
+            "result": "(−5/2)x − 5/2 = (−3/2)x − 13/2"
+          }
+        ],
+        "reason": "נגמרו הסיבובים לפני בידוד הנעלם. למשוואה עדיין יש פתרון.",
+        "settings": {
+          "muted": true,
+          "reduced": false
+        },
+        "elapsedSimulation": 18.217,
+        "viewportInsets": {
+          "top": 190,
+          "formulaTop": 132,
+          "formulaLeft": 12,
+          "formulaRight": 308,
+          "bottom": 176,
+          "left": 12,
+          "right": 12
+        },
+        "scene": {
+          "modelLoaded": true,
+          "modelError": "",
+          "camera": {
+            "azimuth": 0,
+            "distance": 25
+          },
+          "drawCalls": 65,
+          "triangles": 113142,
+          "textures": 19,
+          "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+          "physicalCards": 2,
+          "cardScreens": [
+            {
+              "id": "3-d",
+              "index": 0,
+              "slot": 0,
+              "x": 142.39938993627703,
+              "y": 345.06345340618043,
+              "facePolygon": [
+                {
+                  "x": 119.04629854485171,
+                  "y": 314.88937690075244
+                },
+                {
+                  "x": 163.13704923396108,
+                  "y": 312.7881554177444
+                },
+                {
+                  "x": 166.02858110562252,
+                  "y": 375.55104318452777
+                },
+                {
+                  "x": 121.34930721821678,
+                  "y": 377.6291159475945
+                }
+              ],
+              "layer": 1000,
+              "hovered": false,
+              "visible": false
+            },
+            {
+              "id": "3-draw+1",
+              "index": 1,
+              "slot": 1,
+              "x": 177.60061006372297,
+              "y": 345.06345340618043,
+              "facePolygon": [
+                {
+                  "x": 156.86295076603892,
+                  "y": 312.7881554177444
+                },
+                {
+                  "x": 200.9537014551483,
+                  "y": 314.88937690075244
+                },
+                {
+                  "x": 198.65069278178322,
+                  "y": 377.6291159475945
+                },
+                {
+                  "x": 153.97141889437745,
+                  "y": 375.55104318452777
+                }
+              ],
+              "layer": 1001,
+              "hovered": false,
+              "visible": false
+            }
+          ]
+        }
+      },
+      "focus": {
+        "id": "drawer-content",
+        "text": "המשוואה המקורית3x + 2 = x + 101 · המהלך שלכם +23x + 4 = x + 122 · תגובת היריב ×(−1)−3x − 4 = −x − 12"
+      }
+    }
+  ],
+  "consoleErrors": []
+}

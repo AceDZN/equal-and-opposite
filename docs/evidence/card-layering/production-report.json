@@ -1,0 +1,1699 @@
+{
+  "url": "http://127.0.0.1:4185",
+  "browserChannel": "chrome",
+  "modelRequired": true,
+  "frameTiming": {
+    "samples": 120,
+    "medianMs": 16.699999999999818,
+    "p95Ms": 16.700000000000273,
+    "maxMs": 16.800000000000182,
+    "minMs": 16.599999999999454,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1672,
+      "height": 941
+    },
+    "context": "Headless installed Chrome on the shared development host; scheduler/render intervals, not a general hardware FPS claim"
+  },
+  "assets": {
+    "totalBytes": 6075790,
+    "files": [
+      {
+        "file": "assets/index-COLgQH6t.css",
+        "bytes": 39700
+      },
+      {
+        "file": "assets/index-DXzXdj8l.js",
+        "bytes": 620360
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-400-normal-BEvsRI_S.woff",
+        "bytes": 8952
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-400-normal-Bp0xVS9x.woff2",
+        "bytes": 7068
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-600-normal-BZTJana4.woff2",
+        "bytes": 7072
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-600-normal-CiulUmaK.woff",
+        "bytes": 9036
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-700-normal-BVftoAx4.woff",
+        "bytes": 8980
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-700-normal-D9plwkIl.woff2",
+        "bytes": 7040
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-400-normal-Cvb_8Q96.woff",
+        "bytes": 13812
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-400-normal-DkOjcY47.woff2",
+        "bytes": 10804
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-600-normal-DBSa9mSH.woff2",
+        "bytes": 10896
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-600-normal-DOfmYOL_.woff",
+        "bytes": 13848
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-700-normal-BLkFS47X.woff",
+        "bytes": 13792
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-700-normal-DuC6TMYq.woff2",
+        "bytes": 10808
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-400-normal-D-r4JGf5.woff2",
+        "bytes": 6572
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-400-normal-R_ivLM58.woff",
+        "bytes": 8500
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-600-normal-DsQRWWZn.woff2",
+        "bytes": 6604
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-600-normal-b7siF5h4.woff",
+        "bytes": 8556
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-700-normal-2aPITt8z.woff2",
+        "bytes": 6552
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-700-normal-D2b18moL.woff",
+        "bytes": 8484
+      },
+      {
+        "file": "index.html",
+        "bytes": 682
+      },
+      {
+        "file": "licenses/Noto-Sans-Hebrew-OFL.txt",
+        "bytes": 4380
+      },
+      {
+        "file": "models/ink-duelist.glb",
+        "bytes": 5243292
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "name": "01-loss-recovery",
+      "duel": 1,
+      "phase": "lost",
+      "moves": 3,
+      "formula": "x + 6 = 11",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 86,
+        "triangles": 115286,
+        "textures": 32,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 1,
+        "cardScreens": [
+          {
+            "id": "1-a",
+            "index": 0,
+            "slot": 0,
+            "x": 720,
+            "y": 839.356394757091,
+            "facePolygon": [
+              {
+                "x": 598.6493655992656,
+                "y": 663.4004293996234
+              },
+              {
+                "x": 841.3506344007344,
+                "y": 663.4004293996234
+              },
+              {
+                "x": 846.4541809914225,
+                "y": 1023.200905082937
+              },
+              {
+                "x": 593.5458190085775,
+                "y": 1023.200905082937
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "target-01-selected-minus4",
+      "duel": 2,
+      "phase": "ready",
+      "moves": 1,
+      "formula": "x + 4 = 8",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 93,
+        "triangles": 114622,
+        "textures": 32,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "2-b",
+            "index": 0,
+            "slot": 0,
+            "x": 459.2152732628399,
+            "y": 787.7418157941146,
+            "facePolygon": [
+              {
+                "x": 322.66683949618727,
+                "y": 642.5593315597546
+              },
+              {
+                "x": 550.2850258272813,
+                "y": 599.9232707793899
+              },
+              {
+                "x": 599.9590353557097,
+                "y": 940.2642645897324
+              },
+              {
+                "x": 362.5087378967043,
+                "y": 983.1680116635077
+              }
+            ],
+            "layer": 1100,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "2-c",
+            "index": 1,
+            "slot": 1,
+            "x": 650.4361504956812,
+            "y": 797.187687652431,
+            "facePolygon": [
+              {
+                "x": 525.3863460315844,
+                "y": 641.6228976712692
+              },
+              {
+                "x": 753.1884133587695,
+                "y": 620.3628441853948
+              },
+              {
+                "x": 780.2497783865664,
+                "y": 960.6873855542283
+              },
+              {
+                "x": 542.7206004045901,
+                "y": 981.0378961247163
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "2-d",
+            "index": 2,
+            "slot": 2,
+            "x": 836,
+            "y": 789.8343674664227,
+            "facePolygon": [
+              {
+                "x": 721.8090530289089,
+                "y": 624.2598040650456
+              },
+              {
+                "x": 950.1909469710912,
+                "y": 624.2598040650456
+              },
+              {
+                "x": 954.9933843129285,
+                "y": 962.8320516830437
+              },
+              {
+                "x": 717.0066156870715,
+                "y": 962.8320516830437
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "2-e",
+            "index": 3,
+            "slot": 3,
+            "x": 1021.5638495043188,
+            "y": 797.187687652431,
+            "facePolygon": [
+              {
+                "x": 918.8115866412305,
+                "y": 620.3628441853948
+              },
+              {
+                "x": 1146.6136539684157,
+                "y": 641.6228976712692
+              },
+              {
+                "x": 1129.27939959541,
+                "y": 981.0378961247163
+              },
+              {
+                "x": 891.7502216134335,
+                "y": 960.6873855542283
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "2-draw+1",
+            "index": 4,
+            "slot": 4,
+            "x": 1209.73939627351,
+            "y": 804.6445013058841,
+            "facePolygon": [
+              {
+                "x": 1120.6936856898612,
+                "y": 617.8996543190623
+              },
+              {
+                "x": 1343.5656811017902,
+                "y": 660.3434359456277
+              },
+              {
+                "x": 1303.934878851204,
+                "y": 997.8318931890859
+              },
+              {
+                "x": 1071.2337858036128,
+                "y": 957.236823590961
+              }
+            ],
+            "layer": 1004,
+            "hovered": false,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "target-02-committed-minus4",
+      "duel": 2,
+      "phase": "won",
+      "moves": 2,
+      "formula": "x = 4",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 73,
+        "triangles": 113438,
+        "textures": 23,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 4,
+        "cardScreens": [
+          {
+            "id": "2-c",
+            "index": 0,
+            "slot": 0,
+            "x": 556.6782732522399,
+            "y": 800.9030217176229,
+            "facePolygon": [
+              {
+                "x": 426.97599071774954,
+                "y": 650.8217712191991
+              },
+              {
+                "x": 652.863767369581,
+                "y": 618.9411160653658
+              },
+              {
+                "x": 691.1098799652641,
+                "y": 959.1170170717251
+              },
+              {
+                "x": 455.4419778197371,
+                "y": 989.6220914435991
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "2-d",
+            "index": 1,
+            "slot": 1,
+            "x": 743.5411273360834,
+            "y": 793.4982260064953,
+            "facePolygon": [
+              {
+                "x": 623.6645412429327,
+                "y": 632.763550202034
+              },
+              {
+                "x": 852.2931356806076,
+                "y": 622.1431040222022
+              },
+              {
+                "x": 868.2045154111104,
+                "y": 961.9310539234305
+              },
+              {
+                "x": 629.9070637723619,
+                "y": 972.1005551321211
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "2-e",
+            "index": 2,
+            "slot": 2,
+            "x": 928.4588726639167,
+            "y": 793.4982260064953,
+            "facePolygon": [
+              {
+                "x": 819.7068643193923,
+                "y": 622.1431040222022
+              },
+              {
+                "x": 1048.3354587570673,
+                "y": 632.763550202034
+              },
+              {
+                "x": 1042.092936227638,
+                "y": 972.1005551321211
+              },
+              {
+                "x": 803.7954845888895,
+                "y": 961.9310539234305
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "2-draw+1",
+            "index": 3,
+            "slot": 3,
+            "x": 1115.32172674776,
+            "y": 800.9030217176229,
+            "facePolygon": [
+              {
+                "x": 1019.1362326304189,
+                "y": 618.9411160653658
+              },
+              {
+                "x": 1245.0240092822505,
+                "y": 650.8217712191991
+              },
+              {
+                "x": 1216.558022180263,
+                "y": 989.6220914435991
+              },
+              {
+                "x": 980.8901200347359,
+                "y": 959.1170170717251
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "02-both-sides-unknown",
+      "duel": 3,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "3x + 2 = x + 10",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 100,
+        "triangles": 114626,
+        "textures": 33,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "3-a",
+            "index": 0,
+            "slot": 0,
+            "x": 398.11918024291,
+            "y": 855.0951129711839,
+            "facePolygon": [
+              {
+                "x": 282.862092830994,
+                "y": 701.7464781568839
+              },
+              {
+                "x": 474.8092659130382,
+                "y": 656.6415029958154
+              },
+              {
+                "x": 517.4063088772713,
+                "y": 1017.254860351712
+              },
+              {
+                "x": 316.99388424298223,
+                "y": 1060.3952106153943
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "3-b",
+            "index": 1,
+            "slot": 1,
+            "x": 560.1842444460411,
+            "y": 847.1707626487046,
+            "facePolygon": [
+              {
+                "x": 452.48584825686686,
+                "y": 681.8521760587346
+              },
+              {
+                "x": 648.6790162898493,
+                "y": 659.259133034426
+              },
+              {
+                "x": 671.9854550697701,
+                "y": 1020.9217699832393
+              },
+              {
+                "x": 467.4148711618479,
+                "y": 1042.5482424279664
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "3-c",
+            "index": 2,
+            "slot": 2,
+            "x": 720,
+            "y": 839.356394757091,
+            "facePolygon": [
+              {
+                "x": 621.653729881357,
+                "y": 663.4004293996234
+              },
+              {
+                "x": 818.3462701186431,
+                "y": 663.4004293996234
+              },
+              {
+                "x": 822.4823405565891,
+                "y": 1023.200905082937
+              },
+              {
+                "x": 617.5176594434109,
+                "y": 1023.200905082937
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "3-d",
+            "index": 3,
+            "slot": 3,
+            "x": 879.8157555539589,
+            "y": 847.1707626487046,
+            "facePolygon": [
+              {
+                "x": 791.3209837101507,
+                "y": 659.259133034426
+              },
+              {
+                "x": 987.5141517431331,
+                "y": 681.8521760587346
+              },
+              {
+                "x": 972.5851288381522,
+                "y": 1042.5482424279664
+              },
+              {
+                "x": 768.0145449302298,
+                "y": 1020.9217699832393
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "3-e",
+            "index": 4,
+            "slot": 4,
+            "x": 1041.88081975709,
+            "y": 855.0951129711839,
+            "facePolygon": [
+              {
+                "x": 965.1907340869618,
+                "y": 656.6415029958154
+              },
+              {
+                "x": 1157.137907169006,
+                "y": 701.7464781568839
+              },
+              {
+                "x": 1123.0061157570178,
+                "y": 1060.3952106153943
+              },
+              {
+                "x": 922.5936911227287,
+                "y": 1017.254860351712
+              }
+            ],
+            "layer": 1004,
+            "hovered": false,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "03-fraction-response",
+      "duel": 4,
+      "phase": "ready",
+      "moves": 1,
+      "formula": "x + 7 = 19/2",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 84,
+        "triangles": 114026,
+        "textures": 28,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "4-a",
+            "index": 0,
+            "slot": 0,
+            "x": 410.86163608635337,
+            "y": 882.074522278717,
+            "facePolygon": [
+              {
+                "x": 249.28366279593726,
+                "y": 734.273993570539
+              },
+              {
+                "x": 496.31634703249443,
+                "y": 673.3609074562626
+              },
+              {
+                "x": 576.1841736802676,
+                "y": 1035.6405416265452
+              },
+              {
+                "x": 320.1414982810645,
+                "y": 1100.5626770653935
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "4-c",
+            "index": 1,
+            "slot": 1,
+            "x": 614.3347347111348,
+            "y": 859.7045583003544,
+            "facePolygon": [
+              {
+                "x": 466.221672912457,
+                "y": 700.7463662578505
+              },
+              {
+                "x": 712.2459975351164,
+                "y": 663.4301430491938
+              },
+              {
+                "x": 766.5008247865021,
+                "y": 1023.9516845577557
+              },
+              {
+                "x": 511.2201552289478,
+                "y": 1066.4709787026222
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "4-d",
+            "index": 2,
+            "slot": 2,
+            "x": 810.1278981009964,
+            "y": 838.178931365672,
+            "facePolygon": [
+              {
+                "x": 677.1312075582358,
+                "y": 669.5638402194629
+              },
+              {
+                "x": 917.641615797539,
+                "y": 655.561847173692
+              },
+              {
+                "x": 947.4636898468077,
+                "y": 1011.5539637245381
+              },
+              {
+                "x": 697.4560869557843,
+                "y": 1031.6791571214433
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "4-e",
+            "index": 3,
+            "slot": 3,
+            "x": 1004.6915890046148,
+            "y": 832.537038197116,
+            "facePolygon": [
+              {
+                "x": 886.6396479286036,
+                "y": 653.3211007488295
+              },
+              {
+                "x": 1120.566292220653,
+                "y": 661.9038444722719
+              },
+              {
+                "x": 1127.4901309514792,
+                "y": 1016.1223856320272
+              },
+              {
+                "x": 883.6116949636464,
+                "y": 1014.540103590956
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "4-draw+1",
+            "index": 4,
+            "slot": 4,
+            "x": 1197.3033160651355,
+            "y": 826.9517474265741,
+            "facePolygon": [
+              {
+                "x": 1095.9644470166454,
+                "y": 638.695166377919
+              },
+              {
+                "x": 1319.077767780647,
+                "y": 669.4514170517691
+              },
+              {
+                "x": 1303.813190547223,
+                "y": 1019.1080856898213
+              },
+              {
+                "x": 1070.368874812035,
+                "y": 996.0340107440917
+              }
+            ],
+            "layer": 1004,
+            "hovered": false,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "04-final-unaided",
+      "duel": 5,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "4x − 2 = 2x + 9",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 104,
+        "triangles": 114492,
+        "textures": 34,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "5-a",
+            "index": 0,
+            "slot": 0,
+            "x": 410.86163608635337,
+            "y": 882.074522278717,
+            "facePolygon": [
+              {
+                "x": 249.28366279593726,
+                "y": 734.273993570539
+              },
+              {
+                "x": 496.31634703249443,
+                "y": 673.3609074562626
+              },
+              {
+                "x": 576.1841736802676,
+                "y": 1035.6405416265452
+              },
+              {
+                "x": 320.1414982810645,
+                "y": 1100.5626770653935
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-b",
+            "index": 1,
+            "slot": 1,
+            "x": 614.3347347111348,
+            "y": 859.7045583003544,
+            "facePolygon": [
+              {
+                "x": 466.221672912457,
+                "y": 700.7463662578505
+              },
+              {
+                "x": 712.2459975351164,
+                "y": 663.4301430491938
+              },
+              {
+                "x": 766.5008247865021,
+                "y": 1023.9516845577557
+              },
+              {
+                "x": 511.2201552289478,
+                "y": 1066.4709787026222
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-c",
+            "index": 2,
+            "slot": 2,
+            "x": 810.1278981009964,
+            "y": 838.178931365672,
+            "facePolygon": [
+              {
+                "x": 677.1312075582358,
+                "y": 669.5638402194629
+              },
+              {
+                "x": 917.641615797539,
+                "y": 655.561847173692
+              },
+              {
+                "x": 947.4636898468077,
+                "y": 1011.5539637245381
+              },
+              {
+                "x": 697.4560869557843,
+                "y": 1031.6791571214433
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-d",
+            "index": 3,
+            "slot": 3,
+            "x": 1004.6915890046148,
+            "y": 832.537038197116,
+            "facePolygon": [
+              {
+                "x": 886.6396479286036,
+                "y": 653.3211007488295
+              },
+              {
+                "x": 1120.566292220653,
+                "y": 661.9038444722719
+              },
+              {
+                "x": 1127.4901309514792,
+                "y": 1016.1223856320272
+              },
+              {
+                "x": 883.6116949636464,
+                "y": 1014.540103590956
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-e",
+            "index": 4,
+            "slot": 4,
+            "x": 1197.3033160651355,
+            "y": 826.9517474265741,
+            "facePolygon": [
+              {
+                "x": 1095.9644470166454,
+                "y": 638.695166377919
+              },
+              {
+                "x": 1319.077767780647,
+                "y": 669.4514170517691
+              },
+              {
+                "x": 1303.813190547223,
+                "y": 1019.1080856898213
+              },
+              {
+                "x": 1070.368874812035,
+                "y": 996.0340107440917
+              }
+            ],
+            "layer": 1004,
+            "hovered": false,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "05-complete-match",
+      "duel": 5,
+      "phase": "won",
+      "moves": 2,
+      "formula": "x = 11/2",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 67,
+        "triangles": 113000,
+        "textures": 20,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 4,
+        "cardScreens": [
+          {
+            "id": "5-b",
+            "index": 0,
+            "slot": 0,
+            "x": 513.5861446225161,
+            "y": 870.7809234139035,
+            "facePolygon": [
+              {
+                "x": 358.52224150938184,
+                "y": 717.2201668673471
+              },
+              {
+                "x": 605.6425514876305,
+                "y": 668.1199700757527
+              },
+              {
+                "x": 672.5526134086072,
+                "y": 1029.8758521050706
+              },
+              {
+                "x": 416.3016534568291,
+                "y": 1083.6170505669393
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "5-d",
+            "index": 1,
+            "slot": 1,
+            "x": 713.1638738212949,
+            "y": 848.8392188680212,
+            "facePolygon": [
+              {
+                "x": 572.4144033406852,
+                "y": 684.8590415092897
+              },
+              {
+                "x": 816.2168734656733,
+                "y": 659.2557364880516
+              },
+              {
+                "x": 858.1112421837278,
+                "y": 1017.8499884057741
+              },
+              {
+                "x": 604.9284163115351,
+                "y": 1049.1497999694466
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "5-e",
+            "index": 2,
+            "slot": 2,
+            "x": 907.6555888689686,
+            "y": 835.3508558407201,
+            "facePolygon": [
+              {
+                "x": 781.9038904196336,
+                "y": 661.2486772264523
+              },
+              {
+                "x": 1019.6634811888779,
+                "y": 658.5707780427301
+              },
+              {
+                "x": 1037.9490435590064,
+                "y": 1014.027709254989
+              },
+              {
+                "x": 790.4573204191443,
+                "y": 1023.2922583090623
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "5-draw+1",
+            "index": 3,
+            "slot": 3,
+            "x": 1101.2396074820745,
+            "y": 829.7373708832621,
+            "facePolygon": [
+              {
+                "x": 991.3295633393681,
+                "y": 645.7979650407102
+              },
+              {
+                "x": 1220.365715346379,
+                "y": 665.5383469825954
+              },
+              {
+                "x": 1216.1052743131443,
+                "y": 1017.8211138934605
+              },
+              {
+                "x": 976.9167426593989,
+                "y": 1005.446021517412
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "06-last-round-alternate",
+      "duel": 5,
+      "phase": "won",
+      "moves": 4,
+      "formula": "x = 11/2",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 63,
+        "triangles": 112994,
+        "textures": 18,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 3,
+        "cardScreens": [
+          {
+            "id": "5-e",
+            "index": 0,
+            "slot": 0,
+            "x": 614.3347347111348,
+            "y": 859.7045583003544,
+            "facePolygon": [
+              {
+                "x": 466.221672912457,
+                "y": 700.7463662578505
+              },
+              {
+                "x": 712.2459975351164,
+                "y": 663.4301430491938
+              },
+              {
+                "x": 766.5008247865021,
+                "y": 1023.9516845577557
+              },
+              {
+                "x": 511.2201552289478,
+                "y": 1066.4709787026222
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "5-draw+1",
+            "index": 1,
+            "slot": 1,
+            "x": 810.1278981009964,
+            "y": 838.178931365672,
+            "facePolygon": [
+              {
+                "x": 677.1312075582358,
+                "y": 669.5638402194629
+              },
+              {
+                "x": 917.641615797539,
+                "y": 655.561847173692
+              },
+              {
+                "x": 947.4636898468077,
+                "y": 1011.5539637245381
+              },
+              {
+                "x": 697.4560869557843,
+                "y": 1031.6791571214433
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "5-draw-1",
+            "index": 2,
+            "slot": 2,
+            "x": 1004.6915890046148,
+            "y": 832.537038197116,
+            "facePolygon": [
+              {
+                "x": 886.6396479286036,
+                "y": 653.3211007488295
+              },
+              {
+                "x": 1120.566292220653,
+                "y": 661.9038444722719
+              },
+              {
+                "x": 1127.4901309514792,
+                "y": 1016.1223856320272
+              },
+              {
+                "x": 883.6116949636464,
+                "y": 1014.540103590956
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "07-mobile-controls",
+      "duel": 5,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "4x − 2 = 2x + 9",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 105,
+        "triangles": 114504,
+        "textures": 34,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "5-a",
+            "index": 0,
+            "slot": 0,
+            "x": 131.00451034692404,
+            "y": 495.5408615687155,
+            "facePolygon": [
+              {
+                "x": 96.77813743475913,
+                "y": 465.5387060806307
+              },
+              {
+                "x": 148.047916018921,
+                "y": 453.26646959471924
+              },
+              {
+                "x": 165.41554126546018,
+                "y": 525.6111576591645
+              },
+              {
+                "x": 113.7108074438146,
+                "y": 538.1745851113088
+              }
+            ],
+            "layer": 1100,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-b",
+            "index": 1,
+            "slot": 1,
+            "x": 172.58423721161327,
+            "y": 496.317039811955,
+            "facePolygon": [
+              {
+                "x": 141.3073932562624,
+                "y": 463.5646866295368
+              },
+              {
+                "x": 193.00277119141703,
+                "y": 456.0422367486688
+              },
+              {
+                "x": 204.11070745981166,
+                "y": 529.1658949837515
+              },
+              {
+                "x": 151.93309029363226,
+                "y": 536.9402582198371
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-c",
+            "index": 2,
+            "slot": 2,
+            "x": 213.648239528928,
+            "y": 492.9140198047009,
+            "facePolygon": [
+              {
+                "x": 185.52207354137997,
+                "y": 457.5403571250336
+              },
+              {
+                "x": 237.20158325739655,
+                "y": 454.9978999548229
+              },
+              {
+                "x": 242.08879642545023,
+                "y": 528.3616931411678
+              },
+              {
+                "x": 189.89366275590007,
+                "y": 531.2046115131833
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-d",
+            "index": 3,
+            "slot": 3,
+            "x": 254.99175969068995,
+            "y": 492.0389228185343,
+            "facePolygon": [
+              {
+                "x": 230.21558967266782,
+                "y": 454.21449265019993
+              },
+              {
+                "x": 281.42322958270535,
+                "y": 456.6331192089194
+              },
+              {
+                "x": 280.15086929512927,
+                "y": 529.9231448065852
+              },
+              {
+                "x": 228.385836046318,
+                "y": 527.8458905470754
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": true
+          },
+          {
+            "id": "5-e",
+            "index": 4,
+            "slot": 4,
+            "x": 296.2356223743692,
+            "y": 491.1659352308509,
+            "facePolygon": [
+              {
+                "x": 275.0926090299529,
+                "y": 451.2145109997063
+              },
+              {
+                "x": 325.2031646181376,
+                "y": 458.5403502180515
+              },
+              {
+                "x": 317.8311773459862,
+                "y": 531.1668281093513
+              },
+              {
+                "x": 267.11818374214084,
+                "y": 524.2139320621287
+              }
+            ],
+            "layer": 1004,
+            "hovered": false,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "08-touch-isolation",
+      "duel": 1,
+      "phase": "won",
+      "moves": 1,
+      "formula": "x = 5",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 68,
+        "triangles": 113542,
+        "textures": 22,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 3,
+        "cardScreens": [
+          {
+            "id": "1-b",
+            "index": 0,
+            "slot": 0,
+            "x": 153.6126415128882,
+            "y": 494.295368468015,
+            "facePolygon": [
+              {
+                "x": 124.64895996537857,
+                "y": 460.2122447182389
+              },
+              {
+                "x": 176.31561147091062,
+                "y": 455.26196375945875
+              },
+              {
+                "x": 182.8049835978583,
+                "y": 528.6303515790773
+              },
+              {
+                "x": 130.58794316300464,
+                "y": 533.5382992545044
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "1-c",
+            "index": 1,
+            "slot": 1,
+            "x": 195,
+            "y": 493.03579533819067,
+            "facePolygon": [
+              {
+                "x": 169.0524463955541,
+                "y": 456.398009914335
+              },
+              {
+                "x": 220.9475536044459,
+                "y": 456.398009914335
+              },
+              {
+                "x": 221.2205872853874,
+                "y": 529.9020533015208
+              },
+              {
+                "x": 168.7794127146126,
+                "y": 529.9020533015208
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "1-d",
+            "index": 2,
+            "slot": 2,
+            "x": 236.3873584871118,
+            "y": 494.295368468015,
+            "facePolygon": [
+              {
+                "x": 213.68438852908938,
+                "y": 455.26196375945875
+              },
+              {
+                "x": 265.3510400346214,
+                "y": 460.2122447182389
+              },
+              {
+                "x": 259.41205683699536,
+                "y": 533.5382992545044
+              },
+              {
+                "x": 207.19501640214173,
+                "y": 528.6303515790773
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "09-landscape-controls",
+      "duel": 1,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "x + 3 = 8",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 82,
+        "triangles": 114420,
+        "textures": 27,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 4,
+        "cardScreens": [
+          {
+            "id": "1-a",
+            "index": 0,
+            "slot": 0,
+            "x": 306.2343534201632,
+            "y": 331.93642770443455,
+            "facePolygon": [
+              {
+                "x": 252.47889094571977,
+                "y": 269.73484673271804
+              },
+              {
+                "x": 346.09869210854043,
+                "y": 256.5218228113631
+              },
+              {
+                "x": 361.94989711631564,
+                "y": 397.5086468203749
+              },
+              {
+                "x": 264.276696439636,
+                "y": 410.15155755898365
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "1-b",
+            "index": 1,
+            "slot": 1,
+            "x": 383.68016967170297,
+            "y": 328.867490055827,
+            "facePolygon": [
+              {
+                "x": 333.99699371386157,
+                "y": 262.25056809648595
+              },
+              {
+                "x": 428.75273423532093,
+                "y": 257.848895397087
+              },
+              {
+                "x": 435.34724868260685,
+                "y": 398.6749320192751
+              },
+              {
+                "x": 336.58422409268985,
+                "y": 402.8897093533765
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "1-c",
+            "index": 2,
+            "slot": 2,
+            "x": 460.31983032829703,
+            "y": 328.867490055827,
+            "facePolygon": [
+              {
+                "x": 415.24726576467907,
+                "y": 257.848895397087
+              },
+              {
+                "x": 510.0030062861385,
+                "y": 262.25056809648595
+              },
+              {
+                "x": 507.41577590731015,
+                "y": 402.8897093533765
+              },
+              {
+                "x": 408.6527513173931,
+                "y": 398.6749320192751
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "1-d",
+            "index": 3,
+            "slot": 3,
+            "x": 537.7656465798368,
+            "y": 331.93642770443455,
+            "facePolygon": [
+              {
+                "x": 497.90130789145957,
+                "y": 256.5218228113631
+              },
+              {
+                "x": 591.5211090542803,
+                "y": 269.73484673271804
+              },
+              {
+                "x": 579.723303560364,
+                "y": 410.15155755898365
+              },
+              {
+                "x": 482.05010288368436,
+                "y": 397.5086468203749
+              }
+            ],
+            "layer": 1003,
+            "hovered": false,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "10-landscape-isolation",
+      "duel": 1,
+      "phase": "won",
+      "moves": 1,
+      "formula": "x = 5",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 68,
+        "triangles": 113542,
+        "textures": 22,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 3,
+        "cardScreens": [
+          {
+            "id": "1-b",
+            "index": 0,
+            "slot": 0,
+            "x": 345.0925597165947,
+            "y": 330.3965974329948,
+            "facePolygon": [
+              {
+                "x": 293.2653293860976,
+                "y": 265.9223486629065
+              },
+              {
+                "x": 387.6785135068226,
+                "y": 257.11106188342615
+              },
+              {
+                "x": 398.89416957572894,
+                "y": 398.15949029346336
+              },
+              {
+                "x": 300.4495580847929,
+                "y": 406.5938145469069
+              }
+            ],
+            "layer": 1000,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "1-c",
+            "index": 1,
+            "slot": 1,
+            "x": 422,
+            "y": 327.3489939552655,
+            "facePolygon": [
+              {
+                "x": 374.6732525837136,
+                "y": 258.7261674658531
+              },
+              {
+                "x": 469.3267474162864,
+                "y": 258.7261674658531
+              },
+              {
+                "x": 471.3171305866547,
+                "y": 399.0483529823454
+              },
+              {
+                "x": 372.68286941334526,
+                "y": 399.0483529823454
+              }
+            ],
+            "layer": 1001,
+            "hovered": false,
+            "visible": false
+          },
+          {
+            "id": "1-d",
+            "index": 2,
+            "slot": 2,
+            "x": 498.90744028340526,
+            "y": 330.3965974329948,
+            "facePolygon": [
+              {
+                "x": 456.3214864931774,
+                "y": 257.11106188342615
+              },
+              {
+                "x": 550.7346706139024,
+                "y": 265.9223486629065
+              },
+              {
+                "x": 543.5504419152071,
+                "y": 406.5938145469069
+              },
+              {
+                "x": 445.1058304242711,
+                "y": 398.15949029346336
+              }
+            ],
+            "layer": 1002,
+            "hovered": false,
+            "visible": false
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

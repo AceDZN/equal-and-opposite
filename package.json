@@ -9,7 +9,8 @@
     "preview": "vite preview --host 0.0.0.0 --port 4185 --strictPort",
     "test": "tsx --test tests/math.test.ts",
     "test:browser": "node tests/browser-qa.mjs",
-    "test:ux": "node tests/ux-regressions.mjs"
+    "test:ux": "node tests/ux-regressions.mjs",
+    "test:cards": "node tests/card-layering.mjs"
   },
   "dependencies": {
     "@fontsource/noto-sans-hebrew": "^5.3.0",

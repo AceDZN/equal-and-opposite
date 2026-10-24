@@ -73,3 +73,12 @@ User correction: "no, wtf? it was much better before with the opponent, the full
 - Restored-scene diff contains invisible-rayframe picking/primary-pointer/touch-hover cleanup and a camera-input guard that prevents losing available physical cards; the default camera and composition are unchanged.
 - Independent visual reviewer compared the actual1672×941 target state with the original and confirmed the scene composition matches. No new art/model generation or deployment.
 - Restored final build index-DZtXCIFK passes29/29 UX checks,13 domain tests and12-capture browser suite with all5 duels/alternates, required local GLB and zero console/network failures. Original default composition is retained. Latest reports and actual screenshots saved separately in docs/evidence/restored.
+
+## Card layering correction
+
+User: "the cards have z-index issue", with an actual screenshot showing crossing card borders and the footer strip across the fan.
+
+- Confirmed that neighboring 3D card planes intersect, making depth testing alternate which edge is in front. Assigned whole-card draw ranks with selected card above the fixed fan order; hand materials render in that order without depth testing/writing. Picking uses the identical card rank, so the visible front card receives the click. Hover lifts without reshuffling the stack.
+- Removed the footer's full-width paint/hit area. Compact footer buttons sit at the outer sides. Original card transforms/sizes, camera, opponent, tokens and tabletop are unchanged.
+- Added read-only projected face polygons/layers to scene diagnostics for independent overlap tests. Final build index-DXzXdj8l compiled, and the installed skill client selection capture was opened; borders and footer are clear. Independent overlap/selection and browser regressions are running.
+- Final card-layering matrix passes6 desktop views, all27 card selections,75 physical clicks/hover checks and6,297 independently sampled overlap pixels. Footer transparency, center-band pointer pass-through and compact button clickability pass. Existing29 UX checks and12-capture browser suite pass with no console/network failures. Actual four-card, five-card and selected-middle captures were opened and saved with reports in docs/evidence/card-layering. No scene recomposition or asset changes.

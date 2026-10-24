@@ -18,6 +18,7 @@ npm run build      # typecheck + static dist/
 npm run preview    # http://localhost:4185
 npm run test:browser
 npm run test:ux     # adversarial focus, modal, camera and responsive checks
+npm run test:cards  # physical card overlap, hover, click and rendered stacking
 ```
 
 Both servers use strict assigned ports and never stop other processes. Browser QA uses Playwright, falling back to installed Chrome if its bundled browser is missing. `QA_URL`, `QA_BROWSER_CHANNEL` and `QA_HEADED=1` can select test context. Screenshots and local reports go to ignored `output/`.
