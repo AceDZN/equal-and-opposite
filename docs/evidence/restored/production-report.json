@@ -1,0 +1,759 @@
+{
+  "url": "http://127.0.0.1:4185",
+  "browserChannel": "chrome",
+  "modelRequired": true,
+  "frameTiming": {
+    "samples": 120,
+    "medianMs": 16.699999999999818,
+    "p95Ms": 16.700000000000273,
+    "maxMs": 16.800000000000182,
+    "minMs": 16.59999999999991,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1672,
+      "height": 941
+    },
+    "context": "Headless installed Chrome on the shared development host; scheduler/render intervals, not a general hardware FPS claim"
+  },
+  "assets": {
+    "totalBytes": 6074420,
+    "files": [
+      {
+        "file": "assets/index-CbOukM9A.css",
+        "bytes": 39118
+      },
+      {
+        "file": "assets/index-DZtXCIFK.js",
+        "bytes": 619572
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-400-normal-BEvsRI_S.woff",
+        "bytes": 8952
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-400-normal-Bp0xVS9x.woff2",
+        "bytes": 7068
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-600-normal-BZTJana4.woff2",
+        "bytes": 7072
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-600-normal-CiulUmaK.woff",
+        "bytes": 9036
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-700-normal-BVftoAx4.woff",
+        "bytes": 8980
+      },
+      {
+        "file": "assets/noto-sans-hebrew-hebrew-700-normal-D9plwkIl.woff2",
+        "bytes": 7040
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-400-normal-Cvb_8Q96.woff",
+        "bytes": 13812
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-400-normal-DkOjcY47.woff2",
+        "bytes": 10804
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-600-normal-DBSa9mSH.woff2",
+        "bytes": 10896
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-600-normal-DOfmYOL_.woff",
+        "bytes": 13848
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-700-normal-BLkFS47X.woff",
+        "bytes": 13792
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-700-normal-DuC6TMYq.woff2",
+        "bytes": 10808
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-400-normal-D-r4JGf5.woff2",
+        "bytes": 6572
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-400-normal-R_ivLM58.woff",
+        "bytes": 8500
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-600-normal-DsQRWWZn.woff2",
+        "bytes": 6604
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-600-normal-b7siF5h4.woff",
+        "bytes": 8556
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-700-normal-2aPITt8z.woff2",
+        "bytes": 6552
+      },
+      {
+        "file": "assets/noto-sans-hebrew-latin-ext-700-normal-D2b18moL.woff",
+        "bytes": 8484
+      },
+      {
+        "file": "index.html",
+        "bytes": 682
+      },
+      {
+        "file": "licenses/Noto-Sans-Hebrew-OFL.txt",
+        "bytes": 4380
+      },
+      {
+        "file": "models/ink-duelist.glb",
+        "bytes": 5243292
+      }
+    ]
+  },
+  "checkpoints": [
+    {
+      "name": "01-loss-recovery",
+      "duel": 1,
+      "phase": "lost",
+      "moves": 3,
+      "formula": "x + 6 = 11",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 85,
+        "triangles": 115285,
+        "textures": 32,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 1,
+        "cardScreens": [
+          {
+            "id": "1-a",
+            "index": 0,
+            "slot": 0,
+            "x": 720,
+            "y": 839.356394757091,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "target-01-selected-minus4",
+      "duel": 2,
+      "phase": "ready",
+      "moves": 1,
+      "formula": "x + 4 = 8",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 88,
+        "triangles": 114617,
+        "textures": 32,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "2-b",
+            "index": 0,
+            "slot": 0,
+            "x": 459.2157600545903,
+            "y": 787.7445176643924,
+            "visible": true
+          },
+          {
+            "id": "2-c",
+            "index": 1,
+            "slot": 1,
+            "x": 650.4361504956812,
+            "y": 797.187687652431,
+            "visible": true
+          },
+          {
+            "id": "2-d",
+            "index": 2,
+            "slot": 2,
+            "x": 836,
+            "y": 789.8343674664227,
+            "visible": true
+          },
+          {
+            "id": "2-e",
+            "index": 3,
+            "slot": 3,
+            "x": 1021.5638495043188,
+            "y": 797.187687652431,
+            "visible": true
+          },
+          {
+            "id": "2-draw+1",
+            "index": 4,
+            "slot": 4,
+            "x": 1209.73939627351,
+            "y": 804.6445013058841,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "target-02-committed-minus4",
+      "duel": 2,
+      "phase": "won",
+      "moves": 2,
+      "formula": "x = 4",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 69,
+        "triangles": 113434,
+        "textures": 23,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 4,
+        "cardScreens": [
+          {
+            "id": "2-c",
+            "index": 0,
+            "slot": 0,
+            "x": 556.6782732522399,
+            "y": 800.9030217176229,
+            "visible": false
+          },
+          {
+            "id": "2-d",
+            "index": 1,
+            "slot": 1,
+            "x": 743.5411273360834,
+            "y": 793.4982260064953,
+            "visible": false
+          },
+          {
+            "id": "2-e",
+            "index": 2,
+            "slot": 2,
+            "x": 928.4588726639167,
+            "y": 793.4982260064953,
+            "visible": false
+          },
+          {
+            "id": "2-draw+1",
+            "index": 3,
+            "slot": 3,
+            "x": 1115.32172674776,
+            "y": 800.9030217176229,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "02-both-sides-unknown",
+      "duel": 3,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "3x + 2 = x + 10",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 95,
+        "triangles": 114621,
+        "textures": 33,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "3-a",
+            "index": 0,
+            "slot": 0,
+            "x": 322.82742160094574,
+            "y": 855.0951129711839,
+            "visible": true
+          },
+          {
+            "id": "3-b",
+            "index": 1,
+            "slot": 1,
+            "x": 522.8014351707557,
+            "y": 847.1707626487046,
+            "visible": true
+          },
+          {
+            "id": "3-c",
+            "index": 2,
+            "slot": 2,
+            "x": 720,
+            "y": 839.356394757091,
+            "visible": true
+          },
+          {
+            "id": "3-d",
+            "index": 3,
+            "slot": 3,
+            "x": 917.1985648292443,
+            "y": 847.1707626487046,
+            "visible": true
+          },
+          {
+            "id": "3-e",
+            "index": 4,
+            "slot": 4,
+            "x": 1117.1725783990544,
+            "y": 855.0951129711839,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "03-fraction-response",
+      "duel": 4,
+      "phase": "ready",
+      "moves": 1,
+      "formula": "x + 7 = 19/2",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 79,
+        "triangles": 114021,
+        "textures": 28,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "4-a",
+            "index": 0,
+            "slot": 0,
+            "x": 410.86163608635337,
+            "y": 882.074522278717,
+            "visible": true
+          },
+          {
+            "id": "4-c",
+            "index": 1,
+            "slot": 1,
+            "x": 614.3347347111348,
+            "y": 859.7045583003544,
+            "visible": true
+          },
+          {
+            "id": "4-d",
+            "index": 2,
+            "slot": 2,
+            "x": 810.1278981009964,
+            "y": 838.178931365672,
+            "visible": true
+          },
+          {
+            "id": "4-e",
+            "index": 3,
+            "slot": 3,
+            "x": 1004.6915890046148,
+            "y": 832.537038197116,
+            "visible": true
+          },
+          {
+            "id": "4-draw+1",
+            "index": 4,
+            "slot": 4,
+            "x": 1197.3033160651355,
+            "y": 826.9517474265741,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "04-final-unaided",
+      "duel": 5,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "4x − 2 = 2x + 9",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 99,
+        "triangles": 114487,
+        "textures": 34,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "5-a",
+            "index": 0,
+            "slot": 0,
+            "x": 410.86163608635337,
+            "y": 882.074522278717,
+            "visible": true
+          },
+          {
+            "id": "5-b",
+            "index": 1,
+            "slot": 1,
+            "x": 614.3347347111348,
+            "y": 859.7045583003544,
+            "visible": true
+          },
+          {
+            "id": "5-c",
+            "index": 2,
+            "slot": 2,
+            "x": 810.1278981009964,
+            "y": 838.178931365672,
+            "visible": true
+          },
+          {
+            "id": "5-d",
+            "index": 3,
+            "slot": 3,
+            "x": 1004.6915890046148,
+            "y": 832.537038197116,
+            "visible": true
+          },
+          {
+            "id": "5-e",
+            "index": 4,
+            "slot": 4,
+            "x": 1197.3033160651355,
+            "y": 826.9517474265741,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "05-complete-match",
+      "duel": 5,
+      "phase": "won",
+      "moves": 2,
+      "formula": "x = 11/2",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 63,
+        "triangles": 112996,
+        "textures": 20,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 4,
+        "cardScreens": [
+          {
+            "id": "5-b",
+            "index": 0,
+            "slot": 0,
+            "x": 513.5861446225161,
+            "y": 870.7809234139035,
+            "visible": false
+          },
+          {
+            "id": "5-d",
+            "index": 1,
+            "slot": 1,
+            "x": 713.1638738212949,
+            "y": 848.8392188680212,
+            "visible": false
+          },
+          {
+            "id": "5-e",
+            "index": 2,
+            "slot": 2,
+            "x": 907.6555888689686,
+            "y": 835.3508558407201,
+            "visible": false
+          },
+          {
+            "id": "5-draw+1",
+            "index": 3,
+            "slot": 3,
+            "x": 1101.2396074820745,
+            "y": 829.7373708832621,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "06-last-round-alternate",
+      "duel": 5,
+      "phase": "won",
+      "moves": 4,
+      "formula": "x = 11/2",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 60,
+        "triangles": 112991,
+        "textures": 18,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 3,
+        "cardScreens": [
+          {
+            "id": "5-e",
+            "index": 0,
+            "slot": 0,
+            "x": 614.3347347111348,
+            "y": 859.7045583003544,
+            "visible": false
+          },
+          {
+            "id": "5-draw+1",
+            "index": 1,
+            "slot": 1,
+            "x": 810.1278981009964,
+            "y": 838.178931365672,
+            "visible": false
+          },
+          {
+            "id": "5-draw-1",
+            "index": 2,
+            "slot": 2,
+            "x": 1004.6915890046148,
+            "y": 832.537038197116,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "07-mobile-controls",
+      "duel": 5,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "4x − 2 = 2x + 9",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": -0.12,
+          "distance": 25
+        },
+        "drawCalls": 100,
+        "triangles": 114499,
+        "textures": 34,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 5,
+        "cardScreens": [
+          {
+            "id": "5-a",
+            "index": 0,
+            "slot": 0,
+            "x": 131.00451034692404,
+            "y": 495.5408615687155,
+            "visible": true
+          },
+          {
+            "id": "5-b",
+            "index": 1,
+            "slot": 1,
+            "x": 172.58423721161327,
+            "y": 496.317039811955,
+            "visible": true
+          },
+          {
+            "id": "5-c",
+            "index": 2,
+            "slot": 2,
+            "x": 213.648239528928,
+            "y": 492.9140198047009,
+            "visible": true
+          },
+          {
+            "id": "5-d",
+            "index": 3,
+            "slot": 3,
+            "x": 254.99175969068995,
+            "y": 492.0389228185343,
+            "visible": true
+          },
+          {
+            "id": "5-e",
+            "index": 4,
+            "slot": 4,
+            "x": 296.2356223743692,
+            "y": 491.1659352308509,
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "08-touch-isolation",
+      "duel": 1,
+      "phase": "won",
+      "moves": 1,
+      "formula": "x = 5",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 65,
+        "triangles": 113539,
+        "textures": 22,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 3,
+        "cardScreens": [
+          {
+            "id": "1-b",
+            "index": 0,
+            "slot": 0,
+            "x": 153.6126415128882,
+            "y": 494.295368468015,
+            "visible": false
+          },
+          {
+            "id": "1-c",
+            "index": 1,
+            "slot": 1,
+            "x": 195,
+            "y": 493.03579533819067,
+            "visible": false
+          },
+          {
+            "id": "1-d",
+            "index": 2,
+            "slot": 2,
+            "x": 236.3873584871118,
+            "y": 494.295368468015,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "09-landscape-controls",
+      "duel": 1,
+      "phase": "ready",
+      "moves": 0,
+      "formula": "x + 3 = 8",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 78,
+        "triangles": 114416,
+        "textures": 27,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 4,
+        "cardScreens": [
+          {
+            "id": "1-a",
+            "index": 0,
+            "slot": 0,
+            "x": 306.2343534201632,
+            "y": 331.93642770443455,
+            "visible": false
+          },
+          {
+            "id": "1-b",
+            "index": 1,
+            "slot": 1,
+            "x": 383.68016967170297,
+            "y": 328.867490055827,
+            "visible": false
+          },
+          {
+            "id": "1-c",
+            "index": 2,
+            "slot": 2,
+            "x": 460.31983032829703,
+            "y": 328.867490055827,
+            "visible": false
+          },
+          {
+            "id": "1-d",
+            "index": 3,
+            "slot": 3,
+            "x": 537.7656465798368,
+            "y": 331.93642770443455,
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "10-landscape-isolation",
+      "duel": 1,
+      "phase": "won",
+      "moves": 1,
+      "formula": "x = 5",
+      "scene": {
+        "modelLoaded": true,
+        "modelError": "",
+        "camera": {
+          "azimuth": 0,
+          "distance": 25
+        },
+        "drawCalls": 65,
+        "triangles": 113539,
+        "textures": 22,
+        "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+        "physicalCards": 3,
+        "cardScreens": [
+          {
+            "id": "1-b",
+            "index": 0,
+            "slot": 0,
+            "x": 345.0925597165947,
+            "y": 330.3965974329948,
+            "visible": false
+          },
+          {
+            "id": "1-c",
+            "index": 1,
+            "slot": 1,
+            "x": 422,
+            "y": 327.3489939552655,
+            "visible": false
+          },
+          {
+            "id": "1-d",
+            "index": 2,
+            "slot": 2,
+            "x": 498.90744028340526,
+            "y": 330.3965974329948,
+            "visible": false
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "badRequests": []
+}

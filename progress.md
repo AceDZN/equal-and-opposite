@@ -63,3 +63,13 @@ User request: "this one is pretty nice, but there are still weird ui/ux issue tr
 - Long negative/fractional equations now fit the main display and history drawer, including the widest reachable finite-hand witness at320px. Preview/loss formulas also fit. The simulation and exact rules are unchanged.
 - Final production build index-DEwZri80 passed29 adversarial UX cases,13 math tests and the12-capture complete browser suite with all5 duels/3 alternates, zero console/network errors and the local GLB required. Final scene matrix passed15 views/60 physical picks, all5 legal routes and zero math-fit failures. Installed skill client and native in-app Enter/result flow were played and screenshots inspected.
 - Latest actual captures and raw reports saved in docs/evidence/ux; README, UX_FINDINGS, PLAYTEST and visual review updated. Source checkpoint97ade9b pushed to public main. No new generation, deployment or unrelated workspace changes.
+
+## Restore accepted visual composition
+
+User correction: "no, wtf? it was much better before with the opponent, the full size cards, the tokens, etc... wtf have you done?"
+
+- The UX revision overreached by shrinking/repositioning the opponent and tokens and replacing the physical-card composition with an opaque action dock. Functional acceptance did not justify that redesign.
+- Restored the scene/camera/card textures, geometry, token sizes/layout, materials and centered opponent from f95ab41. Restored compact split desktop hand/action/footer controls. Retained modal focus/gating, keyboard, preview and summary fixes, with only localized control reachability and formula fitting changes.
+- Restored-scene diff contains invisible-rayframe picking/primary-pointer/touch-hover cleanup and a camera-input guard that prevents losing available physical cards; the default camera and composition are unchanged.
+- Independent visual reviewer compared the actual1672×941 target state with the original and confirmed the scene composition matches. No new art/model generation or deployment.
+- Restored final build index-DZtXCIFK passes29/29 UX checks,13 domain tests and12-capture browser suite with all5 duels/alternates, required local GLB and zero console/network failures. Original default composition is retained. Latest reports and actual screenshots saved separately in docs/evidence/restored.

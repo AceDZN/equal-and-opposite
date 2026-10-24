@@ -4,6 +4,8 @@ A playable 3D paper-and-ink algebra card duel, in Hebrew. Select a fixed operati
 
 Built with TypeScript, Three.js and Vite. No backend, AI service, account or external asset fetch is needed at runtime. The tabletop pieces and physical card fan are interactive 3D meshes. A locally bundled folded-paper duelist was generated through the owner's Chrome Tripo session. Signed pieces are **virtual ink charges**, not negative physical mass.
 
+The original large centered opponent, oversized physical card fan, token scale and split compact controls are the accepted visual baseline. The first UX revision changed that composition and was rejected; it has been restored while retaining the modal, keyboard, preview and summary correctness fixes. Future UX fixes must preserve this composition.
+
 ## Run
 
 Requires Node 22.12+ (verified here with Node 24.14).

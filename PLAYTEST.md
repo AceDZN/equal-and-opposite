@@ -2,6 +2,8 @@
 
 24 October 2026. This report records automated and builder observations, not learner enjoyment, mastery or a novelty result.
 
+The first UX revision passed functional checks but changed the visual composition against the owner's intent. That revision was rejected. The current restoration uses the original `f95ab41` scene composition and compact split controls, with the nonvisual interaction fixes retained. Independent same-state comparison confirms the original large opponent, full-size cards and tokens. Historical results below identify the revision tested and must not be read as visual approval.
+
 ## Rules and strategy
 
 `npm test` passes 13 independent tests. They prove normalized BigInt rational arithmetic (including values beyond Number precision), equivalent truth sets, signs/fractions on complete expressions, zero/unknown divisor rejection, atomic commits, both isolation orientations, original substitution, opponent/draw timing, finite cycling, costly legal moves, last-round victory and deterministic replay/tamper rejection. All five guaranteed routes and three supplied alternate routes were executed.
@@ -26,7 +28,7 @@ Native user Chrome completed all five duels with moves [1,2,3,2,2] and exact ori
 
 Representative actual captures are in [docs/evidence](docs/evidence/): [selected −4](docs/evidence/gameplay-selected-minus4.png), [verified consequence](docs/evidence/duel2-win.png), [loss/recovery](docs/evidence/loss-recovery.png), [final unaided duel](docs/evidence/final-unaided.png), [portrait](docs/evidence/portrait.png), [landscape](docs/evidence/landscape-ready.png), [native completion](docs/evidence/native-chrome-complete.png), and [latest native target](docs/evidence/native-chrome-target.png). The full final metadata/checkpoints are in [production-report.json](docs/evidence/production-report.json).
 
-## UX hardening production result
+## Rejected UX revision production result (historical)
 
 The follow-up request was to play outside the happy paths and fix interaction problems. The independent audit reproduced twelve concrete failures in the initially delivered build, then added camera, touch, focus, preview, completion and long-equation checks. [UX_FINDINGS.md](UX_FINDINGS.md) records the triggers and rechecks.
 
@@ -36,8 +38,14 @@ The comprehensive scene matrix covers five viewport sizes at normal, near-left a
 
 Latest evidence lives in [docs/evidence/ux](docs/evidence/ux/): [selected −4](docs/evidence/ux/selected-minus4.png), [small screen](docs/evidence/ux/small-screen.png), [long history](docs/evidence/ux/history-fractions.png), [complete match](docs/evidence/ux/complete-match.png), [UX report](docs/evidence/ux/ux-report.json), [production report](docs/evidence/ux/production-report.json), and [camera matrix](docs/evidence/ux/camera-matrix.json). Earlier captures above remain historical.
 
+## Restored composition production result
+
+The current production build `index-DZtXCIFK.js` passes all29 UX regressions, all13 domain tests and the full12-capture browser suite. The required local GLB loads; no console/uncaught errors or failed HTTP requests were recorded. The original scene's accepted default composition was independently compared against the original same-state screenshot. Camera input now stops before losing currently available physical cards, and native drawer padding leaves fractional history lines enough width at320px. These are bounded repairs with no default scene recomposition.
+
+Latest actual evidence: [restored gameplay](docs/evidence/restored/gameplay.png), [game state](docs/evidence/restored/gameplay-state.json), [short portrait controls](docs/evidence/restored/small-screen.png), [fraction history](docs/evidence/restored/history.png), [UX report](docs/evidence/restored/ux-report.json), and [production report](docs/evidence/restored/production-report.json). The unchanged installed skill client also played a real costly ×2 move on this restored build; its [capture](docs/evidence/restored/skill-client.png) and [state](docs/evidence/restored/skill-client-state.json) are saved. All representative captures were opened and inspected.
+
 ## Measured context and limits
 
-In installed headless Chrome 155 on the shared development host, the follow-up run's 120 requestAnimationFrame intervals at 1672×941 measured median 16.7 ms, p95 16.7 ms, min 16.6 ms and max 16.8 ms. This measures observed scheduler/render intervals in that context; it does not establish typical-device FPS. Current static output totals 6,078,587 bytes, including the 5,243,292-byte GLB. Vite reports a >500 kB JavaScript chunk warning; its current JS is 624,922 bytes before compression (165.37 kB gzip).
+In installed headless Chrome155 on the shared development host, the restored build's120 requestAnimationFrame intervals at1672×941 measured median/p95 of16.7ms. This measures observed scheduler/render intervals in that context; it does not establish typical-device FPS. Current static output totals6,074,420 bytes, including the5,243,292-byte GLB. Vite reports a >500kB JavaScript chunk warning; its current JS is619,572 bytes before compression (163.31kB gzip).
 
 The scene retains simpler surroundings, brushwork and lighting than the generated target, and the duelist has a hood rather than a broad hat. Touch/control checks used browser emulation plus real native desktop Chrome, not a separate physical phone. The five-duel slice is authored for deliberate play; no learner study established a human 5–10-minute duration, enjoyment or learning gains. No deployment has occurred. The verified local production server remains at http://localhost:4185/.

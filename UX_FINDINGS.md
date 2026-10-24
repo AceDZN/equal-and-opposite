@@ -1,5 +1,7 @@
 # Follow-up UX audit
 
+The owner rejected the visual redesign accompanying the first audit fixes. That revision's screenshots and camera matrix below are historical. The current restoration returns to the accepted original scene/compact controls while retaining interaction correctness; the latest restoration verification is recorded in PLAYTEST.md. Functional tests alone do not establish visual acceptance.
+
 24 October 2026. Independent review requested after the initial five-duel slice: play outside the happy routes, find real interaction failures and recheck fixes. The lead owns source fixes and Git integration; this reviewer owns `tests/ux-regressions.mjs` and this report. No solved state is injected.
 
 ## Reproduced in the delivered production build

@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const url = process.env.QA_URL || 'http://127.0.0.1:4185';
-const output = path.resolve('output/ux-qa');
+const output = path.resolve(process.env.QA_OUTPUT || 'output/ux-qa');
 await fs.mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true, channel: 'chrome' });
 const checks = [], consoleErrors = [];
@@ -187,6 +187,7 @@ try {
     assert.equal((await state(page)).phase, 'ready');
     assert.equal((await state(page)).moves, 0);
   });
+  // Test reachable controls, not a specific dock or scene composition.
   for (const [width, height] of [[660, 800], [651, 700], [390, 500], [320, 568], [844, 390]]) {
     await record(`07-layout-${width}x${height}`, async page => {
       if (width > 650) {
@@ -247,10 +248,16 @@ try {
     for (let i = 0; i < 8; i++) await page.locator('#cam-in').click();
     for (let i = 0; i < 8; i++) await page.locator('#cam-right').click();
     await page.evaluate(() => window.advanceTime(250));
+    await page.keyboard.press('Escape');
+    await page.evaluate(() => window.advanceTime(100));
     const s = await state(page);
     assert.equal(s.formula, original);
-    assert.ok(s.scene.cardScreens.some(card => card.visible), 'the permitted close camera extreme must leave a physical card available');
-    return s.scene.camera;
+    const card = s.scene.cardScreens.find(card => card.visible);
+    assert.ok(card, 'the permitted close camera extreme must leave a physical card available');
+    await page.mouse.click(card.x, card.y);
+    assert.equal((await state(page)).selected, card.index + 1, 'physical input still selects the exposed card at the permitted camera extreme');
+    assert.equal((await state(page)).moves, 0, 'camera inspection and card selection do not consume a move');
+    return { camera: s.scene.camera, pickedCard: card.id };
   });
   await record('11-touch-modal-cycle-recovery', async page => {
     async function tap(selector) {

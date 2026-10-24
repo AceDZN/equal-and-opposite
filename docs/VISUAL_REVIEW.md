@@ -2,7 +2,15 @@
 
 The selected design target is [gameplay-v2.png](visual-targets/gameplay-v2.png), 1672×941. It was generated with the built-in image_gen tool; prompts, correction and hash are in [PROMPT.md](visual-targets/PROMPT.md) and [manifest.json](visual-targets/manifest.json). It is not an implemented-game screenshot. Version1 is retained as historical reference; version2 fixes the required +1 draw card.
 
-## Latest UX hardening revision
+## Restored accepted composition
+
+The owner rejected the first UX hardening revision because its smaller side-anchored opponent, cropped card tops, reduced tokens and broad action dock removed the original game's presentation. The current build restores the scene from `f95ab41`: centered full-size opponent, original camera, full-size foreground fan, original token sizes/arrangements, textures and materials. The lower interface again uses compact split controls. The retained changes address focus, modal isolation, selection/preview/summary state, invisible raycast frames, narrow-screen control reachability and bounded camera inputs. They do not recompose the default scene.
+
+Independent same-state screenshot comparison at1672×941 confirmed that the opponent, camera/table perspective, lamps, rune/chip size and arrangement, placard bounds, card fan and selected-card lift match the accepted original. The small differences are helper copy, on-demand camera controls and removal of stale transient feedback. The reference for preservation is the actual [original gameplay capture](evidence/gameplay-selected-minus4.png), not a new art direction.
+
+[The restored gameplay capture](evidence/restored/gameplay.png) records the same `x+4=8`, selected−4 state. The restored build passes29 UX checks and the complete five-duel browser suite; [latest production report](evidence/restored/production-report.json).
+
+## Rejected UX hardening revision (historical)
 
 The owner requested a second adversarial playtest after the initial delivery. [The latest comparable capture](evidence/ux/selected-minus4.png) uses the same 1672×941 state with the revised fluid action dock, selected-operation text and explicit commit label. The decorative opponent now occupies the free upper-left space instead of sitting beneath the equation panel. Exact quantities and the generated local model are unchanged.
 

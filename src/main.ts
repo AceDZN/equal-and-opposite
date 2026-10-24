@@ -28,26 +28,12 @@ let viewportInsets: NonNullable<SceneState['viewportInsets']> = { top: 220, bott
 const app = $('app');
 app.innerHTML = `
   <canvas id="table" aria-label="שולחן דו־קרב תלת־ממדי. בחירת קלף במקשים 1 עד 5, ואז Enter להפעלה." tabindex="0"></canvas>
-  <header id="game-header">
-    <div class="brand"><span class="seal" aria-hidden="true">=</span><div><h1>שווה והפוך</h1><span class="english" lang="en">EQUAL & OPPOSITE</span></div></div>
-    <nav aria-label="אפשרויות המשחק">
-      <button id="history" class="nav-button" title="דרך הפתרון" aria-label="דרך הפתרון"><span aria-hidden="true">≡</span><span class="nav-text">הדרך</span></button>
-      <button id="help" class="nav-button" title="איך משחקים" aria-label="איך משחקים"><span aria-hidden="true">?</span><span class="nav-text">כללים</span></button>
-      <button id="mute" class="nav-button" title="קול כבוי" aria-label="קול כבוי" aria-pressed="false"><span aria-hidden="true">♪</span><span class="nav-text" id="mute-text">קול כבוי</span></button>
-      <button id="motion" class="nav-button" title="תנועה מלאה" aria-label="תנועה מלאה" aria-pressed="false"><span aria-hidden="true">≈</span><span class="nav-text" id="motion-text">תנועה</span></button>
-      <button id="pause" class="nav-button" title="השהיה (P)" aria-label="השהיה" aria-keyshortcuts="P"><span aria-hidden="true">Ⅱ</span><span class="nav-text">השהיה</span></button>
-    </nav>
-  </header>
+  <header id="game-header"><div class="brand"><span class="seal" aria-hidden="true">=</span><div><h1>שווה והפוך</h1><span class="english" lang="en">EQUAL & OPPOSITE</span></div></div><nav aria-label="הגדרות"><button id="history" title="דרך הפתרון" aria-label="דרך הפתרון">דרך הפתרון</button><button id="help" title="איך משחקים" aria-label="איך משחקים">?</button><button id="mute" title="קול כבוי" aria-label="קול כבוי" aria-pressed="false"><span id="mute-text">קול כבוי</span></button><button id="motion" title="תנועה מלאה" aria-label="תנועה מלאה" aria-pressed="false"><span id="motion-text">תנועה מלאה</span></button><button id="pause" title="השהיה (P)" aria-label="השהיה" aria-keyshortcuts="P">Ⅱ</button></nav></header>
   <section class="duel-info"><div id="chapter" class="eyebrow"></div><h2 id="title"></h2><p id="note"></p><div id="rounds"></div></section>
-  <aside class="legend"><span>◈ <bdi dir="ltr">x</bdi> = מטען רונה אחת</span><span>מטעני דיו וירטואליים · <bdi dir="ltr">+ / −</bdi></span></aside>
-  <section class="equation-panel" aria-label="המשוואה הנוכחית"><div id="equation" class="formula" dir="ltr"></div><div id="opponent"></div></section>
+  <section class="equation-panel" aria-label="המשוואה הנוכחית"><div class="eyebrow">אותו מהלך · שני אגפים</div><div id="equation" class="formula" dir="ltr"></div><div id="opponent" class="opponent"></div></section>
+  <aside class="legend"><span>◈ <bdi dir="ltr">x</bdi> מטען רונה אחת</span><span>סימני הדיו הם מטענים וירטואליים</span><span><bdi dir="ltr">+</bdi> חיובי &nbsp; <bdi dir="ltr">−</bdi> שלילי</span></aside>
   <div id="camera-panel" class="camera" hidden role="group" aria-label="מבט על השולחן"><button id="cam-left" aria-label="סיבוב שמאלה" title="סיבוב שמאלה">↶</button><button id="cam-right" aria-label="סיבוב ימינה" title="סיבוב ימינה">↷</button><button id="cam-in" aria-label="קירוב" title="קירוב">+</button><button id="cam-out" aria-label="הרחקה" title="הרחקה">−</button><button id="cam-reset" aria-label="איפוס המצלמה" title="איפוס המצלמה">⌾</button><button id="fullscreen" aria-label="מסך מלא" title="מסך מלא (F)">⛶</button></div>
-  <section class="play-controls" aria-label="בחירה והפעלה">
-    <div class="dock-heading"><span id="turn-status">תורכם · בחרו קלף</span><span id="resources"></span></div>
-    <div class="dock-body"><div id="hand" dir="ltr" role="group" aria-label="בחירת קלף — קיצורים 1 עד 5"></div><div class="selection"><span id="selected-symbol" class="formula" dir="ltr"></span><span id="selected-label">בחרו קלף מהיד או מהשולחן</span></div><button id="commit" class="primary" aria-keyshortcuts="Enter">להפעיל <span aria-hidden="true">↵</span></button></div>
-    <div id="preview-row" hidden><span>אחרי המהלך:</span><span id="preview-value" class="formula" dir="ltr"></span></div>
-    <div class="dock-footer"><div class="dock-tools"><button id="cycle" aria-keyshortcuts="C">החלפת קלף</button><button id="preview" aria-pressed="false">בדיקת המהלך</button><button id="retry" aria-keyshortcuts="R">מחדש</button><button id="camera-toggle" aria-expanded="false" aria-controls="camera-panel">מצלמה</button></div><button id="discard" title="הצגת הדרך והקלפים ששוחקו">משומשים: 0</button></div>
-  </section>
+  <section class="play-controls" aria-label="בחירה והפעלה"><div class="hand-caption"><span>היד שלכם <small>מקלדת · 1–5</small></span><span id="resources"></span></div><div id="hand" dir="ltr" role="group" aria-label="בחירת קלף — קיצורים 1 עד 5"></div><div class="action-row"><button id="cycle" aria-keyshortcuts="C">החלפה אחת</button><div class="selection"><span id="selected-symbol" class="formula" dir="ltr"></span><span id="selected-label">בחרו קלף מהיד</span><div id="preview-row" hidden><span>אחרי המהלך:</span><span id="preview-value" class="formula" dir="ltr"></span></div></div><button id="commit" class="primary" aria-keyshortcuts="Enter">ביצוע <span aria-hidden="true">↵</span></button></div><div class="footnote"><button id="preview" aria-pressed="false">תצוגה מקדימה</button><button id="camera-toggle" aria-expanded="false" aria-controls="camera-panel">מצלמה</button><button id="discard" title="הצגת הדרך והקלפים ששוחקו">משומשים: 0</button><button id="retry" aria-keyshortcuts="R">התחלה מחדש <small>R</small></button></div><span id="turn-status" class="sr-only"></span></section>
   <div id="status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
   <dialog id="drawer" class="drawer" aria-labelledby="drawer-title" hidden><div class="drawer-header"><h2 id="drawer-title"></h2><button id="close-drawer" aria-label="סגירה" title="סגירה (Escape)">×</button></div><div id="drawer-content" tabindex="0" aria-label="תוכן החלונית"></div></dialog>
   <dialog id="result" class="result-dialog" aria-labelledby="result-title" aria-describedby="result-note" hidden><div class="eyebrow" id="result-eyebrow"></div><h2 id="result-title"></h2><p id="result-note"></p><div id="witness" class="formula" dir="ltr"></div><div id="result-actions"></div></dialog>
@@ -217,7 +203,7 @@ function render() {
   app.dataset.phase = state.phase;
   $('chapter').innerHTML = `דו־קרב <bdi dir="ltr">${state.duel + 1} / ${DUELS.length}</bdi>`;
   $('title').textContent = duel.title; $('note').textContent = duel.note; $('equation').textContent = formatEquation(state.equation); fitEquation();
-  $('rounds').innerHTML = `<span>מהלכים שנותרו: <bdi dir="ltr">${Math.max(0, duel.limit - state.moves)} / ${duel.limit}</bdi></span><span class="round-dots" aria-hidden="true">${Array.from({ length: duel.limit }, (_, i) => `<i class="${i < state.moves ? 'spent' : ''}"></i>`).join('')}</span>`;
+  $('rounds').innerHTML = Array.from({ length: duel.limit }, (_, i) => `<span class="round ${i < state.moves ? 'spent' : ''}" aria-hidden="true"></span>`).join('') + `<span>סיבוב <bdi dir="ltr">${Math.min(state.moves + 1, duel.limit)} / ${duel.limit}</bdi> · בוצעו ${state.moves}</span>`;
   const lastOpponent = state.history.find(entry => entry.actor === 'opponent');
   $('opponent').innerHTML = state.phase === 'opponent' ? `תגובת היריב: <bdi dir="ltr">${duel.opponent?.label}</bdi> לשני האגפים` : duel.opponent && state.moves === 0 ? `אחרי המהלך הראשון: היריב יפעיל <bdi dir="ltr">${duel.opponent.label}</bdi> לשני האגפים` : lastOpponent ? `היריב הפעיל <bdi dir="ltr">${lastOpponent.label}</bdi> · התגובה הושלמה` : 'אותו מהלך · שני אגפים';
   $('turn-status').innerHTML = isAnimating() ? `${state.phase === 'player' ? 'המהלך שלכם' : 'תגובת היריב'}: <bdi dir="ltr">${state.history.at(-1)?.label}</bdi>` : card ? 'קלף נבחר · מוכנים להפעלה' : 'תורכם · בחרו קלף';
@@ -225,7 +211,7 @@ function render() {
   renderHand(ready);
   $('selected-symbol').textContent = card?.label || ''; $('selected-label').innerHTML = card ? describeCard(card) : isAnimating() ? 'המהלך מופעל על כל איבר בשני האגפים' : 'בחרו קלף מהיד או מהשולחן';
   $<HTMLButtonElement>('commit').disabled = !ready || !card;
-  $('commit').innerHTML = card ? `להפעיל <bdi dir="ltr">${card.label}</bdi> <span aria-hidden="true">↵</span>` : 'להפעיל <span aria-hidden="true">↵</span>';
+  $('commit').innerHTML = 'ביצוע <span aria-hidden="true">↵</span>';
   const canCycle = ready && !!card && !state.cycles && !!state.deck.length;
   $<HTMLButtonElement>('cycle').disabled = !canCycle;
   $('cycle').textContent = state.cycles ? 'ההחלפה נוצלה' : 'החלפת קלף';
@@ -234,7 +220,7 @@ function render() {
   $('preview').textContent = preview ? 'לסגור בדיקה' : 'בדיקת המהלך'; $('preview').setAttribute('aria-pressed', String(preview));
   $('preview-row').hidden = !preview || !card;
   $('preview-value').textContent = preview && card ? formatEquation(applyOperation(state.equation, card.op)) : '';
-  $('discard').textContent = `משומשים: ${state.discard.length}`;
+  $('discard').innerHTML = `משומשים: <bdi dir="ltr">${state.discard.map(card => card.label).join(' · ') || '—'}</bdi>`;
   $('discard').title = state.discard.map(card => card.label).join(' · ') || 'עדיין לא שוחקו קלפים';
   const muteLabel = settings.muted ? 'קול כבוי' : 'קול פעיל', motionLabel = settings.reduced ? 'תנועה מופחתת' : 'תנועה מלאה';
   $('mute-text').textContent = muteLabel; $('motion-text').textContent = motionLabel;

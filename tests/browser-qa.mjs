@@ -7,7 +7,7 @@ import path from 'node:path';
 // this test never writes gameplay state or installs a solved equation.
 const url = process.env.QA_URL || 'http://127.0.0.1:4185';
 const requireModel = process.env.QA_REQUIRE_MODEL === '1' || (process.env.QA_REQUIRE_MODEL !== '0' && new URL(url).port === '4185');
-const directory = path.resolve('output/independent-qa');
+const directory = path.resolve(process.env.QA_OUTPUT || 'output/independent-qa');
 await fs.mkdir(directory, { recursive: true });
 let browserChannel = process.env.QA_BROWSER_CHANNEL || 'chromium';
 let browser;
@@ -157,8 +157,8 @@ try {
   assert.equal((await state()).phase, 'won');
   await next(2);
 
-  // Match the generated reference's exact equation and selection through play.
-  // The required real draw remains visible even though the generated image omits it.
+  // Capture the accepted gameplay composition in a reproducible played state.
+  // Keep the finite draw visible; this checks rules without prescribing a layout.
   await play('2-a', true);
   assert.deepEqual((await state()).equation, { aL: '1', bL: '4', aR: '0', bR: '8' });
   assert.equal((await state()).hand.length, 5);

@@ -1,0 +1,153 @@
+{
+  "coordinateSystem": "tabletop origin=center, +x=screen right, +y=up, +z=toward player; equation left-to-right",
+  "duel": 2,
+  "title": "תגובה בדיו",
+  "phase": "ready",
+  "paused": false,
+  "drawer": null,
+  "cameraOpen": false,
+  "matchComplete": false,
+  "equation": {
+    "aL": "1",
+    "bL": "4",
+    "aR": "0",
+    "bR": "8"
+  },
+  "formula": "x + 4 = 8",
+  "original": "2x + 4 = 12",
+  "unknown": "signed virtual charge of one x rune",
+  "hand": [
+    {
+      "slot": 1,
+      "id": "2-b",
+      "label": "−4",
+      "kind": "addC",
+      "value": "-4"
+    },
+    {
+      "slot": 2,
+      "id": "2-c",
+      "label": "−2",
+      "kind": "addC",
+      "value": "-2"
+    },
+    {
+      "slot": 3,
+      "id": "2-d",
+      "label": "+2",
+      "kind": "addC",
+      "value": "2"
+    },
+    {
+      "slot": 4,
+      "id": "2-e",
+      "label": "×2",
+      "kind": "mul",
+      "value": "2"
+    },
+    {
+      "slot": 5,
+      "id": "2-draw+1",
+      "label": "+1",
+      "kind": "addC",
+      "value": "1"
+    }
+  ],
+  "selected": 1,
+  "preview": false,
+  "helpRequests": 0,
+  "moves": 1,
+  "limit": 4,
+  "opponent": null,
+  "deck": [
+    "−1"
+  ],
+  "discard": [
+    "÷2"
+  ],
+  "cycleAvailable": true,
+  "history": [
+    {
+      "actor": "player",
+      "card": "2-a",
+      "label": "÷2",
+      "result": "x + 2 = 6"
+    },
+    {
+      "actor": "opponent",
+      "card": "2-opp",
+      "label": "+2",
+      "result": "x + 4 = 8"
+    }
+  ],
+  "reason": "",
+  "settings": {
+    "muted": true,
+    "reduced": false
+  },
+  "elapsedSimulation": 12.283,
+  "viewportInsets": {
+    "top": 386.703125,
+    "formulaTop": 291.703125,
+    "formulaLeft": 671,
+    "formulaRight": 1001,
+    "bottom": 140,
+    "left": 20,
+    "right": 20
+  },
+  "scene": {
+    "modelLoaded": true,
+    "modelError": "",
+    "camera": {
+      "azimuth": 0,
+      "distance": 25
+    },
+    "drawCalls": 88,
+    "triangles": 114617,
+    "textures": 32,
+    "coordinateSystem": "Y up; left expression X<0, right expression X>0; hand at positive Z",
+    "physicalCards": 5,
+    "cardScreens": [
+      {
+        "id": "2-b",
+        "index": 0,
+        "slot": 0,
+        "x": 459.2157600545903,
+        "y": 787.7445176643924,
+        "visible": true
+      },
+      {
+        "id": "2-c",
+        "index": 1,
+        "slot": 1,
+        "x": 650.4361504956812,
+        "y": 797.187687652431,
+        "visible": true
+      },
+      {
+        "id": "2-d",
+        "index": 2,
+        "slot": 2,
+        "x": 836,
+        "y": 789.8343674664227,
+        "visible": true
+      },
+      {
+        "id": "2-e",
+        "index": 3,
+        "slot": 3,
+        "x": 1021.5638495043188,
+        "y": 797.187687652431,
+        "visible": true
+      },
+      {
+        "id": "2-draw+1",
+        "index": 4,
+        "slot": 4,
+        "x": 1209.73939627351,
+        "y": 804.6445013058841,
+        "visible": true
+      }
+    ]
+  }
+}
